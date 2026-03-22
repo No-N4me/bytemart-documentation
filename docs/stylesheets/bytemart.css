@@ -168,31 +168,42 @@ body {
 }
 
 /* =========================================
-   6. COPY BUTTON & TOAST TESTER
+   6. COPY BUTTON & TOAST (MASK FIX)
    ========================================= */
 
-/* The Code Block Copy Button - Broad Catch-All */
-button.md-clipboard,
-.highlight button.md-clipboard,
-.md-typeset .highlight button.md-clipboard {
+/* 1. Target the actual SVG Icon Mask */
+.md-typeset .highlight .md-clipboard::after {
+  background-color: #b0bec5 !important; /* Default muted gray icon */
+}
+
+/* 2. Color the icon Bytemart Blue when hovered */
+.md-typeset .highlight .md-clipboard:hover::after {
+  background-color: #64b5f6 !important; /* Glow blue */
+}
+
+/* 3. Style the button container itself (Glass pill) */
+.md-typeset .highlight .md-clipboard {
   background-color: rgba(255, 255, 255, 0.05) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 8px !important; 
-  color: #64b5f6 !important; 
-  
-  /* FORCE VISIBLE: This proves the CSS is loading */
-  opacity: 1 !important; 
-  transform: scale(1) !important;
-  visibility: visible !important;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
 }
 
-/* Toast Snackbar - Broad Catch-All */
-div.md-toast,
-#mkdocs-toast,
-.md-toast-wrap {
+/* Button container hover glow */
+.md-typeset .highlight .md-clipboard:hover {
+  background-color: rgba(100, 181, 246, 0.15) !important; 
+  border-color: rgba(100, 181, 246, 0.4) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px rgba(144, 202, 249, 0.2) !important;
+}
+
+/* 4. The Toast Notification */
+.md-toast {
   background-color: rgba(19, 19, 19, 0.95) !important;
   backdrop-filter: blur(10px) !important; 
   border: 1px solid rgba(139, 92, 246, 0.6) !important;
   border-radius: 12px !important;
+}
+.md-toast__message {
   color: #f5f5f5 !important;
+  font-weight: 600 !important;
 }
