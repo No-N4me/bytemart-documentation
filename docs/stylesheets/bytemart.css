@@ -168,42 +168,42 @@ body {
 }
 
 /* =========================================
-   6. COPY BUTTON & TOAST (MASK FIX)
+   6. COPY BUTTON & TOAST (MODERN MKDOCS)
    ========================================= */
-
-/* 1. Target the actual SVG Icon Mask */
-.md-typeset .highlight .md-clipboard::after {
-  background-color: #b0bec5 !important; /* Default muted gray icon */
-}
-
-/* 2. Color the icon Bytemart Blue when hovered */
-.md-typeset .highlight .md-clipboard:hover::after {
-  background-color: #64b5f6 !important; /* Glow blue */
-}
-
-/* 3. Style the button container itself (Glass pill) */
-.md-typeset .highlight .md-clipboard {
+/* The Code Block Navigation Container (Holds the copy button) */
+.md-typeset .md-code__nav {
   background-color: rgba(255, 255, 255, 0.05) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 8px !important; 
+  padding: 4px !important;
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
 }
-
-/* Button container hover glow */
-.md-typeset .highlight .md-clipboard:hover {
-  background-color: rgba(100, 181, 246, 0.15) !important; 
-  border-color: rgba(100, 181, 246, 0.4) !important;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px rgba(144, 202, 249, 0.2) !important;
+/* Add a nice hover effect to the container itself when the code block is hovered */
+.md-typeset *:hover > .md-code__nav {
+  background-color: rgba(255, 255, 255, 0.08) !important; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
 }
-
-/* 4. The Toast Notification */
+/* The actual copy button inside the container */
+.md-typeset .md-code__button {
+  color: #b0bec5 !important; /* Muted gray by default */
+  transition: color 0.3s ease !important;
+}
+/* When you explicitly hover over the copy button */
+.md-typeset .md-code__button:hover {
+  color: #64b5f6 !important; /* Illuminates Bytemart Blue */
+}
+/* The Animated "Copied to Clipboard" Toast Snackbar */
 .md-toast {
-  background-color: rgba(19, 19, 19, 0.95) !important;
+  background-color: rgba(19, 19, 19, 0.95) !important; 
   backdrop-filter: blur(10px) !important; 
-  border: 1px solid rgba(139, 92, 246, 0.6) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(139, 92, 246, 0.6) !important; /* Purple/Permanent Accent */
   border-radius: 12px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(139, 92, 246, 0.3) !important;
 }
+/* Make the toast text bold/clean */
 .md-toast__message {
-  color: #f5f5f5 !important;
   font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  color: #f5f5f5 !important;
 }
