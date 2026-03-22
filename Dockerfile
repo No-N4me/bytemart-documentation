@@ -1,19 +1,18 @@
-# 1. Use the official Material image
 FROM squidfunk/mkdocs-material:latest
 
-# 2. Set the working directory
+# Set working directory
 WORKDIR /docs
 
-# 3. Copy your project files
+# Copy everything from your repo
 COPY . .
 
-# 4. CRITICAL: Reset the entrypoint
-# The base image has ENTRYPOINT ["mkdocs"]. We clear it so CMD works normally.
+# Clear the entrypoint so we can run shell commands
 ENTRYPOINT []
 
-# 5. Build the static site during the image build
-RUN mkdocs build --clean
+# 1. Build the site
+# 2. We use 'ls -la site' to verify the index.html exists in the logs
+RUN mkdocs build --clean && ls -la site
 
-# 6. Serve the static folder using Python
-# Using 'python' instead of 'python3' as the base image usually aliases it
-CMD ["python", "-m", "http.server", "8000", "--directory", "site"]
+# 3. Serve the folder. 
+# IMPORTANT: Use '0.0.0.0' so it's accessible outside the container
+CMD ["python", "-m", "http.server", "8000", "--bind", "0.0.0.0", "--directory", "site"]
