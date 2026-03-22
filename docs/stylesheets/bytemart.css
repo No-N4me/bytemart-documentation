@@ -83,10 +83,9 @@ body {
    3. CARDS & GLASSMORPHISM
    ========================================= */
 
-/* Overriding admonitions, code blocks, and details to act like generic `.card` / `.glass` */
+/* Overriding admonitions and details to act like generic `.card` / `.glass` */
 .md-typeset .admonition, 
-.md-typeset details,
-.md-typeset pre > code {
+.md-typeset details {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px; /* borderRadius.card / .admin-card border-radius */

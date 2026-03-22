@@ -5,8 +5,9 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ${PWD}:/docs
+      - .:/docs
     # 'serve' starts the live server
     # '--dev-addr 0.0.0.0:8000' makes it accessible on your network
-    command: serve --dev-addr 0.0.0.0:8000
+    command: >
+      sh -c "mkdocs build --clean && python -m http.server 8000 --directory site"
     restart: unless-stopped

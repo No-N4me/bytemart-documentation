@@ -1,5 +1,5 @@
 site_name: Bytemart Documentation
-site_url: https://docs.bytemart.com
+site_url: https://bytemart.com
 theme:
   name: material
   logo: assets/bytemart_logo.png    # The main logo in the header navigation
@@ -10,6 +10,14 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-      
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
 extra_css:
   - stylesheets/bytemart.css
