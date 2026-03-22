@@ -4,12 +4,8 @@ theme:
   name: material
   logo: assets/bytemart_logo.png    # The main logo in the header navigation
   favicon: assets/bytemart_logo.png # The tiny icon in the browser tab
-  palette:
-    # Ensure MkDocs starts natively in Slate mode so other dark options map closely 
-    - scheme: slate 
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+  features:
+    - content.code.copy
 
 markdown_extensions:
   - pymdownx.highlight:

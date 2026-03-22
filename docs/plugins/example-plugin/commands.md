@@ -26,6 +26,7 @@ This plugin features both in-game chat commands for players and remote RCON comm
 
 ArkKits relies heavily on ArkApi's built-in permissions system. You must grant the exact permissions matching your `config.json`.
 **To grant a VIP group permission to the "AlphaKit":**
+
 ```bash
 Permissions.AddGroup VIP
 Permissions.Grant VIP ArkKits.Use.AlphaKit
