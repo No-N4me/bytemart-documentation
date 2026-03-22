@@ -168,42 +168,40 @@ body {
 }
 
 /* =========================================
-   6. COPY BUTTON & TOAST (MODERN MKDOCS)
+   6. COPY BUTTON & TOAST (VARIABLE OVERRIDES)
    ========================================= */
-/* The Code Block Navigation Container (Holds the copy button) */
+
+/* Override the exact variables MkDocs expects the copy button to use */
+:root, .md-typeset {
+  /* Copy Button Container background (rest) */
+  --md-code-bg-color--lighter: rgba(255, 255, 255, 0.05); 
+  
+  /* Copy Button Container background (when hovered) */
+  --md-code-bg-color--light: rgba(255, 255, 255, 0.08); 
+  
+  /* Copy Button Icon Color (rest) */
+  --md-default-fg-color--lightest: #b0bec5; 
+  
+  /* Copy Button Icon Color (hovered - Bytemart Blue) */
+  --md-accent-fg-color: #64b5f6; 
+  
+  /* Toast Snackbar specific root variables */
+  --md-toast-bg-color: rgba(19, 19, 19, 0.95);
+  --md-toast-fg-color: #f5f5f5;
+}
+
+/* Give the container your custom CSS border/radius since MkDocs doesn't use variables for borders */
 .md-typeset .md-code__nav {
-  background-color: rgba(255, 255, 255, 0.05) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 8px !important; 
+  border-radius: 8px !important;
   padding: 4px !important;
-  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-/* Add a nice hover effect to the container itself when the code block is hovered */
-.md-typeset *:hover > .md-code__nav {
-  background-color: rgba(255, 255, 255, 0.08) !important; 
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
-}
-/* The actual copy button inside the container */
-.md-typeset .md-code__button {
-  color: #b0bec5 !important; /* Muted gray by default */
-  transition: color 0.3s ease !important;
-}
-/* When you explicitly hover over the copy button */
-.md-typeset .md-code__button:hover {
-  color: #64b5f6 !important; /* Illuminates Bytemart Blue */
-}
-/* The Animated "Copied to Clipboard" Toast Snackbar */
+
+/* Force the toast to inherit the glass aesthetic */
 .md-toast {
-  background-color: rgba(19, 19, 19, 0.95) !important; 
-  backdrop-filter: blur(10px) !important; 
+  backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
   border: 1px solid rgba(139, 92, 246, 0.6) !important; /* Purple/Permanent Accent */
   border-radius: 12px !important;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(139, 92, 246, 0.3) !important;
-}
-/* Make the toast text bold/clean */
-.md-toast__message {
-  font-weight: 600 !important;
-  letter-spacing: 0.5px !important;
-  color: #f5f5f5 !important;
 }
