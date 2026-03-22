@@ -2,12 +2,12 @@ services:
   mkdocs:
     image: squidfunk/mkdocs-material:latest
     container_name: mkdocs_live
+    # This line is the magic fix:
+    entrypoint: /bin/sh
+    command: >
+      -c "mkdocs build --clean && python3 -m http.server 8000 --directory site"
     ports:
-      - "8000:8000"
+      - 8000:8000
     volumes:
       - .:/docs
-    # 'serve' starts the live server
-    # '--dev-addr 0.0.0.0:8000' makes it accessible on your network
-    command: >
-      sh -c "mkdocs build --clean && python -m http.server 8000 --directory site"
     restart: unless-stopped
