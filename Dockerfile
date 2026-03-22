@@ -1,18 +1,16 @@
 FROM squidfunk/mkdocs-material:latest
 
-# Set working directory
-WORKDIR /docs
+WORKDIR /app
 
-# Copy everything from your repo
+# Copy the project
 COPY . .
 
-# Clear the entrypoint so we can run shell commands
+# Reset entrypoint
 ENTRYPOINT []
 
-# 1. Build the site
-# 2. We use 'ls -la site' to verify the index.html exists in the logs
-RUN mkdocs build --clean && ls -la site
+# Build the site
+RUN mkdocs build --clean
 
-# 3. Serve the folder. 
-# IMPORTANT: Use '0.0.0.0' so it's accessible outside the container
+# We serve from the /app/site directory explicitly
+# We use port 8000
 CMD ["python", "-m", "http.server", "8000", "--bind", "0.0.0.0", "--directory", "site"]

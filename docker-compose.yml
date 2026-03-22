@@ -2,8 +2,6 @@ services:
   mkdocs:
     build: .
     container_name: mkdocs_live
-    volumes:
-      - .:/docs
     ports:
       - 8000:8000
     restart: unless-stopped
