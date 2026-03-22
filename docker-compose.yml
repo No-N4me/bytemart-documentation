@@ -4,10 +4,13 @@ services:
     container_name: mkdocs_live
     # This line is the magic fix:
     entrypoint: /bin/sh
+    # We force a build AND then serve. 
+    # This ensures that even if Dokploy's mount is weird, 
+    # the container builds its own internal HTML before starting.
     command: >
       -c "mkdocs build --clean && python3 -m http.server 8000 --directory site"
-    ports:
-      - 8000:8000
     volumes:
       - .:/docs
+    ports:
+      - 8000:8000
     restart: unless-stopped
