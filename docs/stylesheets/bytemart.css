@@ -168,42 +168,40 @@ body {
 }
 
 /* =========================================
-   6. COPY BUTTON & TOAST NOTIFICATION
+   6. COPY BUTTON & TOAST NOTIFICATION (FORCED OVERRIDES)
    ========================================= */
 
 /* The Code Block Copy Button */
-.md-clipboard {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px; 
-  color: #b0bec5; /* Muted text default */
-  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  margin: 5px; /* Pull it slightly away from the absolute corner */
+html .md-typeset .highlight .md-clipboard {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important; 
+  color: #b0bec5 !important; 
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
 }
 
 /* Copy Button Hover Glow */
-.md-clipboard:hover {
-  background: rgba(100, 181, 246, 0.15); /* Bytemart Blue */
-  border-color: rgba(100, 181, 246, 0.3);
-  color: #64b5f6; 
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px rgba(144, 202, 249, 0.2);
-  cursor: pointer;
+html .md-typeset .highlight .md-clipboard:hover {
+  background-color: rgba(100, 181, 246, 0.15) !important; /* Bytemart Blue */
+  border-color: rgba(100, 181, 246, 0.4) !important;
+  color: #64b5f6 !important; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px rgba(144, 202, 249, 0.2) !important;
 }
 
 /* The Animated "Copied to Clipboard" Toast Snackbar */
-.md-toast {
-  background: rgba(19, 19, 19, 0.85) !important; /* Forces dark matching background */
-  backdrop-filter: blur(10px); /* Restores glass blur */
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(139, 92, 246, 0.4); /* Your Purple/Permanent Accent */
-  border-radius: 16px;
+div.md-toast {
+  background-color: rgba(19, 19, 19, 0.95) !important; /* Forces dark matching background */
+  backdrop-filter: blur(10px) !important; 
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(139, 92, 246, 0.4) !important; /* Your Purple/Permanent Accent */
+  border-radius: 12px !important;
   color: #f5f5f5 !important; 
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(139, 92, 246, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(139, 92, 246, 0.3) !important;
 }
 
 /* Make the toast text bold/clean */
-.md-toast__message {
-  font-weight: 600;
-  letter-spacing: 0.5px;
+div.md-toast__message {
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  color: #f5f5f5 !important;
 }
