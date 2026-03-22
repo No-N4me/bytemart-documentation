@@ -1,8 +1,13 @@
-site_name: Bytemart
 theme:
-  name: material
-  palette: 
-    scheme: slate # Dark mode for coders
-
-nav:
-  - Home: index.md
+  name: Bytemart
+  logo: assets/bytemart_logo.png    # The main logo in the header navigation
+  favicon: assets/bytemart_logo.png # The tiny icon in the browser tab
+  palette:
+    # Ensure MkDocs starts natively in Slate mode so other dark options map closely 
+    - scheme: slate 
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      
+extra_css:
+  - stylesheets/bytemart.css

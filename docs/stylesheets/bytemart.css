@@ -1,0 +1,169 @@
+/* 
+ * MkDocs Custom Theme
+ * Based on PluginHub Frontend (theme.ts / globals.css / tailwind.config.js)
+ */
+
+:root {
+  /* =========================================
+     1. COLORS (Based on theme.ts / Tailwind)
+     ========================================= */
+  
+  /* Primary Colors (Blue shades) */
+  --md-primary-fg-color:        #64b5f6;
+  --md-primary-fg-color--light: #90caf9;
+  --md-primary-fg-color--dark:  #1e88e5;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #ffffff;
+
+  /* Accent Colors (Pink shades) */
+  --md-accent-fg-color:         #ff4081;
+  --md-accent-fg-color--transparent: rgba(255, 64, 129, 0.1);
+  --md-accent-bg-color:         #ffffff;
+  --md-accent-bg-color--light:  #ffffff;
+
+  /* Typography Fonts */
+  --md-text-font:               "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  
+  /* Status Colors */
+  --md-status-red:              #ef5350;
+  --md-status-green:            #66BB6A;
+  --md-status-yellow:           #FFD54F;
+}
+
+/* Base override for MkDocs Default and Slate (Dark) schemes */
+[data-md-color-scheme="slate"], [data-md-color-scheme="default"] {
+  /* Structural Defaults */
+  --md-default-bg-color:        transparent; /* Important for global gradient body to show through */
+  --md-default-bg-color--light: rgba(255, 255, 255, 0.05); /* Similar to bg-white/5 */
+  --md-default-bg-color--lighter: rgba(255, 255, 255, 0.1); /* Similar to bg-white/10 */
+  
+  /* Text defaults */
+  --md-default-fg-color:        #f5f5f5; /* theme.colors.text.default */
+  --md-default-fg-color--light: #b0bec5; /* theme.colors.text.secondary */
+  --md-default-fg-color--lighter: rgba(176, 190, 197, 0.7);
+
+  --md-typeset-color:           #f5f5f5;
+  --md-typeset-a-color:         #64b5f6;
+
+  /* Code Block Colors */
+  --md-code-bg-color:           rgba(255, 255, 255, 0.05);
+  --md-code-fg-color:           #f5f5f5;
+  
+  /* Box Shadows mapped directly from theme.ts */
+  --md-shadow-z1:               0 10px 30px rgba(0, 0, 0, 0.25); /* .shadow-card */
+  --md-shadow-z2:               0 15px 35px rgba(0, 0, 0, 0.2), 0 0 15px rgba(144, 202, 249, 0.3); /* .shadow-hover */
+}
+
+/* =========================================
+   2. BODY & GLOBAL STRUCTURE
+   ========================================= */
+
+body {
+  /* Based on bg-gradient-main from tailwind.config.ts */
+  background: linear-gradient(125deg, rgba(19, 19, 19, 0.95) 0%, rgba(19, 19, 19, 0.8) 50%, rgba(32, 20, 50, 0.85) 100%);
+  background-attachment: fixed;
+  background-color: #131313;
+  color: var(--md-default-fg-color);
+  background-size: cover;
+}
+
+/* Remove default background colors from structural tags so body gradient passes through */
+.md-header, .md-tabs, .md-main__inner {
+  background-color: transparent !important;
+}
+
+/* Provide the transparent glass aesthetic on the top navigation bar header */
+.md-header {
+  background: rgba(19, 19, 19, 0.8) !important;
+  backdrop-filter: blur(10px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* =========================================
+   3. CARDS & GLASSMORPHISM
+   ========================================= */
+
+/* Overriding admonitions, code blocks, and details to act like generic `.card` / `.glass` */
+.md-typeset .admonition, 
+.md-typeset details,
+.md-typeset pre > code {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px; /* borderRadius.card / .admin-card border-radius */
+  box-shadow: var(--md-shadow-z1);
+  backdrop-filter: blur(10px); /* blurs.glass */
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); /* ark-bezier transition */
+}
+
+/* Give admonitions that hover effect */
+.md-typeset .admonition:hover, 
+.md-typeset details:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  box-shadow: var(--md-shadow-z2);
+}
+
+.md-nav__link--active {
+  color: #90caf9; /* primary.light */
+  font-weight: 600;
+}
+
+/* Highlight font weights like your tailwind defaults */
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {
+  font-weight: bold;
+}
+
+/* =========================================
+   4. BUTTON STYLES
+   ========================================= */
+
+/* Making default MkDocs buttons match styles mapped from globals.css .btn */
+.md-typeset .md-button {
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border: 1px solid rgba(100, 181, 246, 0.3);
+  background: rgba(100, 181, 246, 0.15);
+  color: #fff;
+}
+
+.md-typeset .md-button:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 0 0 15px rgba(144, 202, 249, 0.3);
+}
+
+.md-typeset .md-button--primary {
+  background: rgba(255, 64, 129, 0.15); /* accent */
+  border-color: rgba(255, 64, 129, 0.3);
+}
+
+.md-typeset .md-button--primary:hover {
+  background: rgba(255, 64, 129, 0.25);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 64, 129, 0.3);
+}
+
+/* =========================================
+   5. CUSTOM SCROLLBAR
+   ========================================= */
+
+/* Transferred over from the `.custom-scrollbar` and Webkit specifics in globals.css */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(30, 30, 42, 0.4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(142, 142, 160, 0.5);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(142, 142, 160, 0.8);
+}
