@@ -1,0 +1,8 @@
+site_name: Bytemart
+theme:
+  name: material
+  palette: 
+    scheme: slate # Dark mode for coders
+
+nav:
+  - Home: index.md
