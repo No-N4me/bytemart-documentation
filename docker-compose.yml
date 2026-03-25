@@ -1,7 +1,0 @@
-services:
-  mkdocs:
-    build: .
-    container_name: mkdocs_live
-    ports:
-      - 8000:8000
-    restart: unless-stopped
