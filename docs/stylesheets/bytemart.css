@@ -200,8 +200,58 @@ body {
 
 /* Force the toast to inherit the glass aesthetic */
 .md-toast {
+  background-color: rgba(30, 30, 42, 0.98) !important;
+  color: #f5f5f5 !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
   border: 1px solid rgba(139, 92, 246, 0.6) !important; /* Purple/Permanent Accent */
   border-radius: 12px !important;
+}
+
+.md-toast__message {
+  color: #f5f5f5 !important;
+}
+
+/* =========================================
+   7. TABLE STYLES
+   ========================================= */
+
+/* Fix transparent tables */
+.md-typeset table {
+  background-color: rgba(30, 30, 42, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.md-typeset table th {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f5f5f5;
+}
+
+.md-typeset table td, .md-typeset table th {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* =========================================
+   8. SEARCH COMPONENT
+   ========================================= */
+
+/* Fix transparent search results */
+.md-search-result, .md-search-result__scrollwrap {
+  background-color: rgba(30, 30, 42, 0.98) !important;
+  color: #f5f5f5 !important;
+}
+
+.md-search-result__item {
+  background-color: transparent !important;
+}
+
+.md-search-result__article {
+  background-color: transparent !important;
+}
+
+.md-search-result__article:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
 }
