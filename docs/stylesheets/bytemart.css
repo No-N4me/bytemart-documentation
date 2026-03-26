@@ -198,8 +198,8 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Force the toast to inherit the glass aesthetic */
-.md-toast {
+/* Force the toast/dialog to inherit the glass aesthetic */
+.md-toast, .md-dialog {
   background-color: rgba(30, 30, 42, 0.98) !important;
   color: #f5f5f5 !important;
   backdrop-filter: blur(10px) !important;
@@ -208,7 +208,7 @@ body {
   border-radius: 12px !important;
 }
 
-.md-toast__message {
+.md-toast__message, .md-dialog__inner {
   color: #f5f5f5 !important;
 }
 
@@ -239,7 +239,7 @@ body {
    ========================================= */
 
 /* Fix transparent search results */
-.md-search-result, .md-search-result__scrollwrap {
+.md-search-result, .md-search-result__scrollwrap, .md-search-result__meta {
   background-color: rgba(30, 30, 42, 0.98) !important;
   color: #f5f5f5 !important;
 }
