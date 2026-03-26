@@ -1,5 +1,5 @@
 site_name: Bytemart Documentation
-site_url: https://bytemart.com
+site_url: https://docs.bytemart.net
 theme:
   name: material
   logo: assets/bytemart_logo.png    # The main logo in the header navigation
