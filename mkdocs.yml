@@ -4,6 +4,8 @@ theme:
   name: material
   logo: assets/bytemart_logo.png    # The main logo in the header navigation
   favicon: assets/bytemart_logo.png # The tiny icon in the browser tab
+  palette:
+    scheme: slate
   features:
     - content.code.copy
 
