@@ -266,7 +266,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  margin: auto 0.2rem;
+  margin: auto 0.5rem auto 0; /* first item on the left, gap before the logo */
   padding: 0.25rem 0.55rem;
   height: 1.6rem;
   border-radius: 50px;
