@@ -2,6 +2,7 @@ site_name: Bytemart Documentation
 site_url: https://docs.bytemart.net
 theme:
   name: material
+  custom_dir: overrides             # Local template overrides (e.g. the header "main site" button)
   logo: assets/bytemart_logo.png    # The main logo in the header navigation
   favicon: assets/bytemart_logo.png # The tiny icon in the browser tab
   palette:

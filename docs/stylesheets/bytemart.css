@@ -255,3 +255,70 @@ body {
 .md-search-result__article:hover {
   background-color: rgba(255, 255, 255, 0.05) !important;
 }
+
+/* =========================================
+   9. "BACK TO MAIN SITE" HEADER BUTTON
+   ========================================= */
+
+/* Compact glass pill in the header that links back to bytemart.net.
+   Markup lives in overrides/partials/header.html (.md-mainsite). */
+.md-header__button.md-mainsite {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: auto 0.2rem;
+  padding: 0.25rem 0.55rem;
+  height: 1.6rem;
+  border-radius: 50px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  color: #fff;
+  opacity: 1; /* override the default dimmed .md-header__button */
+  border: 1px solid rgba(100, 181, 246, 0.35);
+  background: rgba(100, 181, 246, 0.15);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.md-header__button.md-mainsite:hover {
+  background: rgba(100, 181, 246, 0.28);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 12px rgba(144, 202, 249, 0.4);
+  transform: translateY(-1px);
+}
+
+/* The arrow icon inside the pill */
+.md-header__button.md-mainsite svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: 0;
+  fill: currentColor;
+}
+
+/* Collapse to an icon-only button on narrow screens to save header space */
+@media screen and (max-width: 44.9375em) {
+  .md-mainsite__label {
+    display: none;
+  }
+  .md-header__button.md-mainsite {
+    padding: 0.25rem;
+  }
+}
+
+/* =========================================
+   10. CODE LINE ANCHOR HIGHLIGHT
+   ========================================= */
+
+/* When a code line is targeted via its anchor (e.g. #__codelineno-0-11),
+   highlight the whole line. The URL fragment matches the empty
+   <a id="__codelineno-N-M">, so we light up its wrapping line span
+   (<span id="__span-N-M">) using :has(). Mirrors Material's own hl_lines
+   full-width bleed, but with a clearly visible Bytemart-blue tint. */
+.md-typeset .highlight [id^="__span"]:has(> a[id^="__codelineno"]:target) {
+  display: block;
+  margin: 0 -1.1764705882em;
+  padding: 0 1.1764705882em;
+  background-color: rgba(100, 181, 246, 0.16);
+  box-shadow: 3px 0 0 0 var(--md-primary-fg-color) inset;
+}
