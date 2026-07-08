@@ -322,3 +322,77 @@ body {
   background-color: rgba(100, 181, 246, 0.16);
   box-shadow: 3px 0 0 0 var(--md-primary-fg-color) inset;
 }
+
+/* =========================================
+   11. LANGUAGE SELECTOR (i18n switcher)
+   ========================================= */
+
+/* The dropdown panel. The theme sets --md-default-bg-color to transparent so
+   the page gradient shows through the body, but Material reuses that variable
+   for this popup, leaving it see-through and unreadable over content. Give it
+   the same opaque glass treatment as the search results and cards. */
+.md-select__inner {
+  /* Right-align under the button so the panel opens inward and never spills
+     off the right edge of the viewport (the switcher sits near the header end).
+     !important overrides Material's higher-specificity [dir=ltr] left-anchor. */
+  left: auto !important;
+  right: 0 !important;
+  background: rgba(30, 30, 42, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  box-shadow: var(--md-shadow-z1);
+  margin-top: 0.2rem;
+  overflow: hidden;
+}
+
+/* Material draws a little caret above the panel tinted with the (now
+   transparent) default bg; hide it for a clean floating panel. */
+.md-select__inner::after {
+  display: none;
+}
+
+.md-select__list {
+  padding: 0.25rem;
+}
+
+/* Each language row: flag chip + label, full width, rounded hover. */
+.md-select__link {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  color: var(--md-default-fg-color);
+  opacity: 1;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.md-select__link:hover,
+.md-select__link:focus {
+  background: rgba(100, 181, 246, 0.18);
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Flag chip, keyed off the hreflang the switcher emits per language.
+   Files live in docs/assets/flags/; the path is relative to this
+   stylesheet (site/stylesheets/ -> site/assets/flags/). */
+.md-select__link::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 1.2rem;
+  height: 0.8rem;
+  border-radius: 2px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.md-select__link[hreflang="en"]::before { background-image: url("../assets/flags/en.svg"); }
+.md-select__link[hreflang="de"]::before { background-image: url("../assets/flags/de.svg"); }
+.md-select__link[hreflang="fr"]::before { background-image: url("../assets/flags/fr.svg"); }
+.md-select__link[hreflang="es"]::before { background-image: url("../assets/flags/es.svg"); }
+.md-select__link[hreflang="zh"]::before { background-image: url("../assets/flags/zh.svg"); }
+.md-select__link[hreflang="ru"]::before { background-image: url("../assets/flags/ru.svg"); }
