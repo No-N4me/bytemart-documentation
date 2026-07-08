@@ -352,10 +352,13 @@ body {
   overflow: hidden;
 }
 
-/* Revealed state: slide up to rest, still without any horizontal translate. */
+/* Revealed state: slide up to rest, still without any horizontal translate.
+   Also lift Material's 10rem max-height cap so all six languages show without a
+   scrollbar (the compact rows below fit comfortably). */
 .md-select:focus-within .md-select__inner,
 .md-select:hover .md-select__inner {
   transform: translateY(0) !important;
+  max-height: 80vh !important;
 }
 
 /* Material draws a little caret above the panel tinted with the (now
@@ -372,8 +375,9 @@ body {
 .md-select__link {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.5rem;
   padding: 0.4rem 0.7rem;
+  font-size: 0.62rem;
   border-radius: 8px;
   color: var(--md-default-fg-color);
   opacity: 1;
@@ -393,8 +397,8 @@ body {
 .md-select__link::before {
   content: "";
   flex: 0 0 auto;
-  width: 1.2rem;
-  height: 0.8rem;
+  width: 0.9rem;
+  height: 0.6rem;
   border-radius: 2px;
   background-size: cover;
   background-position: center;
@@ -446,9 +450,9 @@ html[lang|="ru"] .md-select__link[hreflang="ru"]::after {
 
 .md-select > .md-header__button.md-icon::after {
   content: "";
-  width: 1.05rem;
-  height: 0.72rem;
-  margin-left: 0.25rem;
+  width: 0.9rem;
+  height: 0.6rem;
+  margin-left: 0.2rem;
   border-radius: 2px;
   background-size: cover;
   background-position: center;
