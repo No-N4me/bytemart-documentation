@@ -1,0 +1,3 @@
+mkdocs-material
+mkdocs-static-i18n
+jieba              # Chinese word segmentation for accurate search

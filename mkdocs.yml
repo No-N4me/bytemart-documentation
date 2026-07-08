@@ -10,6 +10,34 @@ theme:
   features:
     - content.code.copy
 
+plugins:
+  - search                          # Must be listed explicitly once `plugins` is defined
+  - i18n:
+      docs_structure: suffix        # Translations live beside originals: index.fr.md, installation.de.md, ...
+      fallback_to_default: true     # Untranslated pages fall back to the English (default) version
+      reconfigure_material: true    # Injects the header language switcher + translates Material's UI
+      reconfigure_search: true      # Per-language search indexes
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: de
+          name: Deutsch
+          build: true
+        - locale: fr
+          name: Français
+          build: true
+        - locale: es
+          name: Español
+          build: true
+        - locale: zh
+          name: 简体中文
+          build: true
+        - locale: ru
+          name: Русский
+          build: true
+
 markdown_extensions:
   - pymdownx.highlight:
       linenums: true
