@@ -334,9 +334,14 @@ body {
 .md-select__inner {
   /* Right-align under the button so the panel opens inward and never spills
      off the right edge of the viewport (the switcher sits near the header end).
-     !important overrides Material's higher-specificity [dir=ltr] left-anchor. */
+     Material positions this panel centered on the button via `left: 50%` plus a
+     `transform: translateX(-50%)`. We swap to right-alignment, so we must also
+     drop the -50% X translate (keeping only the vertical reveal slide) or the
+     panel ends up shifted left by half its width. !important beats Material's
+     higher-specificity rules. */
   left: auto !important;
   right: 0 !important;
+  transform: translateY(0.3rem) !important;
   background: rgba(30, 30, 42, 0.98);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -345,6 +350,12 @@ body {
   box-shadow: var(--md-shadow-z1);
   margin-top: 0.2rem;
   overflow: hidden;
+}
+
+/* Revealed state: slide up to rest, still without any horizontal translate. */
+.md-select:focus-within .md-select__inner,
+.md-select:hover .md-select__inner {
+  transform: translateY(0) !important;
 }
 
 /* Material draws a little caret above the panel tinted with the (now

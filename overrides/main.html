@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{#-
+  Load the per-language search filter BEFORE Material's bundle so it can patch
+  window.fetch in time to scope the search index to the current language.
+  A blocking <head> script runs before the body's bundle.js (and its search
+  index prefetch). Logic lives in docs/javascripts/i18n-search.js.
+-#}
+{% block extrahead %}
+  {{ super() }}
+  <script src="{{ 'javascripts/i18n-search.js' | url }}"></script>
+{% endblock %}

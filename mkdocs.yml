@@ -16,7 +16,7 @@ plugins:
       docs_structure: suffix        # Translations live beside originals: index.fr.md, installation.de.md, ...
       fallback_to_default: true     # Untranslated pages fall back to the English (default) version
       reconfigure_material: true    # Injects the header language switcher + translates Material's UI
-      reconfigure_search: true      # Per-language search indexes
+      reconfigure_search: false     # Keep fallback pages indexed under every language prefix
       languages:
         - locale: en
           default: true
@@ -37,6 +37,9 @@ plugins:
         - locale: ru
           name: Русский
           build: true
+
+hooks:
+  - hooks/i18n_search_split.py       # Splits the search index into one file per language
 
 markdown_extensions:
   - pymdownx.highlight:
