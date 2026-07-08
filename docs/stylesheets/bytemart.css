@@ -407,3 +407,57 @@ body {
 .md-select__link[hreflang="es"]::before { background-image: url("../assets/flags/es.svg"); }
 .md-select__link[hreflang="zh"]::before { background-image: url("../assets/flags/zh.svg"); }
 .md-select__link[hreflang="ru"]::before { background-image: url("../assets/flags/ru.svg"); }
+
+/* Active language: highlight the row matching the current page's <html lang>
+   (accent colour + subtle tint) and add a trailing checkmark, so the current
+   selection is obvious once the menu is open. `|=` also matches region codes
+   like "de-AT". */
+html[lang|="en"] .md-select__link[hreflang="en"],
+html[lang|="de"] .md-select__link[hreflang="de"],
+html[lang|="fr"] .md-select__link[hreflang="fr"],
+html[lang|="es"] .md-select__link[hreflang="es"],
+html[lang|="zh"] .md-select__link[hreflang="zh"],
+html[lang|="ru"] .md-select__link[hreflang="ru"] {
+  color: #90caf9;
+  font-weight: 600;
+  background: rgba(100, 181, 246, 0.14);
+}
+
+html[lang|="en"] .md-select__link[hreflang="en"]::after,
+html[lang|="de"] .md-select__link[hreflang="de"]::after,
+html[lang|="fr"] .md-select__link[hreflang="fr"]::after,
+html[lang|="es"] .md-select__link[hreflang="es"]::after,
+html[lang|="zh"] .md-select__link[hreflang="zh"]::after,
+html[lang|="ru"] .md-select__link[hreflang="ru"]::after {
+  content: "✓";
+  margin-left: auto;
+  padding-left: 0.6rem;
+  color: #90caf9;
+  font-weight: 700;
+}
+
+/* At-a-glance: show the current language's flag next to the header globe icon
+   so the active language is visible without opening the menu. */
+.md-select > .md-header__button.md-icon {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+}
+
+.md-select > .md-header__button.md-icon::after {
+  content: "";
+  width: 1.05rem;
+  height: 0.72rem;
+  margin-left: 0.25rem;
+  border-radius: 2px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22);
+}
+
+html[lang|="en"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/en.svg"); }
+html[lang|="de"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/de.svg"); }
+html[lang|="fr"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/fr.svg"); }
+html[lang|="es"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/es.svg"); }
+html[lang|="zh"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/zh.svg"); }
+html[lang|="ru"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/ru.svg"); }
