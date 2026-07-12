@@ -29,6 +29,9 @@ basados en permisos y potenciadores temporizados otorgados por administradores.
 - **Herramientas de administración:** Dar/quitar puntos, otorgar potenciadores
   temporizados, auditar el historial de transacciones de una tribu y estimar el valor
   de una base, todo desde la consola/RCON.
+- **Bot de Discord complementario:** Un bot incluido publica una tabla de clasificación
+  en vivo en Discord, añade comandos de barra para consultar tribus y señala
+  puntuaciones sospechosas. Consulta [Bot de Discord](discord-bot.md).
 
 ## Cómo funciona la puntuación
 
@@ -81,4 +84,5 @@ detectar claves nuevas o renombradas.
 
 - [Configuración](configuration.md) — el `config.json` completo, más `structures.json` y `dinos.json`.
 - [Comandos](commands.md) — comandos de administración de consola/RCON y comandos de chat en el juego.
+- [Bot de Discord](discord-bot.md) — el bot complementario: tabla de clasificación en vivo, comandos de barra y detección de abusos.
 - [Configuración común](../common-configuration.md) — las claves compartidas `LicenseKey`, `Database`, `LogToFile` y `Verbose`.

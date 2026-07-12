@@ -27,6 +27,9 @@ boosts.
   players can toggle on or off for themselves.
 - **Admin tooling:** Give/take score, grant timed boosts, audit a tribe's
   transaction history, and estimate a base's worth — all from the console/RCON.
+- **Companion Discord bot:** A bundled bot posts a live leaderboard to Discord,
+  adds tribe-lookup slash commands, and flags suspicious scoring. See
+  [Discord Bot](discord-bot.md).
 
 ## How scoring works
 
@@ -78,4 +81,5 @@ Always check the changelog for config changes when updating; a tool like
 
 - [Configuration](configuration.md) — the full `config.json`, plus `structures.json` and `dinos.json`.
 - [Commands](commands.md) — console/RCON admin commands and in-game chat commands.
+- [Discord Bot](discord-bot.md) — the companion bot: live leaderboard, slash commands, and abuse detection.
 - [Common Configuration](../common-configuration.md) — the shared `LicenseKey`, `Database`, `LogToFile`, and `Verbose` keys.

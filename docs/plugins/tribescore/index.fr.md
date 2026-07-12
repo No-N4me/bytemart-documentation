@@ -29,6 +29,9 @@ sur les permissions et boosts temporaires accordés par les administrateurs.
 - **Outils d'administration :** Ajoutez/retirez du score, accordez des boosts
   temporaires, auditez l'historique des transactions d'une tribu et estimez la valeur
   d'une base — le tout depuis la console/RCON.
+- **Bot Discord compagnon :** Un bot fourni publie un classement en direct dans Discord,
+  ajoute des commandes slash de consultation de tribu et signale les scores suspects.
+  Voir [Bot Discord](discord-bot.md).
 
 ## Fonctionnement du scoring
 
@@ -81,4 +84,5 @@ clés nouvelles ou renommées.
 
 - [Configuration](configuration.md) — le `config.json` complet, ainsi que `structures.json` et `dinos.json`.
 - [Commandes](commands.md) — les commandes d'administration console/RCON et les commandes de chat en jeu.
+- [Bot Discord](discord-bot.md) — le bot compagnon : classement en direct, commandes slash et détection d'abus.
 - [Configuration commune](../common-configuration.md) — les clés partagées `LicenseKey`, `Database`, `LogToFile` et `Verbose`.

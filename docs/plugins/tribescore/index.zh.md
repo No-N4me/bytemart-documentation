@@ -22,6 +22,8 @@ Tribescore 是一套面向 ARK: Survival Evolved 的竞技性**部落计分系�
   自己开启或关闭。
 - **管理工具：** 给予/扣除分数、授予限时增益、审计某部落的交易历史，以及
   估算一处基地的价值——全部可从控制台/RCON 操作。
+- **配套 Discord 机器人：** 附带的机器人会将实时排行榜发布到 Discord，添加
+  部落查询斜杠命令，并标记可疑的计分行为。参见 [Discord 机器人](discord-bot.md)。
 
 ## 计分原理
 
@@ -72,4 +74,5 @@ final score = base points
 
 - [配置](configuration.md) —— 完整的 `config.json`，以及 `structures.json` 和 `dinos.json`。
 - [命令](commands.md) —— 控制台/RCON 管理命令和游戏内聊天命令。
+- [Discord 机器人](discord-bot.md) —— 配套机器人：实时排行榜、斜杠命令和滥用检测。
 - [通用配置](../common-configuration.md) —— 共享的 `LicenseKey`、`Database`、`LogToFile` 和 `Verbose` 键。

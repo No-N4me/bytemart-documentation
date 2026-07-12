@@ -29,6 +29,9 @@ von Admins vergebene zeitlich begrenzte Boosts.
 - **Admin-Werkzeuge:** Punkte geben/nehmen, zeitlich begrenzte Boosts vergeben, die
   Transaktionshistorie eines Stammes prüfen und den Wert einer Basis schätzen — alles
   über die Konsole/RCON.
+- **Begleitender Discord-Bot:** Ein mitgelieferter Bot postet eine Live-Bestenliste nach
+  Discord, ergänzt Slash-Befehle zum Nachschlagen von Stämmen und meldet verdächtige
+  Punktevergaben. Siehe [Discord-Bot](discord-bot.md).
 
 ## Wie die Punktevergabe funktioniert
 
@@ -82,4 +85,5 @@ erkennen.
 
 - [Konfiguration](configuration.md) — die vollständige `config.json` sowie `structures.json` und `dinos.json`.
 - [Befehle](commands.md) — Admin-Befehle über Konsole/RCON und In-Game-Chatbefehle.
+- [Discord-Bot](discord-bot.md) — der begleitende Bot: Live-Bestenliste, Slash-Befehle und Missbrauchserkennung.
 - [Gemeinsame Konfiguration](../common-configuration.md) — die gemeinsamen Schlüssel `LicenseKey`, `Database`, `LogToFile` und `Verbose`.
