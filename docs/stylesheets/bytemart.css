@@ -1,45 +1,45 @@
-/* 
- * MkDocs Custom Theme
- * Based on PluginHub Frontend (theme.ts / globals.css / tailwind.config.js)
+/*
+ * Bytemart theme for Material for MkDocs.
+ *
+ * Layered on top of Material's `slate` scheme to match bytemart.net: a fixed
+ * gradient body, glass surfaces, and a blue accent. Section 2 sets
+ * `--md-default-bg-color` to transparent so the gradient shows through, which is
+ * why several Material components below need an explicit opaque background.
  */
 
 :root {
   /* =========================================
-     1. COLORS (Based on theme.ts / Tailwind)
+     1. COLORS
      ========================================= */
-  
-  /* Primary Colors (Blue shades) */
+
+  /* Primary (blue shades) */
   --md-primary-fg-color:        #64b5f6;
   --md-primary-fg-color--light: #90caf9;
   --md-primary-fg-color--dark:  #1e88e5;
   --md-primary-bg-color:        #ffffff;
   --md-primary-bg-color--light: #ffffff;
 
-  /* Accent Colors (Pink shades) */
-  --md-accent-fg-color:         #ff4081;
-  --md-accent-fg-color--transparent: rgba(255, 64, 129, 0.1);
+  /* Accent. Material uses this for link/icon hover states; the matching
+     --md-accent-fg-color declaration lives in section 5, alongside the other
+     copy-button variables. */
+  --md-accent-fg-color--transparent: rgba(100, 181, 246, 0.1);
   --md-accent-bg-color:         #ffffff;
   --md-accent-bg-color--light:  #ffffff;
 
-  /* Typography Fonts */
+  /* Typography */
   --md-text-font:               "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
-  
-  /* Status Colors */
-  --md-status-red:              #ef5350;
-  --md-status-green:            #66BB6A;
-  --md-status-yellow:           #FFD54F;
 }
 
 /* Base override for MkDocs Default and Slate (Dark) schemes */
 [data-md-color-scheme="slate"], [data-md-color-scheme="default"] {
   /* Structural Defaults */
   --md-default-bg-color:        transparent; /* Important for global gradient body to show through */
-  --md-default-bg-color--light: rgba(255, 255, 255, 0.05); /* Similar to bg-white/5 */
-  --md-default-bg-color--lighter: rgba(255, 255, 255, 0.1); /* Similar to bg-white/10 */
-  
+  --md-default-bg-color--light: rgba(255, 255, 255, 0.05);
+  --md-default-bg-color--lighter: rgba(255, 255, 255, 0.1);
+
   /* Text defaults */
-  --md-default-fg-color:        #f5f5f5; /* theme.colors.text.default */
-  --md-default-fg-color--light: #b0bec5; /* theme.colors.text.secondary */
+  --md-default-fg-color:        #f5f5f5;
+  --md-default-fg-color--light: #b0bec5;
   --md-default-fg-color--lighter: rgba(176, 190, 197, 0.7);
 
   --md-typeset-color:           #f5f5f5;
@@ -48,10 +48,10 @@
   /* Code Block Colors */
   --md-code-bg-color:           rgba(255, 255, 255, 0.05);
   --md-code-fg-color:           #f5f5f5;
-  
-  /* Box Shadows mapped directly from theme.ts */
-  --md-shadow-z1:               0 10px 30px rgba(0, 0, 0, 0.25); /* .shadow-card */
-  --md-shadow-z2:               0 15px 35px rgba(0, 0, 0, 0.2), 0 0 15px rgba(144, 202, 249, 0.3); /* .shadow-hover */
+
+  /* Card shadow at rest, and the lifted blue-glow shadow on hover. */
+  --md-shadow-z1:               0 10px 30px rgba(0, 0, 0, 0.25);
+  --md-shadow-z2:               0 15px 35px rgba(0, 0, 0, 0.2), 0 0 15px rgba(144, 202, 249, 0.3);
 }
 
 /* =========================================
@@ -59,7 +59,6 @@
    ========================================= */
 
 body {
-  /* Based on bg-gradient-main from tailwind.config.ts */
   background: linear-gradient(125deg, rgba(19, 19, 19, 0.95) 0%, rgba(19, 19, 19, 0.8) 50%, rgba(32, 20, 50, 0.85) 100%);
   background-attachment: fixed;
   background-color: #131313;
@@ -83,19 +82,19 @@ body {
    3. CARDS & GLASSMORPHISM
    ========================================= */
 
-/* Overriding admonitions and details to act like generic `.card` / `.glass` */
-.md-typeset .admonition, 
+/* Admonitions and collapsible details get the glass-card treatment. */
+.md-typeset .admonition,
 .md-typeset details {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px; /* borderRadius.card / .admin-card border-radius */
+  border-radius: 16px;
   box-shadow: var(--md-shadow-z1);
-  backdrop-filter: blur(10px); /* blurs.glass */
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); /* ark-bezier transition */
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* Give admonitions that hover effect */
-.md-typeset .admonition:hover, 
+/* Lift on hover. */
+.md-typeset .admonition:hover,
 .md-typeset details:hover {
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.15);
@@ -104,50 +103,19 @@ body {
 }
 
 .md-nav__link--active {
-  color: #90caf9; /* primary.light */
+  color: #90caf9;
   font-weight: 600;
 }
 
-/* Highlight font weights like your tailwind defaults */
+/* Headings are bold across the board. */
 .md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {
   font-weight: bold;
 }
 
 /* =========================================
-   4. BUTTON STYLES
+   4. CUSTOM SCROLLBAR
    ========================================= */
 
-/* Making default MkDocs buttons match styles mapped from globals.css .btn */
-.md-typeset .md-button {
-  border-radius: 50px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  border: 1px solid rgba(100, 181, 246, 0.3);
-  background: rgba(100, 181, 246, 0.15);
-  color: #fff;
-}
-
-.md-typeset .md-button:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 0 0 15px rgba(144, 202, 249, 0.3);
-}
-
-.md-typeset .md-button--primary {
-  background: rgba(255, 64, 129, 0.15); /* accent */
-  border-color: rgba(255, 64, 129, 0.3);
-}
-
-.md-typeset .md-button--primary:hover {
-  background: rgba(255, 64, 129, 0.25);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 64, 129, 0.3);
-}
-
-/* =========================================
-   5. CUSTOM SCROLLBAR
-   ========================================= */
-
-/* Transferred over from the `.custom-scrollbar` and Webkit specifics in globals.css */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -168,29 +136,29 @@ body {
 }
 
 /* =========================================
-   6. COPY BUTTON & TOAST (VARIABLE OVERRIDES)
+   5. COPY BUTTON & TOAST (VARIABLE OVERRIDES)
    ========================================= */
 
-/* Override the exact variables MkDocs expects the copy button to use */
+/* Material drives the code copy button entirely through these variables. */
 :root, .md-typeset {
   /* Copy Button Container background (rest) */
-  --md-code-bg-color--lighter: rgba(255, 255, 255, 0.05); 
-  
+  --md-code-bg-color--lighter: rgba(255, 255, 255, 0.05);
+
   /* Copy Button Container background (when hovered) */
-  --md-code-bg-color--light: rgba(255, 255, 255, 0.08); 
-  
+  --md-code-bg-color--light: rgba(255, 255, 255, 0.08);
+
   /* Copy Button Icon Color (rest) */
-  --md-default-fg-color--lightest: #b0bec5; 
-  
+  --md-default-fg-color--lightest: #b0bec5;
+
   /* Copy Button Icon Color (hovered - Bytemart Blue) */
-  --md-accent-fg-color: #64b5f6; 
-  
+  --md-accent-fg-color: #64b5f6;
+
   /* Toast Snackbar specific root variables */
   --md-toast-bg-color: rgba(19, 19, 19, 0.95);
   --md-toast-fg-color: #f5f5f5;
 }
 
-/* Give the container your custom CSS border/radius since MkDocs doesn't use variables for borders */
+/* Borders and radii are not variable-driven, so the container is styled directly. */
 .md-typeset .md-code__nav {
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 8px !important;
@@ -204,7 +172,7 @@ body {
   color: #f5f5f5 !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(139, 92, 246, 0.6) !important; /* Purple/Permanent Accent */
+  border: 1px solid rgba(139, 92, 246, 0.6) !important;
   border-radius: 12px !important;
 }
 
@@ -213,10 +181,10 @@ body {
 }
 
 /* =========================================
-   7. TABLE STYLES
+   6. TABLE STYLES
    ========================================= */
 
-/* Fix transparent tables */
+/* Tables need an explicit background: --md-default-bg-color is transparent. */
 .md-typeset table {
   background-color: rgba(30, 30, 42, 0.9) !important;
   backdrop-filter: blur(10px);
@@ -235,10 +203,10 @@ body {
 }
 
 /* =========================================
-   8. SEARCH COMPONENT
+   7. SEARCH COMPONENT
    ========================================= */
 
-/* Fix transparent search results */
+/* Same for the search overlay, which would otherwise read straight through. */
 .md-search-result, .md-search-result__scrollwrap, .md-search-result__meta {
   background-color: rgba(30, 30, 42, 0.98) !important;
   color: #f5f5f5 !important;
@@ -257,7 +225,7 @@ body {
 }
 
 /* =========================================
-   9. "BACK TO MAIN SITE" HEADER BUTTON
+   8. "BACK TO MAIN SITE" HEADER BUTTON
    ========================================= */
 
 /* Compact glass pill in the header that links back to bytemart.net.
@@ -307,7 +275,7 @@ body {
 }
 
 /* =========================================
-   10. CODE LINE ANCHOR HIGHLIGHT
+   9. CODE LINE ANCHOR HIGHLIGHT
    ========================================= */
 
 /* When a code line is targeted via its anchor (e.g. #__codelineno-0-11),
@@ -324,7 +292,7 @@ body {
 }
 
 /* =========================================
-   11. LANGUAGE SELECTOR (i18n switcher)
+   10. LANGUAGE SELECTOR (i18n switcher)
    ========================================= */
 
 /* The dropdown panel. The theme sets --md-default-bg-color to transparent so
