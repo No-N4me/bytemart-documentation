@@ -23,4 +23,3 @@ obige Seite.
 | Plugin | Beschreibung |
 | ------ | ----------- |
 | [Tribescore](tribescore/index.md) | Ein kompetitives Punktesystem für Stämme: Stämme verdienen Punkte für das Zerstören feindlicher Strukturen, Dinos und Spieler im PvP, dargestellt über eine Bestenliste und Hologramme in der Spielwelt. |
-| [ArkKits (Beispiel)](example-plugin/index.md) | Verteile anpassbare Startgegenstände, Dinos und Buffs an Spieler basierend auf Berechtigungen. |

@@ -21,4 +21,3 @@ and links back to the page above for the shared ones.
 | Plugin | Description |
 | ------ | ----------- |
 | [Tribescore](tribescore/index.md) | A competitive tribe scoring system: tribes earn score for destroying enemy structures, dinos, and players in PvP, surfaced through a leaderboard and in-world holograms. |
-| [ArkKits (Example)](example-plugin/index.md) | Distribute customizable starter items, dinos, and buffs to players based on permissions. |

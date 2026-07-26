@@ -22,4 +22,3 @@ ese plugin y enlaza de vuelta a la página anterior para las compartidas.
 | Plugin | Descripción |
 | ------ | ----------- |
 | [Tribescore](tribescore/index.md) | Un sistema competitivo de puntuación de tribus: las tribus ganan puntos por destruir estructuras, dinos y jugadores enemigos en PvP, mostrado a través de una tabla de clasificación y hologramas en el mundo. |
-| [ArkKits (Ejemplo)](example-plugin/index.md) | Distribuye objetos iniciales, dinos y potenciadores personalizables a los jugadores según sus permisos. |

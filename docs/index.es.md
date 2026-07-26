@@ -1,11 +1,17 @@
 # Bienvenido a Bytemart
 
-La documentación de Bytemart es tu punto central para instalar, configurar y aprovechar al máximo Bytemart.
+La documentación de Bytemart cubre nuestros plugins para ARK: Survival Evolved:
+cómo instalarlos, cómo configurarlos y qué hace cada opción.
 
 ## Por dónde empezar
 
-- **Primeros pasos** — instala Bytemart, configura tu base de datos y pon en marcha tu primera instancia.
-- **Plugins** — amplía tu configuración con plugins y aprende a configurarlos.
-- **Soporte** — encuentra respuestas en las preguntas frecuentes, resuelve problemas comunes o contáctanos en Discord.
+- **[Plugins](plugins/index.md)** — el catálogo de plugins y cómo se instalan.
+- **[Configuración común](plugins/common-configuration.md)** — las claves
+  `LicenseKey`, `Verbose`, `LogToFile` y `Database`, comunes a todos los plugins de
+  Bytemart.
+- **[Tribescore](plugins/tribescore/index.md)** — el sistema competitivo de
+  puntuación de tribus: instalación, configuración, comandos y su bot de Discord
+  complementario.
 
-Elige una sección en la navegación para comenzar.
+Las descargas de plugins y las claves de licencia están en tu
+[Panel de Bytemart](https://bytemart.net/).
