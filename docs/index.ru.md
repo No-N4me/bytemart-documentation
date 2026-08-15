@@ -10,6 +10,8 @@
   `Verbose`, `LogToFile` и `Database`, общие для всех плагинов Bytemart.
 - **[Tribescore](plugins/tribescore/index.md)** — соревновательная система подсчёта
   очков племён: установка, настройка, команды и сопутствующий Discord-бот.
+- **[ssAntiCheat](plugins/ssanticheat/index.md)** — серверный античит: установка,
+  настройка, команды и система банов.
 
 Загрузки плагинов и лицензионные ключи находятся в вашей
 [панели управления Bytemart](https://bytemart.net/).

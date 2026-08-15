@@ -12,6 +12,8 @@ wie du sie installierst, wie du sie konfigurierst und was jede Option bewirkt.
   gemeinsam haben.
 - **[Tribescore](plugins/tribescore/index.md)** — das kompetitive Punktesystem für
   Stämme: Einrichtung, Konfiguration, Befehle und der zugehörige Discord-Bot.
+- **[ssAntiCheat](plugins/ssanticheat/index.md)** — der serverseitige Anti-Cheat:
+  Einrichtung, Konfiguration, Befehle und das Bansystem.
 
 Plugin-Downloads und Lizenzschlüssel findest du in deinem
 [Bytemart-Dashboard](https://bytemart.net/).

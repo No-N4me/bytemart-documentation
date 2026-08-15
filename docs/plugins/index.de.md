@@ -23,3 +23,4 @@ obige Seite.
 | Plugin | Beschreibung |
 | ------ | ----------- |
 | [Tribescore](tribescore/index.md) | Ein kompetitives Punktesystem für Stämme: Stämme verdienen Punkte für das Zerstören feindlicher Strukturen, Dinos und Spieler im PvP, dargestellt über eine Bestenliste und Hologramme in der Spielwelt. |
+| [ssAntiCheat](ssanticheat/index.md) | Serverseitiger Anti-Cheat: Erkennungsmodule für Kampf-Cheats und Exploits, ein integriertes Bansystem mit Ban-Wellen, Discord-Benachrichtigungen sowie Fixes für bekannte Crash- und Duplikations-Exploits. |

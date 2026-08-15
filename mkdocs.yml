@@ -49,8 +49,9 @@ hooks:
 
 # Explicit navigation. Leaf entries are listed without a title on purpose, so each
 # page's label comes from its own translated `# H1` rather than being pinned to
-# English. The two section headings below are literal, and are translated per locale
-# via `nav_translations` above ("Tribescore" is a product name, so it never changes).
+# English. The section headings below are literal: only `Plugins` is translated per
+# locale via `nav_translations` above — "Tribescore" and "ssAntiCheat" are product
+# names, so they never change.
 nav:
   - index.md
   - Plugins:
@@ -61,6 +62,11 @@ nav:
           - plugins/tribescore/configuration.md
           - plugins/tribescore/commands.md
           - plugins/tribescore/discord-bot.md
+      - ssAntiCheat:
+          - plugins/ssanticheat/index.md
+          - plugins/ssanticheat/configuration.md
+          - plugins/ssanticheat/commands.md
+          - plugins/ssanticheat/bans.md
 
 markdown_extensions:
   - pymdownx.highlight:

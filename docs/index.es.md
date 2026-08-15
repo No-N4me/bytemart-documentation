@@ -12,6 +12,8 @@ cómo instalarlos, cómo configurarlos y qué hace cada opción.
 - **[Tribescore](plugins/tribescore/index.md)** — el sistema competitivo de
   puntuación de tribus: instalación, configuración, comandos y su bot de Discord
   complementario.
+- **[ssAntiCheat](plugins/ssanticheat/index.md)** — el anti-cheat del lado del
+  servidor: instalación, configuración, comandos y el sistema de baneos.
 
 Las descargas de plugins y las claves de licencia están en tu
 [Panel de Bytemart](https://bytemart.net/).

@@ -10,6 +10,8 @@ Bytemart 文档介绍我们为 ARK: Survival Evolved 开发的插件——如何
   `LogToFile` 和 `Database`，这些键对所有 Bytemart 插件都通用。
 - **[Tribescore](plugins/tribescore/index.md)** —— 竞技性的部落计分系统：安装、
   配置、命令以及配套的 Discord 机器人。
+- **[ssAntiCheat](plugins/ssanticheat/index.md)** —— 服务端反作弊：安装、配置、
+  命令以及封禁系统。
 
 插件下载和许可证密钥都在你的
 [Bytemart 控制台](https://bytemart.net/)中。

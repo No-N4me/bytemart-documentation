@@ -11,6 +11,8 @@ install them, how to configure them, and what every option does.
   `Verbose`, `LogToFile`, and `Database` keys shared by every Bytemart plugin.
 - **[Tribescore](plugins/tribescore/index.md)** — the competitive tribe scoring
   system: setup, configuration, commands, and its companion Discord bot.
+- **[ssAntiCheat](plugins/ssanticheat/index.md)** — the server-side anti-cheat:
+  setup, configuration, commands, and the ban system.
 
 Plugin downloads and license keys live on your
 [Bytemart Dashboard](https://bytemart.net/).

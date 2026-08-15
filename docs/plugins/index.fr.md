@@ -22,3 +22,4 @@ ce plugin et renvoie à la page ci-dessus pour les clés partagées.
 | Plugin | Description |
 | ------ | ----------- |
 | [Tribescore](tribescore/index.md) | Un système compétitif de score de tribu : les tribus gagnent des points en détruisant les structures, dinos et joueurs ennemis en PvP, le tout mis en avant via un classement et des hologrammes affichés dans le monde. |
+| [ssAntiCheat](ssanticheat/index.md) | Anticheat côté serveur : modules de détection pour les triches de combat et les exploits, système de bannissement intégré avec vagues de bans, alertes Discord et correctifs pour les exploits connus de crash et de duplication. |
