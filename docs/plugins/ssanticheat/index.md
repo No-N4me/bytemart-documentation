@@ -8,7 +8,7 @@ learn which check caught them.
 
 Alongside detection, ssAntiCheat also **blocks** a large number of known exploits
 outright, and ships fixes for several long-standing server issues — including
-**crash exploits** and **item/dino duplication**.
+**crash exploits** and **item duplication**.
 
 ## Features
 
@@ -18,9 +18,10 @@ outright, and ships fixes for several long-standing server issues — including
   auto-loot and auto-craft. Each one can be enabled, disabled, and tuned on its
   own.
 - **Exploit blocking, not just reporting.** Most exploit modules can *prevent*
-  the action as well as flag it — the offending RPC simply never executes.
+  the action as well as flag it, so the exploit fails instead of merely being
+  logged after the fact.
 - **Crash & duplication protection.** Known server-crash vectors are blocked, and
-  the duplication fixes stop the common dupe routes (transfer dupes, bag/
+  the duplication fixes stop the common item-dupe routes (transfer dupes, bag/
   transmitter tricks, and more).
 - **Glitch & lag fixes.** A separate `Fixes` section covers well-known server
   glitches (scout glitch, handcuff glitch, "player already connected", the pull
