@@ -22,3 +22,4 @@ and links back to the page above for the shared ones.
 | ------ | ----------- |
 | [Tribescore](tribescore/index.md) | A competitive tribe scoring system: tribes earn score for destroying enemy structures, dinos, and players in PvP, surfaced through a leaderboard and in-world holograms. |
 | [ssAntiCheat](ssanticheat/index.md) | Server-side anti-cheat: detection modules for combat cheats and exploits, an integrated ban system with ban waves, Discord alerting, and fixes for known crash and duplication exploits. |
+| [DupeDetector](dupedetector/index.md) | A focused dupe detector for the tribute/upload store: catches item duplication, alerts your Discord, and optionally punishes repeat offenders automatically. |
