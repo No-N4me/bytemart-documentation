@@ -50,8 +50,8 @@ hooks:
 # Explicit navigation. Leaf entries are listed without a title on purpose, so each
 # page's label comes from its own translated `# H1` rather than being pinned to
 # English. The section headings below are literal: only `Plugins` is translated per
-# locale via `nav_translations` above — "Tribescore", "ssAntiCheat" and
-# "DupeDetector" are product names, so they never change.
+# locale via `nav_translations` above — "Tribescore", "ssAntiCheat",
+# "DupeDetector" and "ArkBossCooldown" are product names, so they never change.
 nav:
   - index.md
   - Plugins:
@@ -70,6 +70,9 @@ nav:
       - DupeDetector:
           - plugins/dupedetector/index.md
           - plugins/dupedetector/configuration.md
+      - ArkBossCooldown:
+          - plugins/arkbosscooldown/index.md
+          - plugins/arkbosscooldown/configuration.md
 
 markdown_extensions:
   - pymdownx.highlight:
