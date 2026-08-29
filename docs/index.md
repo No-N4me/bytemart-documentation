@@ -5,10 +5,9 @@ install them, how to configure them, and what every option does.
 
 ## Where to start
 
-- **[Plugins](plugins/index.md)** — the plugin catalogue and how plugins are
-  installed.
-- **[Common Configuration](plugins/common-configuration.md)** — the `LicenseKey`,
-  `Verbose`, `LogToFile`, and `Database` keys shared by every Bytemart plugin.
+- **[Plugins](plugins/index.md)** — the plugin catalogue, how plugins are
+  installed, and the `LicenseKey`, `Verbose`, `LogToFile`, and `Database` keys
+  shared by every Bytemart plugin.
 - **[Tribescore](plugins/tribescore/index.md)** — the competitive tribe scoring
   system: setup, configuration, commands, and its companion Discord bot.
 - **[ssAntiCheat](plugins/ssanticheat/index.md)** — the server-side anti-cheat:

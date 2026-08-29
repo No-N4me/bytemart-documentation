@@ -32,7 +32,7 @@ Server betreiben.
 
 - Das Tribescore-Plugin ist installiert und schreibt in eine MySQL-/MariaDB-Datenbank
   (siehe [Konfiguration](configuration.md) und
-  [Gemeinsame Konfiguration](../common-configuration.md#database)).
+  [Gemeinsame Konfiguration](../index.md#database)).
 - Eine Discord-Anwendung und ein Bot-Token, erstellt im
   [Discord Developer Portal](https://discord.com/developers/applications).
 - Ein Windows-Rechner, auf dem der Bot läuft — er kann überall laufen, wo die Datenbank

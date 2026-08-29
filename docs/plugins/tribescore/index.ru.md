@@ -58,7 +58,7 @@ final score = base points
    [ArkApi](https://arkserverapi.com/) (Tribescore требует ArkApi **3.51** или
    новее).
 2. Настройте базу данных MySQL/MariaDB — см.
-   [Общую конфигурацию](../common-configuration.md#database).
+   [Общую конфигурацию](../index.md#database).
 3. Скачайте `Tribescore.zip` с вашей **панели управления Bytemart**.
 4. Остановите сервер (сначала выполните `saveworld`) или выгрузите любую предыдущую
    версию командой `plugins.unload Tribescore`.
@@ -88,4 +88,4 @@ final score = base points
 - [Конфигурация](configuration.md) — полный `config.json`, а также `structures.json` и `dinos.json`.
 - [Команды](commands.md) — админ-команды консоли/RCON и внутриигровые чат-команды.
 - [Discord-бот](discord-bot.md) — сопутствующий бот: живая таблица лидеров, слэш-команды и выявление злоупотреблений.
-- [Общая конфигурация](../common-configuration.md) — общие ключи `LicenseKey`, `Database`, `LogToFile` и `Verbose`.
+- [Общая конфигурация](../index.md) — общие ключи `LicenseKey`, `Database`, `LogToFile` и `Verbose`.

@@ -28,7 +28,7 @@ it is safe to run alongside a live server.
 
 - The Tribescore plugin installed and writing to a MySQL/MariaDB database (see
   [Configuration](configuration.md) and
-  [Common Configuration](../common-configuration.md#database)).
+  [Common Configuration](../index.md#database)).
 - A Discord application and bot token, created on the
   [Discord Developer Portal](https://discord.com/developers/applications).
 - A Windows machine to run the bot — it can run anywhere that can reach the database.

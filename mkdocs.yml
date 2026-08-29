@@ -56,7 +56,6 @@ nav:
   - index.md
   - Plugins:
       - plugins/index.md
-      - plugins/common-configuration.md
       - Tribescore:
           - plugins/tribescore/index.md
           - plugins/tribescore/configuration.md

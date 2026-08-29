@@ -34,7 +34,7 @@ en production.
 
 - Le plugin Tribescore installé et écrivant dans une base de données MySQL/MariaDB (voir
   [Configuration](configuration.md) et
-  [Configuration commune](../common-configuration.md#database)).
+  [Configuration commune](../index.md#database)).
 - Une application et un token de bot Discord, créés sur le
   [Portail développeur Discord](https://discord.com/developers/applications).
 - Une machine Windows pour exécuter le bot — il peut fonctionner partout où la base de

@@ -12,7 +12,7 @@ config with `//` comments** — read it, but don't rename it over `config.json`
 
 The keys `LicenseKey`, `Verbose`, `LogToFile`, and `Database` are shared by every
 Bytemart plugin and are documented on the
-**[Common Configuration](../common-configuration.md)** page. This page covers only
+**[Common Configuration](../index.md)** page. This page covers only
 the `DupeDetection` block, which is unique to DupeDetector.
 
 > 💡 **Validate before you start.** Always validate your JSON after editing (e.g.
@@ -123,5 +123,5 @@ log saying so. An empty webhook is never an error; it just means "send nothing".
 **Next steps:**
 
 - [Overview](index.md) — what the plugin covers, installation, and commands.
-- [Common Configuration](../common-configuration.md) — `LicenseKey`, `Database`,
+- [Common Configuration](../index.md) — `LicenseKey`, `Database`,
   `LogToFile`, `Verbose`.

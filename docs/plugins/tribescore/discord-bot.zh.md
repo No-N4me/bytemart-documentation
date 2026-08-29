@@ -26,7 +26,7 @@ Discord —— 一个实时、自动刷新的排行榜，用于查询任意部�
 
 - 已安装 Tribescore 插件并正在向 MySQL/MariaDB 数据库写入数据（参见
   [配置](configuration.md)和
-  [通用配置](../common-configuration.md#database)）。
+  [通用配置](../index.md#database)）。
 - 一个在
   [Discord 开发者门户](https://discord.com/developers/applications)上创建的
   Discord 应用和机器人令牌。

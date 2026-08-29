@@ -33,7 +33,7 @@ puntuaciones — por lo que es seguro ejecutarlo junto a un servidor en vivo.
 
 - El plugin Tribescore instalado y escribiendo en una base de datos MySQL/MariaDB
   (consulta [Configuración](configuration.md) y
-  [Configuración común](../common-configuration.md#database)).
+  [Configuración común](../index.md#database)).
 - Una aplicación de Discord y un token de bot, creados en el
   [Portal de desarrolladores de Discord](https://discord.com/developers/applications).
 - Una máquina Windows para ejecutar el bot — puede ejecutarse en cualquier lugar que

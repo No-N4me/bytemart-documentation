@@ -54,7 +54,7 @@ The attacking tribe **gains** the result; the defending tribe **loses** a
 
 1. Ensure you have a supported version of [ArkApi](https://arkserverapi.com/)
    installed on your server (Tribescore requires ArkApi **3.51** or newer).
-2. Set up a MySQL/MariaDB database — see [Common Configuration](../common-configuration.md#database).
+2. Set up a MySQL/MariaDB database — see [Common Configuration](../index.md#database).
 3. Download the `Tribescore.zip` from your **Bytemart Dashboard**.
 4. Stop the server (run `saveworld` first), or unload any previous version with
    `plugins.unload Tribescore`.
@@ -82,4 +82,4 @@ Always check the changelog for config changes when updating; a tool like
 - [Configuration](configuration.md) — the full `config.json`, plus `structures.json` and `dinos.json`.
 - [Commands](commands.md) — console/RCON admin commands and in-game chat commands.
 - [Discord Bot](discord-bot.md) — the companion bot: live leaderboard, slash commands, and abuse detection.
-- [Common Configuration](../common-configuration.md) — the shared `LicenseKey`, `Database`, `LogToFile`, and `Verbose` keys.
+- [Common Configuration](../index.md) — the shared `LicenseKey`, `Database`, `LogToFile`, and `Verbose` keys.

@@ -34,7 +34,7 @@ It is deliberately small: one cooldown, one message, one list of tribute items.
 | Requirement | Notes |
 | ----------- | ----- |
 | [ArkApi](https://arkserverapi.com/) **3.51** or newer | The plugin will not load on older API versions. |
-| MySQL / MariaDB | The plugin connects on startup, so valid credentials are required — but ArkBossCooldown itself stores nothing there. See [Common Configuration](../common-configuration.md#database). |
+| MySQL / MariaDB | The plugin connects on startup, so valid credentials are required — but ArkBossCooldown itself stores nothing there. See [Common Configuration](../index.md#database). |
 | A Bytemart license key | Nothing activates until the key authenticates. |
 | Outbound HTTPS | Needed for licensing. |
 
@@ -42,7 +42,7 @@ It is deliberately small: one cooldown, one message, one list of tribute items.
 
 1. Make sure you have ArkApi **3.51+** installed on your server.
 2. Set up a MySQL/MariaDB database — see
-   [Common Configuration](../common-configuration.md#database). The database must
+   [Common Configuration](../index.md#database). The database must
    already exist.
 3. Download `ArkBossCooldown.zip` from your **Bytemart Dashboard**.
 4. Stop the server (run `saveworld` first), or unload any previous version with
@@ -109,5 +109,5 @@ your JSON before reloading.
 **Next steps:**
 
 - [Configuration](configuration.md) — the cooldown, the message, and the boss list.
-- [Common Configuration](../common-configuration.md) — the shared `LicenseKey`,
+- [Common Configuration](../index.md) — the shared `LicenseKey`,
   `Database`, `LogToFile`, and `Verbose` keys.

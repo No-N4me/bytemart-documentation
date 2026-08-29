@@ -56,7 +56,7 @@ Der angreifende Stamm **gewinnt** das Ergebnis; der verteidigende Stamm **verlie
 
 1. Stelle sicher, dass eine unterstützte Version von [ArkApi](https://arkserverapi.com/)
    auf deinem Server installiert ist (Tribescore benötigt ArkApi **3.51** oder neuer).
-2. Richte eine MySQL-/MariaDB-Datenbank ein — siehe [Gemeinsame Konfiguration](../common-configuration.md#database).
+2. Richte eine MySQL-/MariaDB-Datenbank ein — siehe [Gemeinsame Konfiguration](../index.md#database).
 3. Lade die `Tribescore.zip` von deinem **Bytemart-Dashboard** herunter.
 4. Stoppe den Server (führe zuerst `saveworld` aus) oder entlade jede vorherige Version
    mit `plugins.unload Tribescore`.
@@ -86,4 +86,4 @@ erkennen.
 - [Konfiguration](configuration.md) — die vollständige `config.json` sowie `structures.json` und `dinos.json`.
 - [Befehle](commands.md) — Admin-Befehle über Konsole/RCON und In-Game-Chatbefehle.
 - [Discord-Bot](discord-bot.md) — der begleitende Bot: Live-Bestenliste, Slash-Befehle und Missbrauchserkennung.
-- [Gemeinsame Konfiguration](../common-configuration.md) — die gemeinsamen Schlüssel `LicenseKey`, `Database`, `LogToFile` und `Verbose`.
+- [Gemeinsame Konfiguration](../index.md) — die gemeinsamen Schlüssel `LicenseKey`, `Database`, `LogToFile` und `Verbose`.

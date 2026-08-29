@@ -16,7 +16,7 @@ Tribescore 通过插件文件夹
 
 `LicenseKey`、`Verbose`、`LogToFile` 和 `Database` 这几个键由每个 Bytemart
 插件共享，其说明位于
-**[通用配置](../common-configuration.md)** 页面。本页只涵盖 Tribescore
+**[通用配置](../index.md)** 页面。本页只涵盖 Tribescore
 独有的键。
 
 ---

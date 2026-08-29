@@ -56,7 +56,7 @@ tous les réglages.
 
 1. Assurez-vous d'avoir une version prise en charge d'[ArkApi](https://arkserverapi.com/)
    installée sur votre serveur (Tribescore requiert ArkApi **3.51** ou plus récent).
-2. Configurez une base de données MySQL/MariaDB — voir [Configuration commune](../common-configuration.md#database).
+2. Configurez une base de données MySQL/MariaDB — voir [Configuration commune](../index.md#database).
 3. Téléchargez le `Tribescore.zip` depuis votre **tableau de bord Bytemart**.
 4. Arrêtez le serveur (exécutez d'abord `saveworld`), ou déchargez toute version
    précédente avec `plugins.unload Tribescore`.
@@ -85,4 +85,4 @@ clés nouvelles ou renommées.
 - [Configuration](configuration.md) — le `config.json` complet, ainsi que `structures.json` et `dinos.json`.
 - [Commandes](commands.md) — les commandes d'administration console/RCON et les commandes de chat en jeu.
 - [Bot Discord](discord-bot.md) — le bot compagnon : classement en direct, commandes slash et détection d'abus.
-- [Configuration commune](../common-configuration.md) — les clés partagées `LicenseKey`, `Database`, `LogToFile` et `Verbose`.
+- [Configuration commune](../index.md) — les clés partagées `LicenseKey`, `Database`, `LogToFile` et `Verbose`.

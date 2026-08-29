@@ -35,7 +35,7 @@ deliberately not a fixed number. See
 | Requirement | Notes |
 | ----------- | ----- |
 | [ArkApi](https://arkserverapi.com/) **3.51** or newer | The plugin will not load on older API versions. |
-| MySQL / MariaDB | The plugin connects on startup, so valid credentials are required. See [Common Configuration](../common-configuration.md#database). |
+| MySQL / MariaDB | The plugin connects on startup, so valid credentials are required. See [Common Configuration](../index.md#database). |
 | A Bytemart license key | Nothing activates until the key authenticates. |
 | Outbound HTTPS | Needed for licensing and for Discord webhooks. |
 
@@ -43,7 +43,7 @@ deliberately not a fixed number. See
 
 1. Make sure you have ArkApi **3.51+** installed on your server.
 2. Set up a MySQL/MariaDB database — see
-   [Common Configuration](../common-configuration.md#database). The database must
+   [Common Configuration](../index.md#database). The database must
    already exist.
 3. Download `DupeDetector.zip` from your **Bytemart Dashboard**.
 4. Stop the server (run `saveworld` first), or unload any previous version with
@@ -102,5 +102,5 @@ so validate your JSON before reloading.
 **Next steps:**
 
 - [Configuration](configuration.md) — the `DupeDetection` block.
-- [Common Configuration](../common-configuration.md) — the shared `LicenseKey`,
+- [Common Configuration](../index.md) — the shared `LicenseKey`,
   `Database`, `LogToFile`, and `Verbose` keys.

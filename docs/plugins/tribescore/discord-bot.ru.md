@@ -31,7 +31,7 @@ Tribescore поставляется с сопутствующим **Discord-бо
 
 - Установленный плагин Tribescore, записывающий данные в базу данных MySQL/MariaDB
   (см. [Конфигурацию](configuration.md) и
-  [Общую конфигурацию](../common-configuration.md#database)).
+  [Общую конфигурацию](../index.md#database)).
 - Приложение Discord и токен бота, созданные в
   [Discord Developer Portal](https://discord.com/developers/applications).
 - Windows-машина для запуска бота — он может работать где угодно, откуда доступна

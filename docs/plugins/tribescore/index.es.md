@@ -56,7 +56,7 @@ La tribu atacante **gana** el resultado; la tribu defensora **pierde** una canti
 
 1. Asegúrate de tener una versión compatible de [ArkApi](https://arkserverapi.com/)
    instalada en tu servidor (Tribescore requiere ArkApi **3.51** o más reciente).
-2. Configura una base de datos MySQL/MariaDB — consulta [Configuración común](../common-configuration.md#database).
+2. Configura una base de datos MySQL/MariaDB — consulta [Configuración común](../index.md#database).
 3. Descarga el `Tribescore.zip` desde tu **Panel de Bytemart**.
 4. Detén el servidor (ejecuta `saveworld` primero) o descarga cualquier versión
    anterior con `plugins.unload Tribescore`.
@@ -85,4 +85,4 @@ detectar claves nuevas o renombradas.
 - [Configuración](configuration.md) — el `config.json` completo, más `structures.json` y `dinos.json`.
 - [Comandos](commands.md) — comandos de administración de consola/RCON y comandos de chat en el juego.
 - [Bot de Discord](discord-bot.md) — el bot complementario: tabla de clasificación en vivo, comandos de barra y detección de abusos.
-- [Configuración común](../common-configuration.md) — las claves compartidas `LicenseKey`, `Database`, `LogToFile` y `Verbose`.
+- [Configuración común](../index.md) — las claves compartidas `LicenseKey`, `Database`, `LogToFile` y `Verbose`.

@@ -46,7 +46,7 @@ final score = base points
 
 1. 确保你的服务器上安装了受支持版本的 [ArkApi](https://arkserverapi.com/)
    （Tribescore 需要 ArkApi **3.51** 或更新版本）。
-2. 设置一个 MySQL/MariaDB 数据库——参见[通用配置](../common-configuration.md#database)。
+2. 设置一个 MySQL/MariaDB 数据库——参见[通用配置](../index.md#database)。
 3. 从你的 **Bytemart 控制台**下载 `Tribescore.zip`。
 4. 停止服务器（先运行 `saveworld`），或使用
    `plugins.unload Tribescore` 卸载任何以前的版本。
@@ -75,4 +75,4 @@ final score = base points
 - [配置](configuration.md) —— 完整的 `config.json`，以及 `structures.json` 和 `dinos.json`。
 - [命令](commands.md) —— 控制台/RCON 管理命令和游戏内聊天命令。
 - [Discord 机器人](discord-bot.md) —— 配套机器人：实时排行榜、斜杠命令和滥用检测。
-- [通用配置](../common-configuration.md) —— 共享的 `LicenseKey`、`Database`、`LogToFile` 和 `Verbose` 键。
+- [通用配置](../index.md) —— 共享的 `LicenseKey`、`Database`、`LogToFile` 和 `Verbose` 键。

@@ -61,7 +61,7 @@ and every knob that changes it — is on the [Bans & Detections](bans.md) page.
 | Requirement | Notes |
 | ----------- | ----- |
 | [ArkApi](https://arkserverapi.com/) **3.51** or newer | The plugin will not load on older API versions. |
-| MySQL / MariaDB | Required. Bans are persisted there. See [Common Configuration](../common-configuration.md#database). |
+| MySQL / MariaDB | Required. Bans are persisted there. See [Common Configuration](../index.md#database). |
 | A Bytemart license key | Nothing activates until the key authenticates. |
 | Outbound HTTPS | Needed for licensing, Discord webhooks, and (if used) the Steam Web API and dashboard. |
 
@@ -69,7 +69,7 @@ and every knob that changes it — is on the [Bans & Detections](bans.md) page.
 
 1. Make sure you have ArkApi **3.51+** installed on your server.
 2. Set up a MySQL/MariaDB database — see
-   [Common Configuration](../common-configuration.md#database). The database must
+   [Common Configuration](../index.md#database). The database must
    already exist; the plugin creates its own tables inside it.
 3. Download `ssAntiCheat.zip` from your **Bytemart Dashboard**.
 4. Stop the server (run `saveworld` first), or unload any previous version with
@@ -120,5 +120,5 @@ tuning.
 - [Configuration](configuration.md) — every key in `config.json`.
 - [Commands](commands.md) — console/RCON commands and in-game admin chat commands.
 - [Bans & Detections](bans.md) — thresholds, ban waves, IP/HWID bans, and unbanning.
-- [Common Configuration](../common-configuration.md) — the shared `LicenseKey`,
+- [Common Configuration](../index.md) — the shared `LicenseKey`,
   `Database`, `LogToFile`, and `Verbose` keys.

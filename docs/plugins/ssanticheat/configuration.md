@@ -12,7 +12,7 @@ config with `//` comments** — read it, but don't rename it over `config.json`
 
 The keys `LicenseKey`, `Verbose`, `LogToFile`, and `Database` are shared by every
 Bytemart plugin and are documented on the
-**[Common Configuration](../common-configuration.md)** page. This page covers only
+**[Common Configuration](../index.md)** page. This page covers only
 the keys unique to ssAntiCheat.
 
 > 💡 **Validate before you start.** Always validate your JSON after editing (e.g.
@@ -54,7 +54,7 @@ can always trim your config down to just the keys you care about.
 
 | Field | Type | Default | Description |
 | ----- | ---- | ------- | ----------- |
-| `Debug` | boolean | `false` | Internal debug flag. Leave it `false` — use [`Verbose`](../common-configuration.md#verbose) for troubleshooting output. |
+| `Debug` | boolean | `false` | Internal debug flag. Leave it `false` — use [`Verbose`](../index.md#verbose) for troubleshooting output. |
 | `Use Discord` | boolean | `true` | Master switch for Discord alerts. When `false`, no detection or ban embeds are posted anywhere. |
 | `UseDiscordURL` | boolean | `true` | Whether Discord embeds include the ssAntiCheat icon/thumbnail images. Purely cosmetic. |
 | `SteamAPIKey` | string | `""` | A [Steam Web API key](https://steamcommunity.com/dev/apikey). Required only by the connection gate (playtime / account age / VAC checks). Leave empty if you don't use it. |
@@ -356,5 +356,5 @@ reject accounts that look disposable.
 
 - [Commands](commands.md) — console/RCON and in-game admin commands.
 - [Bans & Detections](bans.md) — thresholds, ban waves, IP/HWID bans, unbanning.
-- [Common Configuration](../common-configuration.md) — `LicenseKey`, `Database`,
+- [Common Configuration](../index.md) — `LicenseKey`, `Database`,
   `LogToFile`, `Verbose`.

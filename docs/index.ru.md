@@ -5,9 +5,9 @@
 
 ## С чего начать
 
-- **[Плагины](plugins/index.md)** — каталог плагинов и порядок их установки.
-- **[Общая конфигурация](plugins/common-configuration.md)** — ключи `LicenseKey`,
-  `Verbose`, `LogToFile` и `Database`, общие для всех плагинов Bytemart.
+- **[Плагины](plugins/index.md)** — каталог плагинов, порядок их установки и ключи
+  `LicenseKey`, `Verbose`, `LogToFile` и `Database`, общие для всех плагинов
+  Bytemart.
 - **[Tribescore](plugins/tribescore/index.md)** — соревновательная система подсчёта
   очков племён: установка, настройка, команды и сопутствующий Discord-бот.
 - **[ssAntiCheat](plugins/ssanticheat/index.md)** — серверный античит: установка,

@@ -15,7 +15,7 @@ Tribescore wird über **drei** Dateien im Plugin-Ordner konfiguriert
 
 Die Schlüssel `LicenseKey`, `Verbose`, `LogToFile` und `Database` werden von jedem
 Bytemart-Plugin gemeinsam genutzt und sind auf der Seite
-**[Gemeinsame Konfiguration](../common-configuration.md)** dokumentiert. Diese Seite
+**[Gemeinsame Konfiguration](../index.md)** dokumentiert. Diese Seite
 behandelt nur die Schlüssel, die für Tribescore spezifisch sind.
 
 ---
