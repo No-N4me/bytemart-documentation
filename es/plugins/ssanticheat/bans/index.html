@@ -1,0 +1,1516 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.bytemart.net/es/plugins/ssanticheat/bans/">
+      
+      
+        <link rel="prev" href="../commands/">
+      
+      
+        <link rel="next" href="../../dupedetector/">
+      
+      
+        
+          <link rel="alternate" href="../../../../plugins/ssanticheat/bans/" hreflang="en">
+        
+          <link rel="alternate" href="../../../../de/plugins/ssanticheat/bans/" hreflang="de">
+        
+          <link rel="alternate" href="../../../../fr/plugins/ssanticheat/bans/" hreflang="fr">
+        
+          <link rel="alternate" href="./" hreflang="es">
+        
+          <link rel="alternate" href="../../../../zh/plugins/ssanticheat/bans/" hreflang="zh">
+        
+          <link rel="alternate" href="../../../../ru/plugins/ssanticheat/bans/" hreflang="ru">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/bytemart_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Baneos y detecciones - Bytemart Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/bytemart.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="../../../../javascripts/i18n-search.js"></script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#baneos-y-detecciones" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    
+    <a
+      href="https://bytemart.net"
+      class="md-header__button md-mainsite"
+      title="Back to bytemart.net"
+      aria-label="Back to bytemart.net"
+      rel="noopener"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      <span class="md-mainsite__label">bytemart.net</span>
+    </a>
+    
+    <a href="../../../" title="Bytemart Documentation" class="md-header__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bytemart Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Baneos y detecciones
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../plugins/ssanticheat/bans/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../de/plugins/ssanticheat/bans/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fr/plugins/ssanticheat/bans/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../zh/plugins/ssanticheat/bans/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../ru/plugins/ssanticheat/bans/" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Bytemart Documentation" class="md-nav__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    Bytemart Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bienvenido a Bytemart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plugins
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tribescore/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tribescore
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tribescore
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tribescore/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tribescore/commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tribescore/discord-bot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 Bot de Discord
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ssAntiCheat
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ssAntiCheat
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baneos y detecciones
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baneos y detecciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-proceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El proceso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ban-waves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oleadas de baneos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Oleadas de baneos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autoban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AutoBan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integratedbansystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IntegratedBanSystem
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IntegratedBanSystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ban-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mensaje de baneo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip-association-bans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Baneos por asociación de IP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duraciones-de-los-baneos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duraciones de los baneos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revisar-una-deteccion-antes-de-que-se-convierta-en-un-baneo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisar una detección antes de que se convierta en un baneo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dupedetector/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DupeDetector
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DupeDetector
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dupedetector/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../arkbosscooldown/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArkBossCooldown
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ArkBossCooldown
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arkbosscooldown/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-proceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El proceso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ban-waves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oleadas de baneos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Oleadas de baneos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autoban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AutoBan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integratedbansystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IntegratedBanSystem
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IntegratedBanSystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ban-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mensaje de baneo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip-association-bans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Baneos por asociación de IP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duraciones-de-los-baneos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duraciones de los baneos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revisar-una-deteccion-antes-de-que-se-convierta-en-un-baneo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisar una detección antes de que se convierta en un baneo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="baneos-y-detecciones">Baneos y detecciones</h1>
+<p>ssAntiCheat separa <strong>detectar</strong> a un tramposo de <strong>eliminarlo</strong>. Una detección
+siempre alerta; un baneo solo ocurre una vez que se alcanza el umbral de un
+módulo, e incluso entonces normalmente se retiene hasta la próxima <strong>oleada de
+baneos</strong>. Ese retraso es deliberado — evita que un tramposo correlacione "hice
+X, y me banearon un segundo después" y averigüe qué comprobación lo detectó.</p>
+<h2 id="el-proceso">El proceso</h2>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>1. un detector se activa
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>2. la detección se registra  ──&gt; alerta a los administradores en el juego
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>                              ──&gt; webhook de Discord
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>                              ──&gt; panel de control (si está activado)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>3. ¿el módulo alcanzó su contador de BanAfterDetections?   ── no ──&gt; terminado
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>                              │ sí
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>4. el jugador se encola para un baneo
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>5. la cola se ejecuta en la próxima oleada de baneos
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>6. ejecución: se ejecuta AutoBan.ExecuteCommand, se alerta a los administradores,
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>   y (si IntegratedBanSystem está activo) se escribe la fila de baneo y se expulsa
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>7. en su próximo intento de conexión, el baneo se aplica al iniciar sesión
+</span></code></pre></div></td></tr></table></div>
+<p>Los pasos 3 y 4 son específicos de cada módulo — consulta
+<a href="../configuration/#common-submodule-keys"><code>BanAfterDetections</code></a>. Un módulo sin
+esa clave detecta y alerta, pero nunca banea por sí solo.</p>
+<h2 id="ban-waves">Oleadas de baneos</h2>
+<p>Un baneo encolado se ejecuta cuando ocurre <strong>cualquiera</strong> de lo siguiente:</p>
+<table>
+<thead>
+<tr>
+<th>Disparador</th>
+<th>Notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cada <em>N</em> guardados del mundo</td>
+<td><em>N</em> es <a href="#autoban"><code>AutoBan."SaveWorld Cycles"</code></a> — <code>2</code> de forma predeterminada. Esta es la vía normal.</td>
+</tr>
+<tr>
+<td>El jugador encolado se desconecta</td>
+<td>Se le banea al salir, en lugar de dejarlo libre hasta la próxima oleada.</td>
+</tr>
+<tr>
+<td>El módulo tiene <code>InstantBan: true</code></td>
+<td>Reservado para detecciones sin falso positivo plausible.</td>
+</tr>
+<tr>
+<td>Un administrador ejecuta <code>ssac.banwave</code></td>
+<td>Vacía toda la cola ahora.</td>
+</tr>
+</tbody>
+</table>
+<p>Entre el encolado y la ejecución puedes inspeccionar la cola con
+<code>ssac.pendingbans</code> y vaciarla con <code>ssac.clearbanwave</code>. Consulta
+<a href="../commands/#ssacbanwave-ssacclearbanwave-ssacpendingbans">Comandos</a>.</p>
+<h3 id="autoban"><code>AutoBan</code></h3>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">"AutoBan"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nt">"SaveWorld Cycles"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nt">"ExecuteCommand"</span><span class="p">:</span><span class="w"> </span><span class="s2">"banplayer {steamid} "</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Predeterminado</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SaveWorld Cycles</code></td>
+<td>number</td>
+<td><code>2</code></td>
+<td>Ejecuta una oleada de baneos cada esta cantidad de guardados del mundo. Con un intervalo de guardado de 15 minutos, <code>2</code> significa un retraso máximo de 30 minutos.</td>
+</tr>
+<tr>
+<td><code>ExecuteCommand</code></td>
+<td>string</td>
+<td><code>"banplayer {steamid} "</code></td>
+<td>Un comando de consola que se ejecuta para cada jugador baneado. <code>{steamid}</code> se reemplaza por su SteamID64. Déjalo vacío para depender únicamente del sistema de baneos integrado.</td>
+</tr>
+</tbody>
+</table>
+<p><code>ExecuteCommand</code> es la forma de enganchar ssAntiCheat a lo que ya uses. El
+valor predeterminado añade al jugador a la lista de baneos propia de ARK; en su
+lugar podrías llamar al comando de baneo de otro plugin, o a uno a nivel de
+clúster.</p>
+<blockquote>
+<p>💡 <strong>Consejo para clústeres.</strong> El <code>banplayer</code> de ARK es por servidor. Si
+administras un clúster, apunta <code>ExecuteCommand</code> a un comando de baneo
+compatible con clústeres, o usa el sistema de baneos integrado con una
+<strong>base de datos MySQL compartida</strong> entre todos tus servidores — así cada
+servidor aplicará cada baneo al iniciar sesión.</p>
+</blockquote>
+<h2 id="integratedbansystem"><code>IntegratedBanSystem</code></h2>
+<p>El almacén de baneos integrado: los baneos se escriben en tu base de datos
+MySQL y se aplican cuando el jugador intenta conectarse.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">"IntegratedBanSystem"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">  </span><span class="nt">"UseIPBans"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">  </span><span class="nt">"UseHWIDBans"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">  </span><span class="nt">"Exclude IPS"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">  </span><span class="nt">"BanMessage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"You are banned from our server\nReason: {reason}\nBan id: {ban_id}\nUnban at: https://store.example.com"</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Predeterminado</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Almacena y aplica los baneos en MySQL. Cuando es <code>false</code>, solo se ejecuta <code>AutoBan.ExecuteCommand</code>.</td>
+</tr>
+<tr>
+<td><code>UseIPBans</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>También rechaza las conexiones desde la dirección IP de un jugador baneado. Consulta más abajo.</td>
+</tr>
+<tr>
+<td><code>UseHWIDBans</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>También rechaza las conexiones desde el ID de hardware de un jugador baneado. Requiere el mod cliente complementario opcional para capturarlo — sin él, esto no hace nada.</td>
+</tr>
+<tr>
+<td><code>Exclude IPS</code></td>
+<td>array</td>
+<td><code>[]</code></td>
+<td>Direcciones IP que nunca se tratan como una asociación. Pon aquí direcciones compartidas/NAT.</td>
+</tr>
+<tr>
+<td><code>BanMessage</code></td>
+<td>string</td>
+<td>ver arriba</td>
+<td>El mensaje que ve el jugador.</td>
+</tr>
+</tbody>
+</table>
+<p>Los baneos viven en una única tabla (<code>ssAntiCheat_bans</code>) que contiene el Steam
+ID, la IP, el ID de hardware, el motivo, la fecha del baneo y su expiración.
+Apunta varios servidores a la misma base de datos y un baneo se aplicará en
+todos ellos.</p>
+<h3 id="ban-message">Mensaje de baneo</h3>
+<p><code>BanMessage</code> admite dos marcadores:</p>
+<table>
+<thead>
+<tr>
+<th>Marcador</th>
+<th>Se reemplaza por</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{reason}</code></td>
+<td>El motivo del baneo.</td>
+</tr>
+<tr>
+<td><code>{ban_id}</code></td>
+<td>El ID numérico del baneo — el valor que necesita un administrador para <code>ssac.unban</code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nt">"BanMessage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"You are banned from our server\nReason: {reason}\nBan id: {ban_id}\nAppeal at: https://yourserver.example/appeal"</span>
+</span></code></pre></div></td></tr></table></div>
+<blockquote>
+<p>⚠️ <strong>Reemplaza la URL de marcador de posición.</strong> El mensaje de fábrica
+apunta a <code>store.example.com</code>. Incluye siempre <code>{ban_id}</code> — sin él, un
+jugador que apele un baneo no tiene nada que citar y tendrás que buscar en
+la base de datos a mano.</p>
+</blockquote>
+<h3 id="ip-association-bans">Baneos por asociación de IP</h3>
+<p>Con <code>UseIPBans</code> activado, se rechaza a un jugador que se conecta desde una
+dirección que pertenece a un baneo activo <strong>y se registra como su propio
+baneo</strong>, de modo que la cuenta alternativa queda baneada por Steam ID a partir
+de ese momento. Se envía una alerta a
+<a href="../configuration/#webhooks"><code>AssociationBans</code></a> nombrando ambas cuentas.</p>
+<p>La comprobación es deliberadamente conservadora — solo se activa cuando la IP
+coincide genuinamente, no está en <code>Exclude IPS</code>, y pertenece a una cuenta de
+Steam <em>diferente</em>.</p>
+<blockquote>
+<p>⚠️ <strong>Los baneos por IP atrapan hogares y conexiones compartidas.</strong> Hermanos,
+compañeros de piso, un cibercafé o una salida de VPN compartida parecerán
+todos el mismo jugador. Observa el canal de asociación durante un tiempo
+antes de confiar en él, y añade direcciones compartidas legítimas a
+<code>Exclude IPS</code>.</p>
+</blockquote>
+<h2 id="duraciones-de-los-baneos">Duraciones de los baneos</h2>
+<table>
+<thead>
+<tr>
+<th>Cómo se hizo el baneo</th>
+<th>Duración</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ssac.ban</code> con <code>d=…</code></td>
+<td>Expira después de ese período.</td>
+</tr>
+<tr>
+<td><code>ssac.ban</code> sin <code>d=…</code></td>
+<td>Permanente.</td>
+</tr>
+<tr>
+<td>Automático (el <code>BanAfterDetections</code> de un módulo)</td>
+<td>Permanente.</td>
+</tr>
+</tbody>
+</table>
+<p>Para levantar cualquier baneo, usa su ID de baneo:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>ssac.unban<span class="w"> </span><span class="m">42</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="revisar-una-deteccion-antes-de-que-se-convierta-en-un-baneo">Revisar una detección antes de que se convierta en un baneo</h2>
+<p>El intervalo entre la detección y la oleada de baneos es tu ventana de
+revisión. Un flujo de trabajo que funciona bien:</p>
+<ol>
+<li>La alerta de Discord (o la alerta de administrador en el juego) nombra al
+   jugador y al módulo.</li>
+<li><code>ssac.go</code> — espíalo de inmediato, sin argumentos para saltar a la última
+   detección.</li>
+<li><code>!tracers</code> — observa sus disparos; la asistencia de puntería es evidente a
+   simple vista de esta forma.</li>
+<li><code>ssac.pendingbans</code> — comprueba si ya está encolado y por qué.</li>
+<li>Decide: dejar que la oleada corra, <code>ssac.banwave</code> para actuar ahora, o
+   <code>ssac.clearbanwave</code> si crees que es un falso positivo.</li>
+</ol>
+<p>Si un módulo produce falsos positivos repetidos en tu configuración, sube su
+umbral o activa <code>OnlyAnalysis</code> en lugar de desactivarlo — consulta
+<a href="../configuration/#common-submodule-keys">Consejo de ajuste</a>.</p>
+<hr />
+<p><strong>Próximos pasos:</strong></p>
+<ul>
+<li><a href="../configuration/">Configuración</a> — todas las claves de <code>config.json</code>.</li>
+<li><a href="../commands/">Comandos</a> — la referencia completa de comandos.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

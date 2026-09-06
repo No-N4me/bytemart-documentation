@@ -1,0 +1,2011 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.bytemart.net/zh/plugins/tribescore/configuration/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../commands/">
+      
+      
+        
+          <link rel="alternate" href="../../../../plugins/tribescore/configuration/" hreflang="en">
+        
+          <link rel="alternate" href="../../../../de/plugins/tribescore/configuration/" hreflang="de">
+        
+          <link rel="alternate" href="../../../../fr/plugins/tribescore/configuration/" hreflang="fr">
+        
+          <link rel="alternate" href="../../../../es/plugins/tribescore/configuration/" hreflang="es">
+        
+          <link rel="alternate" href="./" hreflang="zh">
+        
+          <link rel="alternate" href="../../../../ru/plugins/tribescore/configuration/" hreflang="ru">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/bytemart_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>配置 - Bytemart Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/bytemart.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="../../../../javascripts/i18n-search.js"></script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    
+    <a
+      href="https://bytemart.net"
+      class="md-header__button md-mainsite"
+      title="Back to bytemart.net"
+      aria-label="Back to bytemart.net"
+      rel="noopener"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      <span class="md-mainsite__label">bytemart.net</span>
+    </a>
+    
+    <a href="../../../" title="Bytemart Documentation" class="md-header__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bytemart Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              配置
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../plugins/tribescore/configuration/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../de/plugins/tribescore/configuration/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fr/plugins/tribescore/configuration/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../es/plugins/tribescore/configuration/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../ru/plugins/tribescore/configuration/" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Bytemart Documentation" class="md-nav__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    Bytemart Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    欢迎使用 Bytemart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    插件
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    插件
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tribescore
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tribescore
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配置
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        config.json
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="config.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugmode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DebugMode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tribescoreactivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TribescoreActivation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tribescoreeligibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TribescoreEligibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scoring
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modifiersofflineprotection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.OfflineProtection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifierspermissionmodifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.PermissionModifiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifiersscoredifferenceratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.ScoreDifferenceRatio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#holograms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Holograms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatcommands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ChatCommands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structuresjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        structures.json
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dinosjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dinos.json
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    命令
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../discord-bot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 Discord 机器人
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ssanticheat/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ssAntiCheat
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ssAntiCheat
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    命令
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/bans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    封禁与检测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dupedetector/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DupeDetector
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DupeDetector
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dupedetector/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../arkbosscooldown/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArkBossCooldown
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ArkBossCooldown
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arkbosscooldown/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        config.json
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="config.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugmode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DebugMode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tribescoreactivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TribescoreActivation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tribescoreeligibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TribescoreEligibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scoring
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modifiersofflineprotection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.OfflineProtection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifierspermissionmodifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.PermissionModifiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifiersscoredifferenceratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.ScoreDifferenceRatio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#holograms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Holograms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatcommands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ChatCommands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structuresjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        structures.json
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dinosjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dinos.json
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">配置</h1>
+<p>Tribescore 通过插件文件夹
+（<code>ShooterGame/Binaries/Win64/ArkApi/Plugins/Tribescore/</code>）中的<strong>三个</strong>文件
+进行配置：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config.json</code></td>
+<td>主要设置：许可证、数据库、激活、资格、计分修正、全息投影和聊天命令。</td>
+</tr>
+<tr>
+<td><code>structures.json</code></td>
+<td>建筑的分值，按建造等级和按蓝图设置。</td>
+</tr>
+<tr>
+<td><code>dinos.json</code></td>
+<td>恐龙的分值和计数规则，按物种设置。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>开始前先验证。</strong> 编辑后请务必验证你的 JSON（例如
+使用 <a href="https://jsonlint.com/">JSONLint</a>）。加载错误代码 <code>1114</code> 意味着 JSON
+语法错误。</p>
+</blockquote>
+<p><code>LicenseKey</code>、<code>Verbose</code>、<code>LogToFile</code> 和 <code>Database</code> 这几个键由每个 Bytemart
+插件共享，其说明位于
+<strong><a href="../../#common-configuration">通用配置</a></strong> 页面。本页只涵盖 Tribescore
+独有的键。</p>
+<hr />
+<h2 id="configjson"><code>config.json</code></h2>
+<h3 id="debugmode"><code>DebugMode</code></h3>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">"DebugMode"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span></code></pre></div></td></tr></table></div>
+<p>当设为 <code>true</code> 时，控制台会变得更加详细，<strong>并且</strong>你可以从自己的部落赚取
+tribescore——这在开发服务器上测试计分时很有用。在正式服务器上请保持
+<code>false</code>。</p>
+<h3 id="tribescoreactivation"><code>TribescoreActivation</code></h3>
+<p>在服务器（清档）启动后全局延迟计分，让各部落在竞争开始前有时间重新
+建立起来。</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">"TribescoreActivation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nt">"Activation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="nt">"Type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"delay"</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mi">7200</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">  </span><span class="nt">"Message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tribescore is globally enabled after 2 hours, please wait {cooldown}"</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Activation.Type</code></td>
+<td>string</td>
+<td><code>"delay"</code> —— 在服务器启动 <code>Value</code> 秒之后启用计分。<code>"timestamp"</code> —— 在一个固定的 <a href="https://www.unixtimestamp.com/">Unix 时间戳</a>时启用计分。</td>
+</tr>
+<tr>
+<td><code>Activation.Value</code></td>
+<td>number</td>
+<td>延迟的秒数（对于 <code>delay</code>）或 Unix 时间戳（对于 <code>timestamp</code>）。设为 <code>0</code> 可禁用该功能并立即启用计分。</td>
+</tr>
+<tr>
+<td><code>Message</code></td>
+<td>string</td>
+<td>在计分仍处于冷却中时触发计分的玩家会看到此消息。<code>{cooldown}</code> 占位符会被替换为剩余时间。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tribescoreeligibility"><code>TribescoreEligibility</code></h3>
+<p>根据成员规模限制哪些部落可以赚取分数。</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">"TribescoreEligibility"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">  </span><span class="nt">"MinPlayers"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">  </span><span class="nt">"MinOnlinePlayers"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MinPlayers</code></td>
+<td>number</td>
+<td>部落必须拥有的最少成员数（总数）才能赚取分数。</td>
+</tr>
+<tr>
+<td><code>MinOnlinePlayers</code></td>
+<td>number</td>
+<td>必须<strong>在线</strong>的最少成员数，部落才能赚取分数。<code>0</code> 会禁用此项检查。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scoring"><code>Scoring</code></h3>
+<p>插件的核心所在。基础值存放于此（以及 <code>structures.json</code> /
+<code>dinos.json</code> 中）；<code>Modifiers</code> 子部分会对它们进行乘算。</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nt">"Scoring"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="nt">"GainLossRatio"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.75</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">  </span><span class="nt">"Structures"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"DefaultValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">  </span><span class="nt">"Dinos"</span><span class="p">:</span><span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"DefaultValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">  </span><span class="nt">"Players"</span><span class="p">:</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">150.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">  </span><span class="nt">"Modifiers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GainLossRatio</code></td>
+<td>number</td>
+<td>当没有设置显式的 <code>LossOverride</code>（在 <code>structures.json</code> / <code>dinos.json</code> 中）时，<strong>防守方</strong>的失分为 <code>gain × GainLossRatio</code>。在 <code>0.75</code> 时，防守方失去进攻方所得的 75%。</td>
+</tr>
+<tr>
+<td><code>Structures.Enabled</code></td>
+<td>boolean</td>
+<td>启用来自被摧毁建筑的计分。在 <a href="#structuresjson"><code>structures.json</code></a> 中配置分值。</td>
+</tr>
+<tr>
+<td><code>Structures.DefaultValue</code></td>
+<td>number</td>
+<td>未匹配到等级或蓝图的建筑所得的分值。</td>
+</tr>
+<tr>
+<td><code>Dinos.Enabled</code></td>
+<td>boolean</td>
+<td>启用来自被击杀恐龙的计分。在 <a href="#dinosjson"><code>dinos.json</code></a> 中配置分值。</td>
+</tr>
+<tr>
+<td><code>Dinos.DefaultValue</code></td>
+<td>number</td>
+<td>没有按物种覆盖的恐龙所得的分值。</td>
+</tr>
+<tr>
+<td><code>Players.Enabled</code></td>
+<td>boolean</td>
+<td>启用来自击杀敌方玩家的计分。</td>
+</tr>
+<tr>
+<td><code>Players.Value</code></td>
+<td>number</td>
+<td>每击杀一名敌方玩家授予的固定分值。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="modifiersofflineprotection"><code>Modifiers.OfflineProtection</code></h4>
+<p>降低（或提高）针对一个已完全离线一段时间的部落所赚取的分数——以此
+遏制离线突袭。</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">"OfflineProtection"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="nt">"ActivatesAfter"</span><span class="p">:</span><span class="w"> </span><span class="mi">3600</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">  </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.75</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td>开关此功能。</td>
+</tr>
+<tr>
+<td><code>ActivatesAfter</code></td>
+<td>number</td>
+<td>部落必须完全离线多少秒之后保护才会生效。</td>
+</tr>
+<tr>
+<td><code>Modifier</code></td>
+<td>number</td>
+<td>生效后应用的乘数。<code>&lt; 1</code> 会降低进攻方的所得（例如 <code>0.75</code> = −25%）。</td>
+</tr>
+</tbody>
+</table>
+<p><em>基于</em><em>防守方</em><em>应用。</em></p>
+<h4 id="modifierspermissionmodifiers"><code>Modifiers.PermissionModifiers</code></h4>
+<p>根据进攻方的 ArkApi <strong>权限</strong>来增益（或削弱）分数。需要来自 ArkServerAPI 的
+<a href="https://github.com/ServersHub/ServerAPI">Permissions</a> 插件。</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nt">"PermissionModifiers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">  </span><span class="nt">"TribePermissionsOnly"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span><span class="nt">"OnlinePlayersOnly"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">  </span><span class="nt">"Modifiers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"Permission"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ts.boost.10"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"Permission"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ts.boost.15"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.15</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"Permission"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ts.boost.25"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.25</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td>开关此功能。</td>
+</tr>
+<tr>
+<td><code>TribePermissionsOnly</code></td>
+<td>boolean</td>
+<td>当设为 <code>true</code> 时，只检查部落级别的权限（忽略单个玩家的权限）。</td>
+</tr>
+<tr>
+<td><code>OnlinePlayersOnly</code></td>
+<td>boolean</td>
+<td>当设为 <code>true</code> 时，只考虑当前在线成员的权限；否则会检查所有成员。</td>
+</tr>
+<tr>
+<td><code>Modifiers[]</code></td>
+<td>array</td>
+<td>权限 → 乘数的配对。<strong>一次只应用一个修正</strong>；如果有多个匹配，则使用<strong>最大</strong>的那个。</td>
+</tr>
+<tr>
+<td><code>Modifiers[].Permission</code></td>
+<td>string</td>
+<td>玩家/部落必须持有的权限节点。</td>
+</tr>
+<tr>
+<td><code>Modifiers[].Value</code></td>
+<td>number</td>
+<td>应用的乘数（<code>&gt; 1</code> 会增加所得）。</td>
+</tr>
+</tbody>
+</table>
+<p><em>基于</em><em>进攻方</em><em>应用。</em></p>
+<h4 id="modifiersscoredifferenceratio"><code>Modifiers.ScoreDifferenceRatio</code></h4>
+<p>平衡强弱部落。比较的比率是<strong>防守方</strong>的分数除以<strong>进攻方</strong>的分数；匹配区间的
+<code>Modifier</code> 会缩放进攻方的所得——因此大部落刷小部落会被削弱，而弱者
+进攻巨头则会被增益。</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nt">"ScoreDifferenceRatio"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">  </span><span class="nt">"Intervals"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w">   </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">    </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.2</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">    </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">,</span><span class="w">  </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">,</span><span class="w">  </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">    </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">    </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w">  </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w">  </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span><span class="w"> </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.6</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span><span class="w"> </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td>开关此功能。</td>
+</tr>
+<tr>
+<td><code>Intervals[]</code></td>
+<td>array</td>
+<td>防守方/进攻方分数比率的各个区间，每个区间带有一个乘数。</td>
+</tr>
+<tr>
+<td><code>LowerBound</code> / <code>UpperBound</code></td>
+<td>number</td>
+<td>此修正覆盖的比率区间。将顶部区间的 <code>UpperBound</code> 设为 <code>-1</code> 表示“无上限”。</td>
+</tr>
+<tr>
+<td><code>Modifier</code></td>
+<td>number</td>
+<td>当比率落入此区间时应用的乘数。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>解读默认值：</strong></p>
+<ul>
+<li>比率 <code>≥ 2</code>（防守方分数 ≥ 进攻方的 2 倍）→ 对进攻的弱者给予 <strong>1.2×</strong>
+  增益。</li>
+<li>比率介于 <code>1.5</code> 到 <code>2</code> 之间 → <strong>1.1×</strong> 增益。</li>
+<li>比率介于 <code>0.25</code> 到 <code>0.5</code> 之间 → <strong>0.6×</strong> 削弱。</li>
+<li>比率 <code>&lt; 0.25</code>（防守方分数不足进攻方的四分之一）→
+  <strong>0.25×</strong> —— 对刷弱得多的部落给予严厉削弱。</li>
+</ul>
+<p><em>同时使用</em><em>进攻方</em><em>和</em><em>防守方</em><em>。</em></p>
+<h3 id="holograms"><code>Holograms</code></h3>
+<p>控制在分数变化时于世界中出现的漂浮分数数字。
+<code>Damager</code> 是展示给进攻方的 <code>+points</code> 文本；<code>Damagee</code> 是展示给防守方的
+<code>-points</code> 文本。</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span>
+<span class="normal"><a href="#__codelineno-7-8">8</a></span>
+<span class="normal"><a href="#__codelineno-7-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">"Holograms"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="w">  </span><span class="nt">"DecimalPrecision"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">  </span><span class="nt">"LifeSpan"</span><span class="p">:</span><span class="w"> </span><span class="mf">6.0</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">  </span><span class="nt">"Scale"</span><span class="p">:</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"X"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w"> </span><span class="nt">"Y"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">  </span><span class="nt">"FadeTime"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"In"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="nt">"Out"</span><span class="p">:</span><span class="w"> </span><span class="mf">3.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">  </span><span class="nt">"Velocity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"X"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nt">"Y"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nt">"Z"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="w">  </span><span class="nt">"Damager"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+ {points} points"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"R"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">   </span><span class="nt">"G"</span><span class="p">:</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="nt">"B"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">  </span><span class="nt">"Damagee"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"- {points} points"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"R"</span><span class="p">:</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="nt">"G"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">   </span><span class="nt">"B"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DecimalPrecision</code></td>
+<td>number</td>
+<td><code>{points}</code> 值中显示的小数位数。</td>
+</tr>
+<tr>
+<td><code>LifeSpan</code></td>
+<td>number</td>
+<td>全息投影保持可见的秒数。</td>
+</tr>
+<tr>
+<td><code>Scale.X</code> / <code>Scale.Y</code></td>
+<td>number</td>
+<td>各轴上的文本大小。</td>
+</tr>
+<tr>
+<td><code>FadeTime.In</code> / <code>FadeTime.Out</code></td>
+<td>number</td>
+<td>淡入 / 淡出时长（秒）。</td>
+</tr>
+<tr>
+<td><code>Velocity.X/Y/Z</code></td>
+<td>number</td>
+<td>文本的漂移速度；默认值使其向上漂浮（<code>Z</code>）。</td>
+</tr>
+<tr>
+<td><code>Damager</code> / <code>Damagee</code></td>
+<td>object</td>
+<td>得分 / 失分的弹出提示。<code>Enabled</code> 分别开关；<code>Text</code> 使用 <code>{points}</code> 占位符；<code>Color</code> 为 RGB（0–255）。</td>
+</tr>
+</tbody>
+</table>
+<p>玩家可以使用 <code>/holograms</code> 聊天命令为自己开启或关闭全息投影
+（参见<a href="../commands/">命令</a>）。</p>
+<h3 id="chatcommands"><code>ChatCommands</code></h3>
+<p>启用、重命名并设置三个游戏内聊天命令的样式。每个命令都有一个 <code>Enabled</code>
+开关和一个可自定义的 <code>Command</code> 触发词；禁用某个命令会将其完全注销。</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nt">"ChatCommands"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">  </span><span class="nt">"Holograms"</span><span class="p">:</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/holograms"</span><span class="p">,</span><span class="w"> </span><span class="nt">"On"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="nt">"Off"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">  </span><span class="nt">"Leaderboard"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Lines"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="nt">"Command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/leaderboard"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#{rank} [{tribe}] : {score}"</span><span class="p">,</span><span class="w"> </span><span class="nt">"PerRankColor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">  </span><span class="nt">"MyTribeRank"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/triberank"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Your tribe ({tribe}) is ranked #{rank} with {score}"</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>每个命令的通用字段：<code>TextSize</code>（number）、<code>Color</code>（RGB <code>{R,G,B}</code>）以及
+<code>DisplayTime</code>（消息停留在屏幕上的秒数）。</p>
+<p><strong><code>Holograms</code></strong> —— 切换每位玩家的全息投影显示。<code>On</code> 和 <code>Off</code> 各自定义在
+切换时显示的确认消息（<code>Text</code>、<code>TextSize</code>、<code>Color</code>、<code>DisplayTime</code>）。</p>
+<p><strong><code>Leaderboard</code></strong> —— 打印排名靠前的部落。</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Lines</code></td>
+<td>列出多少个部落。</td>
+</tr>
+<tr>
+<td><code>Text</code></td>
+<td>行格式。占位符：<code>{rank}</code>、<code>{tribe}</code>、<code>{score}</code>。</td>
+</tr>
+<tr>
+<td><code>PerRankColor</code></td>
+<td>可选的按名次颜色覆盖，以名次为键（<code>"1"</code>、<code>"2"</code>、<code>"3"</code>……），每个都是一个 RGB 对象。</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>MyTribeRank</code></strong> —— 打印调用者自己部落的排名。<code>Text</code> 支持相同的
+<code>{rank}</code>、<code>{tribe}</code>、<code>{score}</code> 占位符。</p>
+<h3 id="messages"><code>Messages</code></h3>
+<p>预留用于消息自定义；默认为空（<code>{}</code>）。</p>
+<hr />
+<h2 id="structuresjson"><code>structures.json</code></h2>
+<p>建筑的分值，先按建造<strong>等级</strong>解析，再由具体的<strong>蓝图</strong>覆盖。
+未匹配到任何项的建筑会使用 <code>DefaultValue</code>。</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span>
+<span class="normal"><a href="#__codelineno-9-15">15</a></span>
+<span class="normal"><a href="#__codelineno-9-16">16</a></span>
+<span class="normal"><a href="#__codelineno-9-17">17</a></span>
+<span class="normal"><a href="#__codelineno-9-18">18</a></span>
+<span class="normal"><a href="#__codelineno-9-19">19</a></span>
+<span class="normal"><a href="#__codelineno-9-20">20</a></span>
+<span class="normal"><a href="#__codelineno-9-21">21</a></span>
+<span class="normal"><a href="#__codelineno-9-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">  </span><span class="nt">"Tiers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">    </span><span class="nt">"Thatch"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w">  </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">    </span><span class="nt">"Wood"</span><span class="p">:</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.0</span><span class="p">,</span><span class="w">  </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.25</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="w">    </span><span class="nt">"Stone"</span><span class="p">:</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">3.0</span><span class="p">,</span><span class="w">  </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="w">    </span><span class="nt">"Adobe"</span><span class="p">:</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">5.0</span><span class="p">,</span><span class="w">  </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">4.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="w">    </span><span class="nt">"Metal"</span><span class="p">:</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span><span class="w"> </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">7.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="w">    </span><span class="nt">"Tek"</span><span class="p">:</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">15.0</span><span class="p">,</span><span class="w"> </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">12.5</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="w">  </span><span class="nt">"DefaultValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="w">  </span><span class="nt">"Customs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13"></a><span class="w">      </span><span class="nt">"BlueprintPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_HeavyTurret.PrimalItemStructure_HeavyTurret'"</span><span class="p">,</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="w">      </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.0</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17"></a><span class="w">      </span><span class="nt">"BlueprintPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blueprint'/Game/.../PrimalItemStructure_TurretTek.PrimalItemStructure_TurretTek'"</span><span class="p">,</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18"></a><span class="w">      </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.0</span><span class="p">,</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19"></a><span class="w">      </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.0</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Tiers</code></td>
+<td>object</td>
+<td>按等级的分值，以建造材料为键（<code>Thatch</code>、<code>Wood</code>、<code>Stone</code>、<code>Adobe</code>、<code>Metal</code>、<code>Tek</code>）。</td>
+</tr>
+<tr>
+<td><code>Tiers.&lt;tier&gt;.Value</code></td>
+<td>number</td>
+<td>进攻方摧毁此等级的建筑所获得的分值。</td>
+</tr>
+<tr>
+<td><code>Tiers.&lt;tier&gt;.LossOverride</code></td>
+<td>number</td>
+<td><em>（可选）</em> 防守方失去的固定分值。如果省略，则使用 <code>Value × GainLossRatio</code>。</td>
+</tr>
+<tr>
+<td><code>DefaultValue</code></td>
+<td>number</td>
+<td>当建筑未匹配到任何等级或自定义项时的回退值。</td>
+</tr>
+<tr>
+<td><code>Customs[]</code></td>
+<td>array</td>
+<td>按蓝图的覆盖，优先级高于等级值。</td>
+</tr>
+<tr>
+<td><code>Customs[].BlueprintPath</code></td>
+<td>string</td>
+<td>建筑的完整蓝图路径。使用 <code>ts.addstructure</code> 可自动追加你正注视的建筑（参见<a href="../commands/">命令</a>）。</td>
+</tr>
+<tr>
+<td><code>Customs[].Value</code></td>
+<td>number</td>
+<td>此特定蓝图的分值。</td>
+</tr>
+<tr>
+<td><code>Customs[].LossOverride</code></td>
+<td>number</td>
+<td><em>（可选）</em> 此蓝图的固定失分。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dinosjson"><code>dinos.json</code></h2>
+<p>按恐龙物种的分值和计数规则。<code>Defaults</code> 适用于每一只未在 <code>Customs</code> 中
+列出的恐龙。</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span>
+<span class="normal"><a href="#__codelineno-10-14">14</a></span>
+<span class="normal"><a href="#__codelineno-10-15">15</a></span>
+<span class="normal"><a href="#__codelineno-10-16">16</a></span>
+<span class="normal"><a href="#__codelineno-10-17">17</a></span>
+<span class="normal"><a href="#__codelineno-10-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="p">{</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">  </span><span class="nt">"Defaults"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">    </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.0</span><span class="p">,</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">    </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">20.0</span><span class="p">,</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="w">    </span><span class="nt">"CountBabies"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="w">    </span><span class="nt">"CountWithoutSaddle"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">    </span><span class="nt">"CountNotMounted"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">    </span><span class="nt">"ScoreFromWild"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">  </span><span class="nt">"Customs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">      </span><span class="nt">"BlueprintPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blueprint'/Game/PrimalEarth/Dinos/Giganotosaurus/Gigant_Character_BP.Gigant_Character_BP'"</span><span class="p">,</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="w">      </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">50.0</span><span class="p">,</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14"></a><span class="w">      </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">45.0</span><span class="p">,</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15"></a><span class="w">      </span><span class="nt">"CountBabies"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Value</code></td>
+<td>number</td>
+<td>进攻方击杀此恐龙所获得的分值。</td>
+</tr>
+<tr>
+<td><code>LossOverride</code></td>
+<td>number</td>
+<td><em>（可选）</em> 防守方失去的固定分值。如果省略，则使用 <code>Value × GainLossRatio</code>。</td>
+</tr>
+<tr>
+<td><code>CountBabies</code></td>
+<td>boolean</td>
+<td>击杀幼体/幼年恐龙是否计分。</td>
+</tr>
+<tr>
+<td><code>CountWithoutSaddle</code></td>
+<td>boolean</td>
+<td>无鞍的驯服恐龙是否计分。</td>
+</tr>
+<tr>
+<td><code>CountNotMounted</code></td>
+<td>boolean</td>
+<td>当前未被骑乘的恐龙是否计分。</td>
+</tr>
+<tr>
+<td><code>ScoreFromWild</code></td>
+<td>boolean</td>
+<td>击杀此物种的<strong>野生</strong>（未驯服）恐龙是否计分。</td>
+</tr>
+<tr>
+<td><code>Customs[].BlueprintPath</code></td>
+<td>string</td>
+<td>此覆盖所针对物种的完整蓝图路径。</td>
+</tr>
+</tbody>
+</table>
+<p>每个 <code>Customs</code> 条目都可以设置这些字段的任意子集；未指定的字段会回退到
+<code>Defaults</code>。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

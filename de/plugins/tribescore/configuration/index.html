@@ -1,0 +1,2016 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.bytemart.net/de/plugins/tribescore/configuration/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../commands/">
+      
+      
+        
+          <link rel="alternate" href="../../../../plugins/tribescore/configuration/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="de">
+        
+          <link rel="alternate" href="../../../../fr/plugins/tribescore/configuration/" hreflang="fr">
+        
+          <link rel="alternate" href="../../../../es/plugins/tribescore/configuration/" hreflang="es">
+        
+          <link rel="alternate" href="../../../../zh/plugins/tribescore/configuration/" hreflang="zh">
+        
+          <link rel="alternate" href="../../../../ru/plugins/tribescore/configuration/" hreflang="ru">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/bytemart_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Konfiguration - Bytemart Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/bytemart.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="../../../../javascripts/i18n-search.js"></script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#konfiguration" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    
+    <a
+      href="https://bytemart.net"
+      class="md-header__button md-mainsite"
+      title="Back to bytemart.net"
+      aria-label="Back to bytemart.net"
+      rel="noopener"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      <span class="md-mainsite__label">bytemart.net</span>
+    </a>
+    
+    <a href="../../../" title="Bytemart Documentation" class="md-header__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bytemart Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Konfiguration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../plugins/tribescore/configuration/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fr/plugins/tribescore/configuration/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../es/plugins/tribescore/configuration/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../zh/plugins/tribescore/configuration/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../ru/plugins/tribescore/configuration/" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Bytemart Documentation" class="md-nav__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    Bytemart Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Willkommen bei Bytemart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plugins
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tribescore
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tribescore
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konfiguration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konfiguration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        config.json
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="config.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugmode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DebugMode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tribescoreactivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TribescoreActivation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tribescoreeligibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TribescoreEligibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scoring
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modifiersofflineprotection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.OfflineProtection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifierspermissionmodifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.PermissionModifiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifiersscoredifferenceratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.ScoreDifferenceRatio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#holograms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Holograms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatcommands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ChatCommands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structuresjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        structures.json
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dinosjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dinos.json
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Befehle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../discord-bot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 Discord-Bot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ssanticheat/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ssAntiCheat
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ssAntiCheat
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konfiguration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Befehle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/bans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bans &amp; Erkennungen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dupedetector/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DupeDetector
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DupeDetector
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dupedetector/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konfiguration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../arkbosscooldown/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArkBossCooldown
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ArkBossCooldown
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arkbosscooldown/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konfiguration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        config.json
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="config.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugmode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DebugMode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tribescoreactivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TribescoreActivation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tribescoreeligibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TribescoreEligibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scoring
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modifiersofflineprotection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.OfflineProtection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifierspermissionmodifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.PermissionModifiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifiersscoredifferenceratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifiers.ScoreDifferenceRatio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#holograms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Holograms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatcommands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ChatCommands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structuresjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        structures.json
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dinosjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dinos.json
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="konfiguration">Konfiguration</h1>
+<p>Tribescore wird über <strong>drei</strong> Dateien im Plugin-Ordner konfiguriert
+(<code>ShooterGame/Binaries/Win64/ArkApi/Plugins/Tribescore/</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Datei</th>
+<th>Zweck</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config.json</code></td>
+<td>Haupteinstellungen: Lizenz, Datenbank, Aktivierung, Berechtigung, Punkte-Modifikatoren, Hologramme und Chatbefehle.</td>
+</tr>
+<tr>
+<td><code>structures.json</code></td>
+<td>Punktwerte für Strukturen, nach Baustufe und pro Blueprint.</td>
+</tr>
+<tr>
+<td><code>dinos.json</code></td>
+<td>Punktwerte und Zählregeln für Dinos, pro Spezies.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Vor dem Start validieren.</strong> Validiere dein JSON nach jeder Änderung stets (z. B.
+mit <a href="https://jsonlint.com/">JSONLint</a>). Ein Ladefehler mit dem Code <code>1114</code> bedeutet
+einen JSON-Syntaxfehler.</p>
+</blockquote>
+<p>Die Schlüssel <code>LicenseKey</code>, <code>Verbose</code>, <code>LogToFile</code> und <code>Database</code> werden von jedem
+Bytemart-Plugin gemeinsam genutzt und sind auf der Seite
+<strong><a href="../../#common-configuration">Gemeinsame Konfiguration</a></strong> dokumentiert. Diese Seite
+behandelt nur die Schlüssel, die für Tribescore spezifisch sind.</p>
+<hr />
+<h2 id="configjson"><code>config.json</code></h2>
+<h3 id="debugmode"><code>DebugMode</code></h3>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">"DebugMode"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Wenn <code>true</code>, wird die Konsole ausführlicher <strong>und</strong> du darfst Tribescore vom eigenen
+Stamm verdienen — nützlich, um die Punktevergabe auf einem Entwicklungsserver zu testen.
+Lasse diesen Wert auf einem Live-Server auf <code>false</code>.</p>
+<h3 id="tribescoreactivation"><code>TribescoreActivation</code></h3>
+<p>Verzögert die Punktevergabe global nach einem Serverstart (Wipe), damit Stämme Zeit
+haben, sich neu zu etablieren, bevor der Wettbewerb beginnt.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">"TribescoreActivation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nt">"Activation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="nt">"Type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"delay"</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mi">7200</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">  </span><span class="nt">"Message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tribescore is globally enabled after 2 hours, please wait {cooldown}"</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Activation.Type</code></td>
+<td>string</td>
+<td><code>"delay"</code> — aktiviert die Punktevergabe <code>Value</code> Sekunden nach dem Serverstart. <code>"timestamp"</code> — aktiviert die Punktevergabe zu einem festen <a href="https://www.unixtimestamp.com/">Unix-Zeitstempel</a>.</td>
+</tr>
+<tr>
+<td><code>Activation.Value</code></td>
+<td>number</td>
+<td>Verzögerung in Sekunden (bei <code>delay</code>) oder der Unix-Zeitstempel (bei <code>timestamp</code>). Setze auf <code>0</code>, um die Funktion zu deaktivieren und die Punktevergabe sofort zu aktivieren.</td>
+</tr>
+<tr>
+<td><code>Message</code></td>
+<td>string</td>
+<td>Wird Spielern angezeigt, die die Punktevergabe auslösen, während sie noch in der Abklingzeit ist. Der Platzhalter <code>{cooldown}</code> wird durch die verbleibende Zeit ersetzt.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tribescoreeligibility"><code>TribescoreEligibility</code></h3>
+<p>Steuert, welche Stämme abhängig von ihrer Mitgliederzahl Punkte verdienen können.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">"TribescoreEligibility"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">  </span><span class="nt">"MinPlayers"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">  </span><span class="nt">"MinOnlinePlayers"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MinPlayers</code></td>
+<td>number</td>
+<td>Mindestanzahl an Mitgliedern (insgesamt), die ein Stamm haben muss, um Punkte zu verdienen.</td>
+</tr>
+<tr>
+<td><code>MinOnlinePlayers</code></td>
+<td>number</td>
+<td>Mindestanzahl an Mitgliedern, die <strong>online</strong> sein müssen, damit der Stamm Punkte verdient. <code>0</code> deaktiviert diese Prüfung.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scoring"><code>Scoring</code></h3>
+<p>Das Herzstück des Plugins. Basiswerte befinden sich hier (sowie in <code>structures.json</code> /
+<code>dinos.json</code>); der Unterabschnitt <code>Modifiers</code> multipliziert sie.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nt">"Scoring"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="nt">"GainLossRatio"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.75</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">  </span><span class="nt">"Structures"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"DefaultValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">  </span><span class="nt">"Dinos"</span><span class="p">:</span><span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"DefaultValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">  </span><span class="nt">"Players"</span><span class="p">:</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">150.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">  </span><span class="nt">"Modifiers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GainLossRatio</code></td>
+<td>number</td>
+<td>Wenn kein expliziter <code>LossOverride</code> gesetzt ist (in <code>structures.json</code> / <code>dinos.json</code>), beträgt der Punktverlust des <strong>Verteidigers</strong> <code>gain × GainLossRatio</code>. Bei <code>0.75</code> verliert ein Verteidiger 75 % dessen, was der Angreifer gewonnen hat.</td>
+</tr>
+<tr>
+<td><code>Structures.Enabled</code></td>
+<td>boolean</td>
+<td>Aktiviert die Punktevergabe für zerstörte Strukturen. Werte werden in <a href="#structuresjson"><code>structures.json</code></a> konfiguriert.</td>
+</tr>
+<tr>
+<td><code>Structures.DefaultValue</code></td>
+<td>number</td>
+<td>Punkte für eine Struktur ohne Übereinstimmung bei Stufe oder Blueprint.</td>
+</tr>
+<tr>
+<td><code>Dinos.Enabled</code></td>
+<td>boolean</td>
+<td>Aktiviert die Punktevergabe für getötete Dinos. Werte werden in <a href="#dinosjson"><code>dinos.json</code></a> konfiguriert.</td>
+</tr>
+<tr>
+<td><code>Dinos.DefaultValue</code></td>
+<td>number</td>
+<td>Punkte für einen Dino ohne speziesspezifische Überschreibung.</td>
+</tr>
+<tr>
+<td><code>Players.Enabled</code></td>
+<td>boolean</td>
+<td>Aktiviert die Punktevergabe für getötete feindliche Spieler.</td>
+</tr>
+<tr>
+<td><code>Players.Value</code></td>
+<td>number</td>
+<td>Feste Punkte, die pro getötetem feindlichen Spieler vergeben werden.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="modifiersofflineprotection"><code>Modifiers.OfflineProtection</code></h4>
+<p>Verringert (oder erhöht) die gegen einen Stamm verdienten Punkte, der bereits eine Weile
+vollständig offline ist — um Offline-Raiding zu unterbinden.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">"OfflineProtection"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="nt">"ActivatesAfter"</span><span class="p">:</span><span class="w"> </span><span class="mi">3600</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">  </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.75</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td>Schaltet die Funktion ein oder aus.</td>
+</tr>
+<tr>
+<td><code>ActivatesAfter</code></td>
+<td>number</td>
+<td>Sekunden, die ein Stamm vollständig offline sein muss, bevor der Schutz greift.</td>
+</tr>
+<tr>
+<td><code>Modifier</code></td>
+<td>number</td>
+<td>Multiplikator, der bei Aktivierung angewendet wird. <code>&lt; 1</code> verringert den Gewinn des Angreifers (z. B. <code>0.75</code> = −25 %).</td>
+</tr>
+</tbody>
+</table>
+<p><em>Wird basierend auf dem </em><em>Verteidiger</em><em> angewendet.</em></p>
+<h4 id="modifierspermissionmodifiers"><code>Modifiers.PermissionModifiers</code></h4>
+<p>Erhöht (oder senkt) die Punkte basierend auf den ArkApi-<strong>Berechtigungen</strong> des Angreifers.
+Erfordert das <a href="https://github.com/ServersHub/ServerAPI">Permissions</a>-Plugin aus der
+ArkServerAPI.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nt">"PermissionModifiers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">  </span><span class="nt">"TribePermissionsOnly"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span><span class="nt">"OnlinePlayersOnly"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">  </span><span class="nt">"Modifiers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"Permission"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ts.boost.10"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"Permission"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ts.boost.15"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.15</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"Permission"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ts.boost.25"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.25</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td>Schaltet die Funktion ein oder aus.</td>
+</tr>
+<tr>
+<td><code>TribePermissionsOnly</code></td>
+<td>boolean</td>
+<td>Wenn <code>true</code>, werden nur Berechtigungen auf Stammesebene geprüft (individuelle Spielerberechtigungen werden ignoriert).</td>
+</tr>
+<tr>
+<td><code>OnlinePlayersOnly</code></td>
+<td>boolean</td>
+<td>Wenn <code>true</code>, werden nur die Berechtigungen der aktuell online befindlichen Mitglieder berücksichtigt; andernfalls werden alle Mitglieder geprüft.</td>
+</tr>
+<tr>
+<td><code>Modifiers[]</code></td>
+<td>array</td>
+<td>Paare aus Berechtigung → Multiplikator. <strong>Es gilt jeweils nur ein Modifikator</strong>; wenn mehrere zutreffen, wird der <strong>größte</strong> verwendet.</td>
+</tr>
+<tr>
+<td><code>Modifiers[].Permission</code></td>
+<td>string</td>
+<td>Der Berechtigungsknoten, den der Spieler/Stamm besitzen muss.</td>
+</tr>
+<tr>
+<td><code>Modifiers[].Value</code></td>
+<td>number</td>
+<td>Angewendeter Multiplikator (<code>&gt; 1</code> erhöht den Gewinn).</td>
+</tr>
+</tbody>
+</table>
+<p><em>Wird basierend auf dem </em><em>Angreifer</em><em> angewendet.</em></p>
+<h4 id="modifiersscoredifferenceratio"><code>Modifiers.ScoreDifferenceRatio</code></h4>
+<p>Balanciert starke gegen schwache Stämme. Das verglichene Verhältnis ist die Punktzahl des
+<strong>Verteidigers</strong> geteilt durch die Punktzahl des <strong>Angreifers</strong>; der <code>Modifier</code> des
+passenden Intervalls skaliert den Gewinn des Angreifers — so werden große Stämme, die
+kleine abfarmen, geschwächt, und Außenseiter, die Giganten angreifen, gestärkt.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nt">"ScoreDifferenceRatio"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">  </span><span class="nt">"Intervals"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w">   </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">    </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.2</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">    </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">,</span><span class="w">  </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">,</span><span class="w">  </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">    </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">    </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w">  </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w">  </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span><span class="w"> </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.6</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"UpperBound"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span><span class="w"> </span><span class="nt">"LowerBound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="nt">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td>Schaltet die Funktion ein oder aus.</td>
+</tr>
+<tr>
+<td><code>Intervals[]</code></td>
+<td>array</td>
+<td>Bänder des Verhältnisses Verteidiger-/Angreiferpunktzahl, jeweils mit einem Multiplikator.</td>
+</tr>
+<tr>
+<td><code>LowerBound</code> / <code>UpperBound</code></td>
+<td>number</td>
+<td>Das Verhältnisband, das dieser Modifikator abdeckt. Verwende <code>-1</code> als <code>UpperBound</code> des obersten Bandes, um „keine obere Grenze" auszudrücken.</td>
+</tr>
+<tr>
+<td><code>Modifier</code></td>
+<td>number</td>
+<td>Multiplikator, der angewendet wird, wenn das Verhältnis in dieses Band fällt.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Die Standardwerte gelesen:</strong></p>
+<ul>
+<li>Verhältnis <code>≥ 2</code> (Verteidiger hat ≥ 2× die Punktzahl des Angreifers) → <strong>1.2×</strong>-Boost
+  für den angreifenden Außenseiter.</li>
+<li>Verhältnis zwischen <code>1.5</code> und <code>2</code> → <strong>1.1×</strong>-Boost.</li>
+<li>Verhältnis zwischen <code>0.25</code> und <code>0.5</code> → <strong>0.6×</strong>-Abschwächung.</li>
+<li>Verhältnis <code>&lt; 0.25</code> (Verteidiger hat weniger als ein Viertel der Punktzahl des
+  Angreifers) → <strong>0.25×</strong> — eine harte Abschwächung beim Abfarmen deutlich schwächerer
+  Stämme.</li>
+</ul>
+<p><em>Nutzt </em><em>sowohl</em><em> den Angreifer als auch den Verteidiger.</em></p>
+<h3 id="holograms"><code>Holograms</code></h3>
+<p>Steuert die schwebenden Punktzahlen, die in der Spielwelt erscheinen, wenn sich die
+Punkte ändern. <code>Damager</code> ist der <code>+points</code>-Text, der dem Angreifer angezeigt wird;
+<code>Damagee</code> ist der <code>-points</code>-Text, der dem Verteidiger angezeigt wird.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span>
+<span class="normal"><a href="#__codelineno-7-8">8</a></span>
+<span class="normal"><a href="#__codelineno-7-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">"Holograms"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="w">  </span><span class="nt">"DecimalPrecision"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">  </span><span class="nt">"LifeSpan"</span><span class="p">:</span><span class="w"> </span><span class="mf">6.0</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">  </span><span class="nt">"Scale"</span><span class="p">:</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"X"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w"> </span><span class="nt">"Y"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">  </span><span class="nt">"FadeTime"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"In"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="nt">"Out"</span><span class="p">:</span><span class="w"> </span><span class="mf">3.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">  </span><span class="nt">"Velocity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"X"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nt">"Y"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nt">"Z"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="w">  </span><span class="nt">"Damager"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+ {points} points"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"R"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">   </span><span class="nt">"G"</span><span class="p">:</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="nt">"B"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">  </span><span class="nt">"Damagee"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"- {points} points"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"R"</span><span class="p">:</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="nt">"G"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">   </span><span class="nt">"B"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DecimalPrecision</code></td>
+<td>number</td>
+<td>Anzahl der Nachkommastellen, die im <code>{points}</code>-Wert angezeigt werden.</td>
+</tr>
+<tr>
+<td><code>LifeSpan</code></td>
+<td>number</td>
+<td>Sekunden, die das Hologramm sichtbar bleibt.</td>
+</tr>
+<tr>
+<td><code>Scale.X</code> / <code>Scale.Y</code></td>
+<td>number</td>
+<td>Textgröße auf der jeweiligen Achse.</td>
+</tr>
+<tr>
+<td><code>FadeTime.In</code> / <code>FadeTime.Out</code></td>
+<td>number</td>
+<td>Ein- / Ausblenddauer in Sekunden.</td>
+</tr>
+<tr>
+<td><code>Velocity.X/Y/Z</code></td>
+<td>number</td>
+<td>Driftgeschwindigkeit des Textes; der Standardwert lässt ihn nach oben schweben (<code>Z</code>).</td>
+</tr>
+<tr>
+<td><code>Damager</code> / <code>Damagee</code></td>
+<td>object</td>
+<td>Die Gewinn- / Verlust-Einblendungen. <code>Enabled</code> schaltet jede einzeln ein oder aus; <code>Text</code> verwendet den Platzhalter <code>{points}</code>; <code>Color</code> ist RGB (0–255).</td>
+</tr>
+</tbody>
+</table>
+<p>Spieler können Hologramme für sich selbst mit dem Chatbefehl <code>/holograms</code> ein- oder
+ausschalten (siehe <a href="../commands/">Befehle</a>).</p>
+<h3 id="chatcommands"><code>ChatCommands</code></h3>
+<p>Aktiviert, benennt um und gestaltet die drei In-Game-Chatbefehle. Jeder hat einen
+<code>Enabled</code>-Schalter und einen anpassbaren <code>Command</code>-Auslöser; das Deaktivieren eines
+Befehls hebt seine Registrierung vollständig auf.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nt">"ChatCommands"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">  </span><span class="nt">"Holograms"</span><span class="p">:</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/holograms"</span><span class="p">,</span><span class="w"> </span><span class="nt">"On"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="nt">"Off"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">  </span><span class="nt">"Leaderboard"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Lines"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="nt">"Command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/leaderboard"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#{rank} [{tribe}] : {score}"</span><span class="p">,</span><span class="w"> </span><span class="nt">"PerRankColor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">  </span><span class="nt">"MyTribeRank"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/triberank"</span><span class="p">,</span><span class="w"> </span><span class="nt">"Text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Your tribe ({tribe}) is ranked #{rank} with {score}"</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Gemeinsame Felder bei jedem Befehl: <code>TextSize</code> (number), <code>Color</code> (RGB <code>{R,G,B}</code>) und
+<code>DisplayTime</code> (Sekunden, die die Nachricht auf dem Bildschirm bleibt).</p>
+<p><strong><code>Holograms</code></strong> — schaltet die spielerbezogene Hologrammanzeige um. <code>On</code> und <code>Off</code>
+definieren jeweils die Bestätigungsnachricht (<code>Text</code>, <code>TextSize</code>, <code>Color</code>,
+<code>DisplayTime</code>), die beim Umschalten angezeigt wird.</p>
+<p><strong><code>Leaderboard</code></strong> — gibt die besten Stämme aus.</p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Lines</code></td>
+<td>Wie viele Stämme aufgelistet werden.</td>
+</tr>
+<tr>
+<td><code>Text</code></td>
+<td>Zeilenformat. Platzhalter: <code>{rank}</code>, <code>{tribe}</code>, <code>{score}</code>.</td>
+</tr>
+<tr>
+<td><code>PerRankColor</code></td>
+<td>Optionale Farbüberschreibungen pro Platzierung, indexiert nach Rang (<code>"1"</code>, <code>"2"</code>, <code>"3"</code>, …), jeweils ein RGB-Objekt.</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>MyTribeRank</code></strong> — gibt den Rang des eigenen Stammes des Aufrufers aus. <code>Text</code>
+unterstützt dieselben Platzhalter <code>{rank}</code>, <code>{tribe}</code>, <code>{score}</code>.</p>
+<h3 id="messages"><code>Messages</code></h3>
+<p>Reserviert für die Anpassung von Nachrichten; standardmäßig leer (<code>{}</code>).</p>
+<hr />
+<h2 id="structuresjson"><code>structures.json</code></h2>
+<p>Punktwerte für Strukturen, zuerst nach Bau<strong>stufe</strong> aufgelöst und dann durch spezifische
+<strong>Blueprints</strong> überschrieben. Eine Struktur, die auf nichts passt, verwendet
+<code>DefaultValue</code>.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span>
+<span class="normal"><a href="#__codelineno-9-15">15</a></span>
+<span class="normal"><a href="#__codelineno-9-16">16</a></span>
+<span class="normal"><a href="#__codelineno-9-17">17</a></span>
+<span class="normal"><a href="#__codelineno-9-18">18</a></span>
+<span class="normal"><a href="#__codelineno-9-19">19</a></span>
+<span class="normal"><a href="#__codelineno-9-20">20</a></span>
+<span class="normal"><a href="#__codelineno-9-21">21</a></span>
+<span class="normal"><a href="#__codelineno-9-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">  </span><span class="nt">"Tiers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">    </span><span class="nt">"Thatch"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w">  </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">    </span><span class="nt">"Wood"</span><span class="p">:</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.0</span><span class="p">,</span><span class="w">  </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.25</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="w">    </span><span class="nt">"Stone"</span><span class="p">:</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">3.0</span><span class="p">,</span><span class="w">  </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="w">    </span><span class="nt">"Adobe"</span><span class="p">:</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">5.0</span><span class="p">,</span><span class="w">  </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">4.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="w">    </span><span class="nt">"Metal"</span><span class="p">:</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span><span class="w"> </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">7.0</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="w">    </span><span class="nt">"Tek"</span><span class="p">:</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">15.0</span><span class="p">,</span><span class="w"> </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">12.5</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="w">  </span><span class="nt">"DefaultValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="w">  </span><span class="nt">"Customs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13"></a><span class="w">      </span><span class="nt">"BlueprintPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_HeavyTurret.PrimalItemStructure_HeavyTurret'"</span><span class="p">,</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="w">      </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.0</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17"></a><span class="w">      </span><span class="nt">"BlueprintPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blueprint'/Game/.../PrimalItemStructure_TurretTek.PrimalItemStructure_TurretTek'"</span><span class="p">,</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18"></a><span class="w">      </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.0</span><span class="p">,</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19"></a><span class="w">      </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.0</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Tiers</code></td>
+<td>object</td>
+<td>Werte pro Stufe, indexiert nach Baumaterial (<code>Thatch</code>, <code>Wood</code>, <code>Stone</code>, <code>Adobe</code>, <code>Metal</code>, <code>Tek</code>).</td>
+</tr>
+<tr>
+<td><code>Tiers.&lt;tier&gt;.Value</code></td>
+<td>number</td>
+<td>Punkte, die der Angreifer für das Zerstören einer Struktur dieser Stufe gewinnt.</td>
+</tr>
+<tr>
+<td><code>Tiers.&lt;tier&gt;.LossOverride</code></td>
+<td>number</td>
+<td><em>(optional)</em> Feste Punkte, die der Verteidiger verliert. Wenn ausgelassen, wird <code>Value × GainLossRatio</code> verwendet.</td>
+</tr>
+<tr>
+<td><code>DefaultValue</code></td>
+<td>number</td>
+<td>Ausweichwert, wenn eine Struktur auf keine Stufe oder keinen benutzerdefinierten Eintrag passt.</td>
+</tr>
+<tr>
+<td><code>Customs[]</code></td>
+<td>array</td>
+<td>Überschreibungen pro Blueprint, die Vorrang vor dem Stufenwert haben.</td>
+</tr>
+<tr>
+<td><code>Customs[].BlueprintPath</code></td>
+<td>string</td>
+<td>Vollständiger Blueprint-Pfad der Struktur. Verwende <code>ts.addstructure</code>, um die Struktur, die du gerade ansiehst, automatisch anzuhängen (siehe <a href="../commands/">Befehle</a>).</td>
+</tr>
+<tr>
+<td><code>Customs[].Value</code></td>
+<td>number</td>
+<td>Punkte für diesen spezifischen Blueprint.</td>
+</tr>
+<tr>
+<td><code>Customs[].LossOverride</code></td>
+<td>number</td>
+<td><em>(optional)</em> Fester Verlust für diesen Blueprint.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dinosjson"><code>dinos.json</code></h2>
+<p>Punktwerte und Zählregeln pro Dino-Spezies. <code>Defaults</code> gilt für jeden Dino, der nicht in
+<code>Customs</code> aufgeführt ist.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span>
+<span class="normal"><a href="#__codelineno-10-14">14</a></span>
+<span class="normal"><a href="#__codelineno-10-15">15</a></span>
+<span class="normal"><a href="#__codelineno-10-16">16</a></span>
+<span class="normal"><a href="#__codelineno-10-17">17</a></span>
+<span class="normal"><a href="#__codelineno-10-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="p">{</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">  </span><span class="nt">"Defaults"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">    </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">25.0</span><span class="p">,</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">    </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">20.0</span><span class="p">,</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="w">    </span><span class="nt">"CountBabies"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="w">    </span><span class="nt">"CountWithoutSaddle"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">    </span><span class="nt">"CountNotMounted"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">    </span><span class="nt">"ScoreFromWild"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">  </span><span class="nt">"Customs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">      </span><span class="nt">"BlueprintPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blueprint'/Game/PrimalEarth/Dinos/Giganotosaurus/Gigant_Character_BP.Gigant_Character_BP'"</span><span class="p">,</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="w">      </span><span class="nt">"Value"</span><span class="p">:</span><span class="w"> </span><span class="mf">50.0</span><span class="p">,</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14"></a><span class="w">      </span><span class="nt">"LossOverride"</span><span class="p">:</span><span class="w"> </span><span class="mf">45.0</span><span class="p">,</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15"></a><span class="w">      </span><span class="nt">"CountBabies"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Value</code></td>
+<td>number</td>
+<td>Punkte, die der Angreifer für das Töten dieses Dinos gewinnt.</td>
+</tr>
+<tr>
+<td><code>LossOverride</code></td>
+<td>number</td>
+<td><em>(optional)</em> Feste Punkte, die der Verteidiger verliert. Wenn ausgelassen, wird <code>Value × GainLossRatio</code> verwendet.</td>
+</tr>
+<tr>
+<td><code>CountBabies</code></td>
+<td>boolean</td>
+<td>Ob das Töten von Baby-/Jungdinos Punkte bringt.</td>
+</tr>
+<tr>
+<td><code>CountWithoutSaddle</code></td>
+<td>boolean</td>
+<td>Ob ein gezähmtes Tier ohne Sattel Punkte bringt.</td>
+</tr>
+<tr>
+<td><code>CountNotMounted</code></td>
+<td>boolean</td>
+<td>Ob ein Dino, der gerade nicht geritten wird, Punkte bringt.</td>
+</tr>
+<tr>
+<td><code>ScoreFromWild</code></td>
+<td>boolean</td>
+<td>Ob das Töten eines <strong>wilden</strong> (ungezähmten) Dinos dieser Spezies Punkte bringt.</td>
+</tr>
+<tr>
+<td><code>Customs[].BlueprintPath</code></td>
+<td>string</td>
+<td>Vollständiger Blueprint-Pfad der Spezies, auf die diese Überschreibung abzielt.</td>
+</tr>
+</tbody>
+</table>
+<p>Jeder <code>Customs</code>-Eintrag kann eine beliebige Teilmenge dieser Felder setzen; nicht
+angegebene Felder greifen auf <code>Defaults</code> zurück.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

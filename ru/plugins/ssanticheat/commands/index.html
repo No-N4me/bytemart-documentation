@@ -1,0 +1,1615 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.bytemart.net/ru/plugins/ssanticheat/commands/">
+      
+      
+        <link rel="prev" href="../configuration/">
+      
+      
+        <link rel="next" href="../bans/">
+      
+      
+        
+          <link rel="alternate" href="../../../../plugins/ssanticheat/commands/" hreflang="en">
+        
+          <link rel="alternate" href="../../../../de/plugins/ssanticheat/commands/" hreflang="de">
+        
+          <link rel="alternate" href="../../../../fr/plugins/ssanticheat/commands/" hreflang="fr">
+        
+          <link rel="alternate" href="../../../../es/plugins/ssanticheat/commands/" hreflang="es">
+        
+          <link rel="alternate" href="../../../../zh/plugins/ssanticheat/commands/" hreflang="zh">
+        
+          <link rel="alternate" href="./" hreflang="ru">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/bytemart_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Команды - Bytemart Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/bytemart.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="../../../../javascripts/i18n-search.js"></script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    
+    <a
+      href="https://bytemart.net"
+      class="md-header__button md-mainsite"
+      title="Back to bytemart.net"
+      aria-label="Back to bytemart.net"
+      rel="noopener"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      <span class="md-mainsite__label">bytemart.net</span>
+    </a>
+    
+    <a href="../../../" title="Bytemart Documentation" class="md-header__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bytemart Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Команды
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Выберите язык">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../plugins/ssanticheat/commands/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../de/plugins/ssanticheat/commands/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fr/plugins/ssanticheat/commands/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../es/plugins/ssanticheat/commands/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../zh/plugins/ssanticheat/commands/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Bytemart Documentation" class="md-nav__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    Bytemart Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Добро пожаловать в Bytemart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Плагины
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Плагины
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tribescore/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tribescore
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tribescore
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tribescore/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Конфигурация
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tribescore/commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Команды
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tribescore/discord-bot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 Discord-бот
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ssAntiCheat
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ssAntiCheat
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Конфигурация
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Команды
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Команды
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rcon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Команды консоли / RCON
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Команды консоли / RCON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssacstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssacdetections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.detections
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssacban-ssacunban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.ban / ssac.unban
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssacbanwave-ssacclearbanwave-ssacpendingbans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.banwave / ssac.clearbanwave / ssac.pendingbans
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssacgo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.go
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssaccommand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssactestdetection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.testdetection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Чат-команды
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Чат-команды">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Расследование
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Взаимодействие
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Баны и обнаружения
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dupedetector/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DupeDetector
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DupeDetector
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dupedetector/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Конфигурация
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../arkbosscooldown/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArkBossCooldown
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ArkBossCooldown
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arkbosscooldown/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Конфигурация
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rcon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Команды консоли / RCON
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Команды консоли / RCON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssacstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssacdetections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.detections
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssacban-ssacunban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.ban / ssac.unban
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssacbanwave-ssacclearbanwave-ssacpendingbans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.banwave / ssac.clearbanwave / ssac.pendingbans
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssacgo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.go
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssaccommand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssactestdetection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ssac.testdetection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Чат-команды
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Чат-команды">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Расследование
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Взаимодействие
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Команды</h1>
+<p>ssAntiCheat имеет два вида команд: <strong>консольные/RCON</strong>-команды с префиксом
+<code>ssac.</code> и <strong>внутриигровые чат</strong>-команды с префиксом <code>!</code> (настраивается через
+<a href="../configuration/#top-level-keys"><code>CommandPrefix</code></a>).</p>
+<p>Доступ к консоли и RCON по определению является доступом администратора,
+поэтому команды <code>ssac.</code> не требуют дополнительных прав. Чат-команды проверяют,
+что вы являетесь <strong>администратором сервера</strong> (<code>enablecheats</code>), и в противном
+случае молча ничего не делают.</p>
+<h2 id="rcon">Команды консоли / RCON</h2>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Каналы</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ssac.help [page]</code></td>
+<td>Console, RCON</td>
+<td>Постраничный список всех зарегистрированных команд.</td>
+</tr>
+<tr>
+<td><code>ssac.status</code></td>
+<td>Console, RCON</td>
+<td>Лицензия, ID сервера и статус телеметрии дашборда.</td>
+</tr>
+<tr>
+<td><code>ssac.detections</code></td>
+<td>Console, RCON</td>
+<td>Список последних обнаружений, сгруппированных по Steam ID.</td>
+</tr>
+<tr>
+<td><code>ssac.pendingbans</code></td>
+<td>Console, RCON</td>
+<td>Список игроков, поставленных в очередь на следующую волну банов.</td>
+</tr>
+<tr>
+<td><code>ssac.banwave</code></td>
+<td>Console, RCON</td>
+<td>Немедленно выполнить ожидающую волну банов.</td>
+</tr>
+<tr>
+<td><code>ssac.clearbanwave</code></td>
+<td>Console, RCON</td>
+<td>Сбросить все ожидающие баны, никого не забанив.</td>
+</tr>
+<tr>
+<td><code>ssac.ban &lt;steamid&gt; [r=&lt;reason&gt;] [d=&lt;duration&gt;]</code></td>
+<td>Console, RCON</td>
+<td>Забанить игрока.</td>
+</tr>
+<tr>
+<td><code>ssac.unban &lt;ban-id&gt;</code></td>
+<td>Console, RCON</td>
+<td>Отменить бан по его ID.</td>
+</tr>
+<tr>
+<td><code>ssac.testdetection [steamid] [module]</code></td>
+<td>Console, RCON</td>
+<td>Отправить симулированное обнаружение на дашборд.</td>
+</tr>
+<tr>
+<td><code>ssac.go [steamid]</code></td>
+<td>Console</td>
+<td>Перейти в режим наблюдателя за игроком — указанным, или последним обнаруженным.</td>
+</tr>
+<tr>
+<td><code>ssac.command &lt;reason&gt; &lt;command...&gt;</code></td>
+<td>Console</td>
+<td>Выполнить консольную команду от своего имени, с записью в журнал.</td>
+</tr>
+</tbody>
+</table>
+<p><code>ssac.go</code> и <code>ssac.command</code> действуют на <em>вашего</em> персонажа, поэтому они
+работают только из внутриигровой консоли — за сессией RCON нет персонажа.</p>
+<h3 id="ssacstatus"><code>ssac.status</code></h3>
+<p>Первое, что стоит выполнить после установки, и первое, что попросит запустить
+поддержка. Команда выводит версию плагина, прошла ли лицензия аутентификацию,
+ID этого сервера, карту и имя сервера, а также — если телеметрия дашборда
+включена — конечную точку, зарегистрировался ли сервер, результат последней
+отправки и глубину очереди.</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>ssac.status
+</span></code></pre></div></td></tr></table></div>
+<p>Ненулевая глубина очереди, которая никогда не уменьшается, означает, что
+конечная точка дашборда недоступна или отклоняет ваши события.</p>
+<h3 id="ssacdetections"><code>ssac.detections</code></h3>
+<p>Выводит список обнаружений, хранящихся в памяти (примерно за <strong>последний
+час</strong>), сгруппированных по Steam ID, с указанием модуля, сработавшего для
+каждого из них.</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>ssac.detections
+</span></code></pre></div></td></tr></table></div>
+<blockquote>
+<p>ℹ️ <strong>Обнаружения хранятся только в памяти.</strong> Они не переживают перезапуск
+сервера. Баны переживают — они хранятся в MySQL. Используйте ваши вебхуки
+Discord как постоянную запись обнаружений.</p>
+</blockquote>
+<h3 id="ssacban-ssacunban"><code>ssac.ban</code> / <code>ssac.unban</code></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a>ssac.ban &lt;steamid&gt; [r=&lt;reason&gt;] [d=&lt;duration&gt;]
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>ssac.unban &lt;ban-id&gt;
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Аргумент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;steamid&gt;</code></td>
+<td>SteamID64 цели (17 цифр).</td>
+</tr>
+<tr>
+<td><code>r=&lt;reason&gt;</code></td>
+<td>Причина бана. Заключите в кавычки, если она содержит пробелы. По умолчанию <code>No reason provided</code>.</td>
+</tr>
+<tr>
+<td><code>d=&lt;duration&gt;</code></td>
+<td>Длительность бана, составленная из частей <code>d</code> / <code>h</code> / <code>m</code> / <code>s</code> — например, <code>7d</code>, <code>12h30m</code>, <code>1d6h</code>. Не указывайте её для <strong>перманентного</strong> бана.</td>
+</tr>
+</tbody>
+</table>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>ssac.ban<span class="w"> </span><span class="m">76561198000000000</span><span class="w"> </span><span class="nv">r</span><span class="o">=</span><span class="s2">"Aimbot"</span><span class="w"> </span><span class="nv">d</span><span class="o">=</span>7d
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>ssac.ban<span class="w"> </span><span class="m">76561198000000000</span><span class="w">                  </span><span class="c1"># перманентный, без причины</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>ssac.unban<span class="w"> </span><span class="m">42</span><span class="w">                               </span><span class="c1"># снять бан №42</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Бан записывается в MySQL вместе с IP игрока (и его аппаратным ID, если он был
+захвачен), и игрок немедленно кикается, если он онлайн, с вашим
+<a href="../bans/#ban-message"><code>BanMessage</code></a>. <code>ssac.unban</code> принимает <strong>ID бана</strong>, а не
+Steam ID — его показывают и <code>ssac.detections</code>, и сообщение о бане в Discord, и
+это же значение подставляется как <code>{ban_id}</code> в сообщение при кике, которое
+видит игрок.</p>
+<h3 id="ssacbanwave-ssacclearbanwave-ssacpendingbans"><code>ssac.banwave</code> / <code>ssac.clearbanwave</code> / <code>ssac.pendingbans</code></h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>ssac.pendingbans<span class="w">     </span><span class="c1"># кто в очереди и почему</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>ssac.banwave<span class="w">         </span><span class="c1"># забанить всех прямо сейчас</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a>ssac.clearbanwave<span class="w">    </span><span class="c1"># отпустить всех</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Ожидающие баны ставятся в очередь модулями обнаружения и обычно выполняются
+по расписанию — см. <a href="../bans/#ban-waves">Баны и обнаружения</a>. Эти три команды
+позволяют просмотреть очередь, сбросить её досрочно или очистить очередь,
+которую вы считаете ложным срабатыванием.</p>
+<h3 id="ssacgo"><code>ssac.go</code></h3>
+<p>Переводит вас в режим наблюдателя и перемещает к игроку.</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>ssac.go<span class="w">                       </span><span class="c1"># игрок, обнаруженный последним</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>ssac.go<span class="w"> </span><span class="m">76561198000000000</span><span class="w">     </span><span class="c1"># конкретный игрок</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Без аргумента команда следует за последним обнаружением, что удобно при
+реакции на оповещение. С указанным Steam ID она нацеливается на этого игрока
+и выводит распознанное имя, чтобы вы могли убедиться, что взяли нужного
+человека.</p>
+<h3 id="ssaccommand"><code>ssac.command</code></h3>
+<p>Выполняет консольную команду от вашего имени и фиксирует, что ssAntiCheat её
+санкционировал, чтобы модуль защиты администраторов не пометил вас за её
+использование.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>ssac.command &lt;reason&gt; &lt;command...&gt;
+</span></code></pre></div></td></tr></table></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a>ssac.command<span class="w"> </span>investigating_dupe<span class="w"> </span>giveitemnum<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Первый аргумент — это свободный текст причины для журнала аудита; всё, что
+идёт после, — это выполняемая команда.</p>
+<h3 id="ssactestdetection"><code>ssac.testdetection</code></h3>
+<p>Создаёт <strong>симулированное</strong> обнаружение, чтобы вы могли проверить конвейер
+дашборда, не дожидаясь настоящего читера. Требует, чтобы
+<a href="../configuration/#dashboard"><code>Dashboard.Enabled</code></a> было <code>true</code>.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a>ssac.testdetection [steamid] [module]
+</span></code></pre></div></td></tr></table></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a>ssac.testdetection<span class="w">                              </span><span class="c1"># обнаружение для себя (из внутриигровой консоли)</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>ssac.testdetection<span class="w"> </span><span class="m">76561198000000000</span><span class="w"> </span>AutoLoot<span class="w">   </span><span class="c1"># для конкретного игрока, с меткой AutoLoot</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Выполненная без аргументов из внутриигровой консоли, команда нацеливается на
+<strong>вас</strong>, поэтому строка на дашборде показывает настоящее имя, племя и
+позицию. Тестовые события помечаются как симулированные и исключаются из
+статистики реальных обнаружений. Они не отправляются в Discord и никого не
+банят.</p>
+<hr />
+<h2 id="chat-commands">Чат-команды</h2>
+<p>Вводятся во внутриигровом чате, доступны только администраторам, с префиксом
+<a href="../configuration/#top-level-keys"><code>CommandPrefix</code></a> (по умолчанию <code>!</code>). Там,
+где команда принимает <code>&lt;steamid&gt;</code>, вы можете опустить его, и команда
+подействует на <strong>того, на кого вы смотрите</strong>.</p>
+<p>Названия распознаются точно так, как написано ниже, включая регистр.</p>
+<h3 id="_2">Расследование</h3>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>!esp</code></td>
+<td>Переключить ESP для себя.</td>
+</tr>
+<tr>
+<td><code>!espPlayers</code></td>
+<td>Переключить ESP игроков: имя, здоровье и текущее оружие над каждым игроком.</td>
+</tr>
+<tr>
+<td><code>!EspStruct</code></td>
+<td>Переключить ESP построек.</td>
+</tr>
+<tr>
+<td><code>!espset &lt;name&gt;</code></td>
+<td>Подсвечивать постройки, чьё имя чертежа содержит <code>&lt;name&gt;</code>, в дополнение к списку <a href="../configuration/#admin-esp"><code>Structure ESP</code></a>.</td>
+</tr>
+<tr>
+<td><code>!espHideEmpty</code></td>
+<td>Скрыть пустые контейнеры в ESP построек.</td>
+</tr>
+<tr>
+<td><code>!tracers</code></td>
+<td>Отрисовать каждый ближайший выстрел линией трассера, окрашенной в зависимости от того, в какую часть тела он попал. Самый полезный инструмент для оценки помощи в прицеливании на глаз.</td>
+</tr>
+<tr>
+<td><code>!vanish</code></td>
+<td>Переключить собственную невидимость.</td>
+</tr>
+<tr>
+<td><code>!spawn</code></td>
+<td>Возродиться в текущей точке обзора, затем включить творческий режим, невидимость для врагов и полёт.</td>
+</tr>
+<tr>
+<td><code>!cloud &lt;steamid&gt;</code></td>
+<td>Вывести себе список загруженных (tribute) предметов игрока.</td>
+</tr>
+</tbody>
+</table>
+<p><code>!esp</code> — это главный переключатель — <code>!espPlayers</code> и <code>!EspStruct</code> отрисовываются
+только пока ESP включён для вас.</p>
+<h3 id="_3">Взаимодействие</h3>
+<p>Эти команды действуют на подозреваемого напрямую. Используйте их осознанно:
+они видны игроку и могут спугнуть читера, по которому вы ещё собираете
+доказательства.</p>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>!unequip &lt;steamid&gt;</code></td>
+<td>Снять с игрока надетую броню.</td>
+</tr>
+<tr>
+<td><code>!dropweapon &lt;steamid&gt;</code></td>
+<td>Заставить игрока выронить оружие в руках.</td>
+</tr>
+<tr>
+<td><code>!jump &lt;steamid&gt;</code></td>
+<td>Заставить игрока подпрыгнуть.</td>
+</tr>
+<tr>
+<td><code>!punch &lt;steamid&gt;</code></td>
+<td>Активировать ракетный удар тек-перчатки игрока.</td>
+</tr>
+<tr>
+<td><code>!tekjump &lt;steamid&gt;</code></td>
+<td>Активировать ускорение тек-нагрудника игрока.</td>
+</tr>
+<tr>
+<td><code>!requestjoin &lt;steamid&gt;</code></td>
+<td>Отправить игроку поддельное приглашение в племя.</td>
+</tr>
+<tr>
+<td><code>!outofrange &lt;steamid&gt;</code></td>
+<td>Показать игроку клиентское уведомление «out of range».</td>
+</tr>
+<tr>
+<td><code>!playpoopsound &lt;steamid&gt;</code></td>
+<td>Проиграть игроку звук «poop».</td>
+</tr>
+<tr>
+<td><code>!playdeathsound &lt;steamid&gt;</code></td>
+<td>Проиграть игроку звук смерти.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>ℹ️ <strong>Каждое действие администратора логируется.</strong> Чат-команды администратора
+записываются в локальный файл журнала и публикуются в
+<a href="../configuration/#webhooks"><code>AdminTrollingWebhook</code></a> с указанием
+действовавшего администратора, цели и местоположения — так что права
+администратора остаются подотчётными.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

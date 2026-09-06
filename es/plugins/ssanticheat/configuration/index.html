@@ -1,0 +1,2078 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.bytemart.net/es/plugins/ssanticheat/configuration/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../commands/">
+      
+      
+        
+          <link rel="alternate" href="../../../../plugins/ssanticheat/configuration/" hreflang="en">
+        
+          <link rel="alternate" href="../../../../de/plugins/ssanticheat/configuration/" hreflang="de">
+        
+          <link rel="alternate" href="../../../../fr/plugins/ssanticheat/configuration/" hreflang="fr">
+        
+          <link rel="alternate" href="./" hreflang="es">
+        
+          <link rel="alternate" href="../../../../zh/plugins/ssanticheat/configuration/" hreflang="zh">
+        
+          <link rel="alternate" href="../../../../ru/plugins/ssanticheat/configuration/" hreflang="ru">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/bytemart_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Configuración - Bytemart Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/bytemart.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="../../../../javascripts/i18n-search.js"></script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#configuracion" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    
+    <a
+      href="https://bytemart.net"
+      class="md-header__button md-mainsite"
+      title="Back to bytemart.net"
+      aria-label="Back to bytemart.net"
+      rel="noopener"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      <span class="md-mainsite__label">bytemart.net</span>
+    </a>
+    
+    <a href="../../../" title="Bytemart Documentation" class="md-header__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bytemart Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Configuración
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../plugins/ssanticheat/configuration/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../de/plugins/ssanticheat/configuration/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fr/plugins/ssanticheat/configuration/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../zh/plugins/ssanticheat/configuration/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../ru/plugins/ssanticheat/configuration/" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Bytemart Documentation" class="md-nav__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    Bytemart Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bienvenido a Bytemart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plugins
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tribescore/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tribescore
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tribescore
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tribescore/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tribescore/commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tribescore/discord-bot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 Bot de Discord
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ssAntiCheat
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ssAntiCheat
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-autorreparable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración autorreparable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-level-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claves de nivel superior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webhooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Webhooks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#join-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Join Tracker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-esp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admin ESP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servercrash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ServerCrash
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fixes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protector-de-lag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protector de lag
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integratedbansystem-y-autoban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IntegratedBanSystem y AutoBan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-submodule-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claves comunes de submódulo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-filtro-de-conexion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El filtro de conexión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baneos y detecciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dupedetector/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DupeDetector
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DupeDetector
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dupedetector/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../arkbosscooldown/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArkBossCooldown
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ArkBossCooldown
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arkbosscooldown/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-autorreparable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración autorreparable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-level-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claves de nivel superior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webhooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Webhooks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#join-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Join Tracker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-esp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admin ESP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servercrash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ServerCrash
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fixes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protector-de-lag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protector de lag
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integratedbansystem-y-autoban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IntegratedBanSystem y AutoBan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-submodule-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claves comunes de submódulo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-filtro-de-conexion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El filtro de conexión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="configuracion">Configuración</h1>
+<p>ssAntiCheat se configura mediante un único <code>config.json</code> en la carpeta del
+plugin:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>ShooterGame/Binaries/Win64/ArkApi/Plugins/ssAntiCheat/config.json
+</span></code></pre></div></td></tr></table></div>
+<p>Un segundo archivo, <code>config_commented.json</code>, se incluye junto a él. Es <strong>la
+misma configuración con comentarios <code>//</code></strong> — léelo, pero no lo renombres para
+sustituir a <code>config.json</code> (los comentarios no son JSON válido).</p>
+<p>Las claves <code>LicenseKey</code>, <code>Verbose</code>, <code>LogToFile</code> y <code>Database</code> son compartidas por
+todos los plugins de Bytemart y están documentadas en la página de
+<strong><a href="../../#common-configuration">Configuración común</a></strong>. Esta página cubre
+solo las claves exclusivas de ssAntiCheat.</p>
+<blockquote>
+<p>💡 <strong>Valida antes de empezar.</strong> Valida siempre tu JSON después de editarlo
+(por ejemplo, con <a href="https://jsonlint.com/">JSONLint</a>). Un código de error de
+carga <code>1114</code> significa un error de sintaxis JSON.</p>
+<p>⚠️ <strong>Los nombres de las claves son estructurales — cópialos exactamente.</strong>
+Varias claves contienen espacios (<code>"Join Tracker"</code>, <code>"SaveWorld Cycles"</code>,
+<code>"Block Dedi Fill"</code>) y algunas llevan un error ortográfico histórico
+(<code>Threshole</code>, <code>additionnalData</code>). Se comparan byte a byte. "Corregir" una
+ortografía desactiva la función en silencio.</p>
+</blockquote>
+<h2 id="configuracion-autorreparable">Configuración autorreparable</h2>
+<p>En cada carga, ssAntiCheat compara tu <code>config.json</code> con el esquema con el que
+fue compilado:</p>
+<ul>
+<li><strong>Las claves que faltan</strong> se añaden con sus valores predeterminados, y la
+  consola imprime exactamente lo que se añadió. Tu archivo original se copia
+  primero a <code>config.json.bak</code>.</li>
+<li><strong>Las discrepancias de tipo</strong> (una cadena donde se espera un número, etc.)
+  <strong>abortan la carga</strong> con un error que nombra la clave — el plugin no se
+  ejecutará con una configuración en la que no puede confiar.</li>
+</ul>
+<p>Esto significa que una actualización que introduzca claves nuevas no romperá tu
+servidor, y siempre puedes recortar tu configuración para dejar solo las claves
+que te interesan.</p>
+<hr />
+<h2 id="top-level-keys">Claves de nivel superior</h2>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">"Debug"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nt">"Use Discord"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nt">"UseDiscordURL"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="nt">"SteamAPIKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nt">"CommandPrefix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"!"</span><span class="p">,</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="nt">"Send Alert to Ingame Admins when someone is detected using a cheat"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Predeterminado</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Debug</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>Indicador de depuración interno. Déjalo en <code>false</code> — usa <a href="../../#verbose"><code>Verbose</code></a> para obtener salida de solución de problemas.</td>
+</tr>
+<tr>
+<td><code>Use Discord</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Interruptor maestro para las alertas de Discord. Cuando es <code>false</code>, no se publica ningún embed de detección o baneo en ningún sitio.</td>
+</tr>
+<tr>
+<td><code>UseDiscordURL</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Si los embeds de Discord incluyen las imágenes de icono/miniatura de ssAntiCheat. Puramente estético.</td>
+</tr>
+<tr>
+<td><code>SteamAPIKey</code></td>
+<td>string</td>
+<td><code>""</code></td>
+<td>Una <a href="https://steamcommunity.com/dev/apikey">clave de la Steam Web API</a>. Solo la requiere el filtro de conexión (comprobaciones de tiempo de juego / antigüedad de cuenta / VAC). Déjala vacía si no la usas.</td>
+</tr>
+<tr>
+<td><code>CommandPrefix</code></td>
+<td>string</td>
+<td><code>"!"</code></td>
+<td>El prefijo de los comandos de chat de administración dentro del juego. Consulta <a href="../commands/#chat-commands">Comandos</a>.</td>
+</tr>
+<tr>
+<td><code>Send Alert to Ingame Admins when someone is detected using a cheat</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Difunde una alerta de detección coloreada a todos los administradores conectados.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="webhooks">Webhooks</h2>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">"DefaultWebhookUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nt">"BanWebhookUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nt">"AssociationBans"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="nt">"AdminTrollingWebhook"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Los cuatro son URLs de webhook de Discord, y todos vienen <strong>vacíos</strong> de
+fábrica. Un webhook vacío significa "no enviar nada" — nunca es un error.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DefaultWebhookUrl</code></td>
+<td>A dónde van las detecciones cuando el módulo no tiene su propio webhook. Este es el que debes rellenar primero.</td>
+</tr>
+<tr>
+<td><code>BanWebhookUrl</code></td>
+<td>A dónde van las alertas de <strong>baneo</strong>. Recurre a <code>DefaultWebhookUrl</code> cuando está vacío.</td>
+</tr>
+<tr>
+<td><code>AssociationBans</code></td>
+<td>A dónde van las alertas de baneo por <strong>asociación de IP</strong> — es decir, una cuenta nueva sorprendida conectándose desde la IP de un jugador baneado. Consulta <a href="../bans/#ip-association-bans">Baneos y detecciones</a>.</td>
+</tr>
+<tr>
+<td><code>AdminTrollingWebhook</code></td>
+<td>Registro de auditoría de los comandos de chat de administración dentro del juego: quién ejecutó qué, sobre quién y dónde.</td>
+</tr>
+</tbody>
+</table>
+<p>Cualquier módulo individual también puede tener su propia clave <code>WebhookUrl</code>,
+que anula <code>DefaultWebhookUrl</code> solo para ese módulo.</p>
+<blockquote>
+<p>🔒 <strong>Una URL de webhook es una credencial.</strong> Cualquiera que la tenga puede
+publicar en tu canal. Mantén <code>config.json</code> fuera de repositorios públicos y
+capturas de pantalla.</p>
+</blockquote>
+<h2 id="dashboard"><code>Dashboard</code></h2>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nt">"Dashboard"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">  </span><span class="nt">"LivePositions"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Telemetría opcional hacia el panel de control de ssAnticheat: un feed de
+detecciones y baneos en vivo, historial de baneos y estado básico del
+servidor. <strong>Ambas claves son <code>false</code> de forma predeterminada</strong> — nada sale de
+tu máquina hasta que las actives.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Predeterminado</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>Interruptor maestro para la telemetría del panel de control.</td>
+</tr>
+<tr>
+<td><code>LivePositions</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>Envía además las posiciones de los jugadores para que el panel de control pueda dibujar un mapa en vivo. Esto es, en la práctica, una vista en vivo de dónde está cada jugador — déjalo desactivado a menos que quieras eso.</td>
+</tr>
+</tbody>
+</table>
+<p>Usa <a href="../commands/#ssacstatus"><code>ssac.status</code></a> para comprobar si la telemetría
+realmente está fluyendo, y <a href="../commands/#ssactestdetection"><code>ssac.testdetection</code></a>
+para enviar una detección simulada a través del proceso.</p>
+<h2 id="join-tracker"><code>Join Tracker</code></h2>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">"Join Tracker"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="nt">"Include IP"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">  </span><span class="nt">"JoinLogs"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Publica un embed de Discord cada vez que un jugador se conecta, con su nombre,
+Steam ID, tribu y ubicación de aparición.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Predeterminado</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Activa o desactiva el registro de conexiones.</td>
+</tr>
+<tr>
+<td><code>Include IP</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Incluye la dirección IP de conexión en el embed.</td>
+</tr>
+<tr>
+<td><code>JoinLogs</code></td>
+<td>string</td>
+<td><code>""</code></td>
+<td>URL de webhook para los registros de conexión. Vacío significa que los registros se recopilan pero no se publican.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Las direcciones IP son datos personales.</strong> Si activas <code>Include IP</code>,
+envía los registros de conexión a un canal privado solo para administradores,
+y comprueba qué exige tu normativa local antes de conservarlos.</p>
+</blockquote>
+<h2 id="admin-esp"><code>Admin ESP</code></h2>
+<p>Ajustes para la superposición de ESP de administración dentro del juego,
+activada por cada administrador con la
+<a href="../commands/#chat-commands">familia de comandos <code>!esp</code></a>.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nt">"Admin ESP"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">  </span><span class="nt">"RefreshTime"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span><span class="nt">"Range"</span><span class="p">:</span><span class="w"> </span><span class="mi">30000</span><span class="p">,</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">  </span><span class="nt">"Structure ESP"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Box"</span><span class="p">]</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Predeterminado</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Reservado. El acceso a los comandos de ESP está controlado por el estado de administrador de ARK, no por esta clave.</td>
+</tr>
+<tr>
+<td><code>RefreshTime</code></td>
+<td>number</td>
+<td><code>0.1</code></td>
+<td>Cuánto dura cada etiqueta/caja dibujada, en segundos. Menor = más fluido, más llamadas de dibujo del cliente.</td>
+</tr>
+<tr>
+<td><code>Range</code></td>
+<td>number</td>
+<td><code>30000</code></td>
+<td>Radio de escaneo (unidades de Unreal) alrededor del administrador.</td>
+</tr>
+<tr>
+<td><code>Structure ESP</code></td>
+<td>array</td>
+<td><code>["Box"]</code></td>
+<td>Subcadenas de nombres de blueprint de estructuras a resaltar cuando el ESP de estructuras está activado. <code>"Box"</code> coincide con las cajas de almacenamiento; añade por ejemplo <code>"Vault"</code> o <code>"Turret"</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="servercrash"><code>ServerCrash</code></h2>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nt">"ServerCrash"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="nt">"SaveWorld"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">  </span><span class="nt">"AutomaticRestart"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Qué hacer cuando el proceso del servidor se cierra inesperadamente.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Predeterminado</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SaveWorld</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Intenta guardar el mundo desde dentro del manejador de cierres inesperados, de modo que un cierre cueste minutos en lugar de todo el intervalo de guardado.</td>
+</tr>
+<tr>
+<td><code>AutomaticRestart</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Reinicia el servidor automáticamente tras un breve retraso después del cierre inesperado. <strong>Desactiva</strong> esto si tu gestor de servidor (ASM, ArkServerManager, un wrapper de servicio, …) ya reinicia al salir — de lo contrario tendrás dos reinicios compitiendo entre sí.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fixes"><code>Fixes</code></h2>
+<p>Correcciones para glitches conocidos del servidor y rutas de exploits. No son
+detectores — nadie es señalado ni baneado por ellos; el comportamiento
+defectuoso simplemente se impide.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span>
+<span class="normal"><a href="#__codelineno-7-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">"Fixes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="w">  </span><span class="nt">"Scout Glitch Fix"</span><span class="p">:</span><span class="w">         </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">  </span><span class="nt">"Handcuff Glitch Fix"</span><span class="p">:</span><span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">  </span><span class="nt">"Player Already Connected"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">  </span><span class="nt">"Pull Fix"</span><span class="p">:</span><span class="w">                 </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">  </span><span class="nt">"Lag Protector"</span><span class="p">:</span><span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="w">  </span><span class="nt">"Dupe Fix"</span><span class="p">:</span><span class="w">                 </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Corrección</th>
+<th>Predeterminado</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Scout Glitch Fix</code></td>
+<td><code>true</code></td>
+<td>Corrige el comportamiento de transporte del Scout, cerrando el conocido glitch del Scout.</td>
+</tr>
+<tr>
+<td><code>Handcuff Glitch Fix</code></td>
+<td><code>false</code></td>
+<td>Vuelve a equipar las esposas a un jugador que se reconecta después de haberse desconectado estando esposado — cerrando el truco de "desconectarse para escapar de las esposas". Desactivado de forma predeterminada; actívalo si las esposas forman parte de cómo operan tus administradores o jugadores.</td>
+</tr>
+<tr>
+<td><code>Player Already Connected</code></td>
+<td><code>true</code></td>
+<td>Elimina la sesión atascada que produce el error "player already connected", para que los jugadores no tengan que esperar a que se resuelva sola.</td>
+</tr>
+<tr>
+<td><code>Pull Fix</code></td>
+<td><code>true</code></td>
+<td>Bloquea el exploit de <strong>server pull</strong> de Structures Plus, en el que se usa un pull para arrastrar en bloque objetos restringidos (tributos de jefe y similares) fuera de un contenedor. Al jugador se le muestra "You can't pull this craft".</td>
+</tr>
+<tr>
+<td><code>Lag Protector</code></td>
+<td><code>true</code></td>
+<td>Protección contra griefing dirigida a trucos deliberados de lag en el servidor. <strong>Necesita claves adicionales — consulta más abajo.</strong></td>
+</tr>
+<tr>
+<td><code>Dupe Fix</code></td>
+<td><code>true</code></td>
+<td>Destruye los alijos de objetos de muerte de S+ duplicados: un segundo alijo de muerte que aparece encima de uno ya existente se elimina en lugar de duplicar su contenido.</td>
+</tr>
+</tbody>
+</table>
+<p>Cada corrección tiene un indicador <code>Enabled</code>. <code>Lag Protector</code> tiene tres más.</p>
+<h3 id="protector-de-lag">Protector de lag</h3>
+<p><code>Lag Protector</code> viene solo con <code>Enabled</code>, y cada una de sus protecciones es
+<strong>opcional</strong> — añade tú mismo las claves para activarlas:</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span>
+<span class="normal"><a href="#__codelineno-8-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nt">"Lag Protector"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">  </span><span class="nt">"WhipProtection"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">  </span><span class="nt">"BlueprintProtection"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">  </span><span class="nt">"LagWebhook"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Predeterminado</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WhipProtection</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>Expulsa a un jugador que dispara un arma dentro de un área con suficientes estructuras como para causar lag al servidor — el clásico grief de "látigo en una mega-base".</td>
+</tr>
+<tr>
+<td><code>BlueprintProtection</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>Expulsa a un jugador que encola una ráfaga inverosímil de fabricaciones de blueprints en pocos segundos.</td>
+</tr>
+<tr>
+<td><code>LagWebhook</code></td>
+<td>string</td>
+<td><code>""</code></td>
+<td>Webhook para las expulsiones de la protección contra lag. Si está vacío, no se envía nada.</td>
+</tr>
+</tbody>
+</table>
+<p>Las expulsiones de esta corrección llevan un código de motivo deliberadamente
+opaco, para que un griefer no aprenda nada de ello: <code>0x7E3</code> es la protección
+contra el látigo, <code>0x4DE</code> la protección de blueprints.</p>
+<blockquote>
+<p>ℹ️ <strong>Las claves que añades tú mismo se conservan.</strong> La autorreparación de la
+configuración solo <em>añade</em> claves que faltan — nunca elimina claves que no
+reconoce, así que las tres anteriores sobreviven a las actualizaciones del
+plugin.</p>
+</blockquote>
+<h2 id="integratedbansystem-y-autoban"><code>IntegratedBanSystem</code> y <code>AutoBan</code></h2>
+<p>Estas dos secciones controlan el proceso de baneo y están documentadas en su
+totalidad en la página de <strong><a href="../bans/">Baneos y detecciones</a></strong>:</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="nt">"IntegratedBanSystem"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">  </span><span class="nt">"UseIPBans"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">  </span><span class="nt">"UseHWIDBans"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="w">  </span><span class="nt">"Exclude IPS"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="w">  </span><span class="nt">"BanMessage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"You are banned from our server\nReason: {reason}\nBan id: {ban_id}\nUnban at: https://store.example.com"</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="p">},</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="nt">"AutoBan"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="w">  </span><span class="nt">"SaveWorld Cycles"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="w">  </span><span class="nt">"ExecuteCommand"</span><span class="p">:</span><span class="w"> </span><span class="s2">"banplayer {steamid} "</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<blockquote>
+<p>⚠️ <strong>Cambia la URL de <code>BanMessage</code>.</strong> Viene con un marcador de posición
+<code>example.com</code>. Apúntala a tu propia tienda o página de apelación.</p>
+</blockquote>
+<hr />
+<h2 id="modules"><code>Modules</code></h2>
+<p>Cada detector vive bajo <code>Modules</code>, en una de cuatro categorías:</p>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Qué cubre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CombatCheats</code></td>
+<td>Trampas durante el combate — asistencia de puntería, manipulación de cadencia de disparo y munición, automatización de consumibles.</td>
+</tr>
+<tr>
+<td><code>MiscCheats</code></td>
+<td>Automatización de cliente y herramientas del lado del cliente — auto-loot, auto-craft, spoofers, anomalías de temporización, además del filtro de conexión.</td>
+</tr>
+<tr>
+<td><code>Mod</code></td>
+<td>Comprobaciones que requieren el mod cliente complementario opcional (incluyendo la captura de ID de hardware y la detección de evasión de mods). Inerte a menos que ese mod esté desplegado — pregunta en el <a href="https://bytemart.net/discord">Discord de Bytemart</a> si lo quieres.</td>
+</tr>
+<tr>
+<td><code>Exploits</code></td>
+<td>Exploits conocidos del juego y de mods: rutas de duplicación, vectores de cierre inesperado, unlockers, abuso de monturas y estructuras, protección de administradores, y más.</td>
+</tr>
+</tbody>
+</table>
+<p>La forma es siempre la misma:</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nt">"Modules"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">  </span><span class="nt">"CombatCheats"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">    </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">    </span><span class="nt">"SubModules"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="w">      </span><span class="nt">"AutoFlak"</span><span class="p">:</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Block"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"TimesUntilDetect"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="w">      </span><span class="nt">"NoOverheat"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"Block"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"BanAfterDetections"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">      </span><span class="nt">"..."</span><span class="p">:</span><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">  </span><span class="nt">"MiscCheats"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"SubModules"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">  </span><span class="nt">"Mod"</span><span class="p">:</span><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"SubModules"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">  </span><span class="nt">"Exploits"</span><span class="p">:</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">"SubModules"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>El <code>Enabled: false</code> de una categoría desactiva <strong>todos</strong> los módulos dentro de
+ella, sea lo que digan los indicadores individuales. Tu <code>config.json</code> de
+fábrica contiene la lista completa de submódulos con valores predeterminados
+razonables — la referencia de abajo explica las claves que encontrarás en
+ellos.</p>
+<h3 id="common-submodule-keys">Claves comunes de submódulo</h3>
+<table>
+<thead>
+<tr>
+<th>Clave</th>
+<th>Tipo</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>boolean</td>
+<td>Activa o desactiva este detector específico.</td>
+</tr>
+<tr>
+<td><code>Block</code></td>
+<td>boolean</td>
+<td>Impide la acción tramposa además de reportarla. Cuando es <code>false</code>, la acción se ejecuta y solo obtienes la alerta — útil mientras generas confianza en un módulo en tu propio servidor.</td>
+</tr>
+<tr>
+<td><code>BanAfterDetections</code></td>
+<td>number</td>
+<td>Encola al jugador para un baneo después de esta cantidad de detecciones <strong>de este módulo</strong>. Ausente o <code>0</code> significa que este módulo nunca banea por sí solo.</td>
+</tr>
+<tr>
+<td><code>InstantBan</code></td>
+<td>boolean</td>
+<td>Ejecuta ese baneo de inmediato en lugar de esperar a la próxima oleada de baneos.</td>
+</tr>
+<tr>
+<td><code>OnlyAnalysis</code></td>
+<td>boolean</td>
+<td>Detecta y registra, pero no publica en tu webhook de Discord. Un modo silencioso para evaluar un módulo.</td>
+</tr>
+<tr>
+<td><code>WebhookUrl</code></td>
+<td>string</td>
+<td>Envía las alertas de este módulo a un webhook específico en lugar de <code>DefaultWebhookUrl</code>.</td>
+</tr>
+<tr>
+<td><code>Threshole</code> / <code>*Threshold</code></td>
+<td>number</td>
+<td>La sensibilidad del módulo. Más alto = se requiere más evidencia antes de activarse. La ortografía <code>Threshole</code> es intencional en las claves que la usan.</td>
+</tr>
+<tr>
+<td><code>BlockMovement</code></td>
+<td>boolean</td>
+<td>Usado por algunos módulos de unlockers: inmoviliza al infractor en lugar de solo señalarlo.</td>
+</tr>
+</tbody>
+</table>
+<p>Algunos módulos añaden claves propias — por ejemplo, una lista de nombres de
+blueprint a excluir de una comprobación, o un sub-indicador adicional para una
+variante específica del exploit. Esas se describen en <code>config_commented.json</code>
+donde no son evidentes por sí mismas.</p>
+<blockquote>
+<p>💡 <strong>Consejo de ajuste.</strong> Empieza con los valores predeterminados de
+fábrica. Si un módulo produce falsos positivos en tu configuración, prefiere
+subir su umbral o su <code>BanAfterDetections</code> antes que desactivarlo por
+completo — y activa <code>OnlyAnalysis</code> mientras lo observas.</p>
+</blockquote>
+<h3 id="el-filtro-de-conexion">El filtro de conexión</h3>
+<p>Un módulo dentro de <code>MiscCheats</code> merece mención aparte porque necesita
+configuración externa: el <strong>rastreador de sesión</strong> comprueba a un jugador que
+se conecta contra la Steam Web API y puede rechazar cuentas que parezcan
+desechables.</p>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-11-10">10</a></span>
+<span class="normal"><a href="#__codelineno-11-11">11</a></span>
+<span class="normal"><a href="#__codelineno-11-12">12</a></span>
+<span class="normal"><a href="#__codelineno-11-13">13</a></span>
+<span class="normal"><a href="#__codelineno-11-14">14</a></span>
+<span class="normal"><a href="#__codelineno-11-15">15</a></span>
+<span class="normal"><a href="#__codelineno-11-16">16</a></span>
+<span class="normal"><a href="#__codelineno-11-17">17</a></span>
+<span class="normal"><a href="#__codelineno-11-18">18</a></span>
+<span class="normal"><a href="#__codelineno-11-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="nt">"SessionTracker"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="w">  </span><span class="nt">"Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="w">  </span><span class="nt">"WebhookUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="w">  </span><span class="nt">"Checks"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="w">    </span><span class="nt">"AccountRestrictions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="w">      </span><span class="nt">"MinGameHours"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="w">      </span><span class="nt">"BlockMinGameHours"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="w">      </span><span class="nt">"LogMinGameHours"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="w">      </span><span class="nt">"MinAccountAgeDays"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="w">      </span><span class="nt">"BlockMinAccountAgeDays"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="w">      </span><span class="nt">"LogMinAccountAgeDays"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="w">    </span><span class="nt">"VacBanRestrictions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14"></a><span class="w">      </span><span class="nt">"Block"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="w">      </span><span class="nt">"RecentDaysThreshole"</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="p">,</span>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16"></a><span class="w">      </span><span class="nt">"Log"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Predeterminado</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WebhookUrl</code></td>
+<td>string</td>
+<td><code>""</code></td>
+<td>Webhook para los resultados del filtro. Recurre a <code>DefaultWebhookUrl</code>.</td>
+</tr>
+<tr>
+<td><code>MinGameHours</code></td>
+<td>number</td>
+<td><code>30</code></td>
+<td>Tiempo mínimo de juego en ARK, en horas.</td>
+</tr>
+<tr>
+<td><code>BlockMinGameHours</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>Expulsa a los jugadores por debajo de ese tiempo de juego.</td>
+</tr>
+<tr>
+<td><code>LogMinGameHours</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Reporta a los jugadores por debajo de ese tiempo de juego.</td>
+</tr>
+<tr>
+<td><code>MinAccountAgeDays</code></td>
+<td>number</td>
+<td><code>30</code></td>
+<td>Antigüedad mínima de la cuenta de Steam, en días.</td>
+</tr>
+<tr>
+<td><code>BlockMinAccountAgeDays</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>Expulsa a las cuentas más nuevas que eso.</td>
+</tr>
+<tr>
+<td><code>LogMinAccountAgeDays</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Reporta a las cuentas más nuevas que eso.</td>
+</tr>
+<tr>
+<td><code>VacBanRestrictions.RecentDaysThreshole</code></td>
+<td>number</td>
+<td><code>90</code></td>
+<td>Qué tan reciente debe ser un baneo VAC para contar.</td>
+</tr>
+<tr>
+<td><code>VacBanRestrictions.Block</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>Expulsa a los jugadores con un baneo VAC reciente.</td>
+</tr>
+<tr>
+<td><code>VacBanRestrictions.Log</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>Reporta a los jugadores con un baneo VAC reciente.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>ℹ️ <strong>Requiere <code>SteamAPIKey</code>.</strong> Sin una clave, estas comprobaciones no pueden
+ejecutarse. Ten en cuenta también que un jugador con un perfil de Steam
+<strong>privado</strong> oculta su tiempo de juego — decide deliberadamente si quieres
+activar <code>Block*</code>, ya que alejará a algunos jugadores legítimos.</p>
+</blockquote>
+<hr />
+<p><strong>Próximos pasos:</strong></p>
+<ul>
+<li><a href="../commands/">Comandos</a> — comandos de consola/RCON y de administración
+  dentro del juego.</li>
+<li><a href="../bans/">Baneos y detecciones</a> — umbrales, oleadas de baneos, baneos por
+  IP/HWID, desbaneos.</li>
+<li><a href="../../#common-configuration">Configuración común</a> — <code>LicenseKey</code>,
+  <code>Database</code>, <code>LogToFile</code>, <code>Verbose</code>.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

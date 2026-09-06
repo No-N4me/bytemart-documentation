@@ -1,0 +1,1412 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.bytemart.net/es/plugins/tribescore/discord-bot/">
+      
+      
+        <link rel="prev" href="../commands/">
+      
+      
+        <link rel="next" href="../../ssanticheat/">
+      
+      
+        
+          <link rel="alternate" href="../../../../plugins/tribescore/discord-bot/" hreflang="en">
+        
+          <link rel="alternate" href="../../../../de/plugins/tribescore/discord-bot/" hreflang="de">
+        
+          <link rel="alternate" href="../../../../fr/plugins/tribescore/discord-bot/" hreflang="fr">
+        
+          <link rel="alternate" href="./" hreflang="es">
+        
+          <link rel="alternate" href="../../../../zh/plugins/tribescore/discord-bot/" hreflang="zh">
+        
+          <link rel="alternate" href="../../../../ru/plugins/tribescore/discord-bot/" hreflang="ru">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/bytemart_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>🤖 Bot de Discord - Bytemart Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/bytemart.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="../../../../javascripts/i18n-search.js"></script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bot-de-discord" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    
+    <a
+      href="https://bytemart.net"
+      class="md-header__button md-mainsite"
+      title="Back to bytemart.net"
+      aria-label="Back to bytemart.net"
+      rel="noopener"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      <span class="md-mainsite__label">bytemart.net</span>
+    </a>
+    
+    <a href="../../../" title="Bytemart Documentation" class="md-header__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bytemart Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🤖 Bot de Discord
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../plugins/tribescore/discord-bot/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../de/plugins/tribescore/discord-bot/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fr/plugins/tribescore/discord-bot/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../zh/plugins/tribescore/discord-bot/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../ru/plugins/tribescore/discord-bot/" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Bytemart Documentation" class="md-nav__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    Bytemart Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bienvenido a Bytemart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plugins
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tribescore
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tribescore
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 Bot de Discord
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 Bot de Discord
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#funciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instalación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-configyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración (config.yml)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuración (config.yml)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-de-la-tabla-de-clasificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualización de la tabla de clasificación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-de-barra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comandos de barra
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deteccion-de-abusos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detección de abusos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ssanticheat/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ssAntiCheat
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ssAntiCheat
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/bans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baneos y detecciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dupedetector/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DupeDetector
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DupeDetector
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dupedetector/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../arkbosscooldown/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArkBossCooldown
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ArkBossCooldown
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arkbosscooldown/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#funciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instalación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-configyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración (config.yml)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuración (config.yml)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-de-la-tabla-de-clasificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualización de la tabla de clasificación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-de-barra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comandos de barra
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deteccion-de-abusos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detección de abusos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="bot-de-discord">🤖 Bot de Discord</h1>
+<p>Tribescore incluye un <strong>bot de Discord</strong> complementario que lleva la competición de
+tu servidor a Discord: una tabla de clasificación en vivo con actualización
+automática, comandos de barra para consultar cualquier tribu y un sistema automático
+de detección de abusos que señala puntuaciones sospechosas.</p>
+<p>El bot se conecta <strong>directamente a la misma base de datos MySQL/MariaDB</strong> que utiliza
+el plugin. Solo <em>lee</em> las tablas de puntuación del plugin — nunca modifica tus
+puntuaciones — por lo que es seguro ejecutarlo junto a un servidor en vivo.</p>
+<h2 id="funciones">Funciones</h2>
+<ul>
+<li><strong>Tabla de clasificación en vivo</strong> — publica y actualiza automáticamente las
+  mejores tribus en un canal de tu elección, con flechas de movimiento ▲/▼ entre
+  periodos de puntuación.</li>
+<li><strong>Renderizado como imagen o embed</strong> — muestra la tabla como un embed clásico de
+  Discord, o como un PNG pulido renderizado a partir de uno de los siete diseños
+  integrados (<code>podium</code>, <code>spotlight</code>, <code>cards</code>, <code>bars</code>, <code>terminal</code>, <code>ark</code>, <code>dark</code>). Las
+  plantillas son HTML sencillo que puedes reestilizar y personalizar con la marca de
+  tu servidor.</li>
+<li><strong>Comandos de barra</strong> — <code>/tribepoints</code> y <code>/getrank</code> permiten a los jugadores
+  consultar la puntuación y el rango de cualquier tribu. Los nombres de los comandos y
+  los mensajes son configurables.</li>
+<li><strong>Detección de abusos</strong> — tres detectores independientes publican alertas cuando la
+  puntuación parece sospechosa, cada una con un botón <em>"Ignorar esta alerta"</em> para
+  silenciar los falsos positivos.</li>
+<li><strong>Ejecutable independiente</strong> — distribuido como un único <code>.exe</code> de Windows
+  autocontenido. No se necesita navegador ni instalaciones adicionales, ni siquiera
+  para el renderizado de imágenes.</li>
+</ul>
+<h2 id="requisitos">Requisitos</h2>
+<ul>
+<li>El plugin Tribescore instalado y escribiendo en una base de datos MySQL/MariaDB
+  (consulta <a href="../configuration/">Configuración</a> y
+  <a href="../../#database">Configuración común</a>).</li>
+<li>Una aplicación de Discord y un token de bot, creados en el
+  <a href="https://discord.com/developers/applications">Portal de desarrolladores de Discord</a>.</li>
+<li>Una máquina Windows para ejecutar el bot — puede ejecutarse en cualquier lugar que
+  pueda acceder a la base de datos.</li>
+</ul>
+<h2 id="instalacion">Instalación</h2>
+<ol>
+<li>Descarga el bot desde tu <strong>Panel de Bytemart</strong> y extráelo.</li>
+<li>Abre <code>config.yml</code> y configúralo (ver más abajo).</li>
+<li>Establece tu token de bot y la contraseña de la base de datos — ya sea
+   directamente en <code>config.yml</code>, o mediante las variables de entorno
+   <code>LEADERBOARD_BOT_TOKEN</code> y <code>MYSQL_PASSWORD</code> (recomendado, para que los secretos se
+   mantengan fuera del archivo de configuración).</li>
+<li>Invita al bot a tu servidor, otorgándole permiso para enviar mensajes, embeds y
+   archivos adjuntos en los canales de la tabla de clasificación y de alertas.</li>
+<li>Ejecuta el ejecutable. En el primer arranque registra sus comandos de barra y
+   publica la tabla de clasificación.</li>
+</ol>
+<blockquote>
+<p>💡 Si renombras un comando de barra en <code>config.yml</code>, es posible que Discord necesite
+que se expulse y se vuelva a invitar al bot antes de que el cambio surta efecto.</p>
+</blockquote>
+<h2 id="configuracion-configyml">Configuración (<code>config.yml</code>)</h2>
+<p>El bot se configura por completo a través de <code>config.yml</code>. Ajustes principales:</p>
+<table>
+<thead>
+<tr>
+<th>Ajuste</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bot-token</code></td>
+<td>Tu token de bot de Discord. Déjalo en blanco y establece <code>LEADERBOARD_BOT_TOKEN</code> en su lugar.</td>
+</tr>
+<tr>
+<td><code>period-start</code></td>
+<td>Expresión cron para cuándo comienza un nuevo periodo de puntuación (la tabla toma una instantánea del movimiento en ese momento). Consulta <a href="https://crontab.guru/">crontab.guru</a>.</td>
+</tr>
+<tr>
+<td><code>timezone</code></td>
+<td>Zona horaria para la programación y las comparaciones de transacciones — debe coincidir con la zona horaria de tu base de datos.</td>
+</tr>
+<tr>
+<td><code>refresh-cooldown</code></td>
+<td>Segundos entre actualizaciones de la tabla de clasificación dentro de un periodo.</td>
+</tr>
+<tr>
+<td><code>leaderboard-channel</code></td>
+<td>El ID del canal donde se publica la tabla de clasificación.</td>
+</tr>
+<tr>
+<td><code>keep-leaderboard-history</code></td>
+<td>Cuando es <code>true</code>, publica un mensaje de tabla de clasificación nuevo cada periodo en lugar de editar el existente.</td>
+</tr>
+<tr>
+<td><code>leaderboard-render-mode</code></td>
+<td><code>embed</code> (embed de Discord) o <code>image</code> (PNG renderizado).</td>
+</tr>
+<tr>
+<td><code>leaderboard-image</code></td>
+<td>Opciones del modo imagen: <code>template</code>, <code>title</code>, <code>lines</code>, <code>width</code>, <code>scale</code>.</td>
+</tr>
+<tr>
+<td><code>mysql</code></td>
+<td>Conexión a la base de datos: <code>host</code>, <code>port</code>, <code>user</code>, <code>password</code>, <code>database</code>, <code>leaderboard-table</code>, <code>transactions-table</code>, <code>timezone</code>.</td>
+</tr>
+<tr>
+<td><code>commands</code></td>
+<td>Nombres de comandos, descripciones y mensajes de respuesta.</td>
+</tr>
+<tr>
+<td><code>abuse-detection</code></td>
+<td>Activa y ajusta los módulos de detección de abusos.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Las tablas <code>leaderboard-table</code> y <code>transactions-table</code> deben coincidir con las
+tablas del plugin — por defecto <code>ts_leaderboard</code> y <code>ts_transactions</code>. El bot lee
+estas tablas y nunca escribe en ellas.</p>
+</blockquote>
+<h3 id="visualizacion-de-la-tabla-de-clasificacion">Visualización de la tabla de clasificación</h3>
+<p>Elige cómo se renderiza la tabla con <code>leaderboard-render-mode</code>:</p>
+<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">leaderboard-render-mode</span><span class="p">:</span><span class="w"> </span><span class="s">"image"</span><span class="w">   </span><span class="c1"># o "embed"</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">leaderboard-image</span><span class="p">:</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="nt">template</span><span class="p">:</span><span class="w"> </span><span class="s">"spotlight"</span><span class="w">   </span><span class="c1"># podium | spotlight | cards | bars | terminal | ark | dark</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">"Tribes</span><span class="nv"> </span><span class="s">Leaderboard"</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="nt">lines</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15</span><span class="w">               </span><span class="c1"># número de tribus mostradas</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">  </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">820</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="nt">scale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w">                </span><span class="c1"># 2 = salida nítida / retina</span>
+</span></code></pre></div></td></tr></table></div>
+<p>En el modo <code>embed</code>, la tabla es un embed de texto construido a partir de
+<code>leaderboard_embed.json</code>. En el modo <code>image</code> se renderiza a partir de una plantilla
+HTML ubicada en <code>templates/leaderboard/&lt;name&gt;/</code>. Si el renderizado de imágenes llegara
+a fallar, el bot recurre automáticamente al embed, de modo que la tabla de
+clasificación nunca puede quedar fuera de línea.</p>
+<h3 id="comandos-de-barra">Comandos de barra</h3>
+<table>
+<thead>
+<tr>
+<th>Comando (predeterminado)</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/tribepoints &lt;tribe&gt;</code></td>
+<td>Muestra los puntos actuales de una tribu.</td>
+</tr>
+<tr>
+<td><code>/getrank &lt;tribe&gt;</code></td>
+<td>Muestra el rango y los puntos de una tribu.</td>
+</tr>
+</tbody>
+</table>
+<p>Tanto los nombres de los comandos como sus mensajes de respuesta son configurables
+bajo <code>commands</code> en <code>config.yml</code>, usando los marcadores <code>{tribe}</code>, <code>{points}</code> y
+<code>{rank}</code>.</p>
+<h3 id="deteccion-de-abusos">Detección de abusos</h3>
+<p>Cuando <code>abuse-detection.enabled</code> es <code>true</code>, el bot escanea periódicamente las mejores
+tribus y publica una alerta en el <code>channel-id</code> configurado cuando se activa un módulo.
+Cada alerta incluye un botón <strong>"Ignorar esta alerta"</strong> que suprime futuras
+repeticiones para ese par de tribus.</p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Detecta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rapid-increase</code></td>
+<td>Una tribu que gana una cantidad inusualmente grande de puntos dentro de un mismo periodo de puntuación.</td>
+</tr>
+<tr>
+<td><code>massive-transaction</code></td>
+<td>Una única transferencia de puntos por encima de un umbral de una tribu a otra.</td>
+</tr>
+<tr>
+<td><code>prefered-source</code></td>
+<td>Una tribu que recibe una gran parte de sus puntos de una sola tribu de origen (con una comprobación opcional de reciprocidad "mirror").</td>
+</tr>
+</tbody>
+</table>
+<p>Cada módulo tiene su propio <code>cooldown</code>, umbrales y <code>title</code> / <code>message</code> de alerta — los
+marcadores disponibles están documentados en línea dentro de <code>config.yml</code>.</p>
+<blockquote>
+<p>ℹ️ El bot crea una tabla propia, <code>ts_ignored_alerts</code>, para recordar qué alertas has
+descartado. Esta es la única tabla en la que escribe; los datos de tu puntuación
+nunca se modifican.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

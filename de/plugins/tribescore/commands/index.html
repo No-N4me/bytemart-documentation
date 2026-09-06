@@ -1,0 +1,1459 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.bytemart.net/de/plugins/tribescore/commands/">
+      
+      
+        <link rel="prev" href="../configuration/">
+      
+      
+        <link rel="next" href="../discord-bot/">
+      
+      
+        
+          <link rel="alternate" href="../../../../plugins/tribescore/commands/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="de">
+        
+          <link rel="alternate" href="../../../../fr/plugins/tribescore/commands/" hreflang="fr">
+        
+          <link rel="alternate" href="../../../../es/plugins/tribescore/commands/" hreflang="es">
+        
+          <link rel="alternate" href="../../../../zh/plugins/tribescore/commands/" hreflang="zh">
+        
+          <link rel="alternate" href="../../../../ru/plugins/tribescore/commands/" hreflang="ru">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/bytemart_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Befehle - Bytemart Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/bytemart.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="../../../../javascripts/i18n-search.js"></script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#befehle" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    
+    <a
+      href="https://bytemart.net"
+      class="md-header__button md-mainsite"
+      title="Back to bytemart.net"
+      aria-label="Back to bytemart.net"
+      rel="noopener"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      <span class="md-mainsite__label">bytemart.net</span>
+    </a>
+    
+    <a href="../../../" title="Bytemart Documentation" class="md-header__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bytemart Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Befehle
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../plugins/tribescore/commands/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../fr/plugins/tribescore/commands/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../es/plugins/tribescore/commands/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../zh/plugins/tribescore/commands/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../ru/plugins/tribescore/commands/" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Bytemart Documentation" class="md-nav__button md-logo" aria-label="Bytemart Documentation" data-md-component="logo">
+      
+  <img src="../../../../assets/bytemart_logo.png" alt="logo">
+
+    </a>
+    Bytemart Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Willkommen bei Bytemart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plugins
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tribescore
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tribescore
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konfiguration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Befehle
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Befehle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#konsolen-rcon-befehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konsolen- / RCON-Befehle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Konsolen- / RCON-Befehle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tsgive-tstake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ts.give / ts.take
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ts.boost
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsaudit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ts.audit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsestimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ts.estimate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsaddstructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ts.addstructure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatbefehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chatbefehle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#berechtigungsknoten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Berechtigungsknoten
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../discord-bot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 Discord-Bot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ssanticheat/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ssAntiCheat
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ssAntiCheat
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konfiguration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Befehle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ssanticheat/bans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bans &amp; Erkennungen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dupedetector/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DupeDetector
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DupeDetector
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dupedetector/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konfiguration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../arkbosscooldown/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArkBossCooldown
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ArkBossCooldown
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arkbosscooldown/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konfiguration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#konsolen-rcon-befehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konsolen- / RCON-Befehle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Konsolen- / RCON-Befehle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tsgive-tstake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ts.give / ts.take
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ts.boost
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsaudit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ts.audit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsestimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ts.estimate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsaddstructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ts.addstructure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatbefehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chatbefehle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#berechtigungsknoten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Berechtigungsknoten
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="befehle">Befehle</h1>
+<p>Tribescore hat zwei Arten von Befehlen: <strong>Admin</strong>-Befehle, die über die Serverkonsole
+oder RCON ausgeführt werden, und <strong>Spieler</strong>-Chatbefehle, die im Spiel eingegeben werden.
+Admin-Befehle sind mit <code>ts.</code> vorangestellt und nur über die Konsole/RCON erreichbar, sodass
+kein separates Berechtigungssystem sie absichert — der Zugriff ergibt sich aus dem Kanal.
+Chatbefehle sind konfigurierbar und optional (siehe <a href="../configuration/#chatcommands"><code>ChatCommands</code></a>).</p>
+<h2 id="konsolen-rcon-befehle">Konsolen- / RCON-Befehle</h2>
+<table>
+<thead>
+<tr>
+<th>Befehl</th>
+<th>Kanäle</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ts.help [page]</code></td>
+<td>Konsole, RCON</td>
+<td>Zeigt das paginierte Tribescore-Hilfemenü.</td>
+</tr>
+<tr>
+<td><code>ts.give &lt;tribe-id&gt; &lt;score&gt;</code></td>
+<td>Konsole</td>
+<td>Fügt einem Stamm Tribescore hinzu. Protokolliert eine <code>system</code>-Transaktion.</td>
+</tr>
+<tr>
+<td><code>ts.take &lt;tribe-id&gt; &lt;score&gt;</code></td>
+<td>Konsole</td>
+<td>Entfernt Tribescore von einem Stamm. Protokolliert eine <code>system</code>-Transaktion.</td>
+</tr>
+<tr>
+<td><code>ts.boost &lt;tribe-id&gt; &lt;type&gt; &lt;value&gt; &lt;duration&gt;</code></td>
+<td>Konsole, RCON</td>
+<td>Gewährt einem Stamm einen zeitlich begrenzten Punkte-Boost.</td>
+</tr>
+<tr>
+<td><code>ts.boost &lt;tribe-id&gt; clear</code></td>
+<td>Konsole, RCON</td>
+<td>Löscht den aktiven zeitlich begrenzten Boost eines Stammes.</td>
+</tr>
+<tr>
+<td><code>ts.audit &lt;tribe-id&gt; [options]</code></td>
+<td>Konsole</td>
+<td>Prüft die Punktetransaktionen eines Stammes und lädt einen Bericht hoch.</td>
+</tr>
+<tr>
+<td><code>ts.estimate &lt;recipient-tribe-id&gt; [options]</code></td>
+<td>Konsole</td>
+<td>Schätzt den Tribescore der Strukturen um dich herum.</td>
+</tr>
+<tr>
+<td><code>ts.addstructure</code></td>
+<td>Konsole</td>
+<td>Hängt die Struktur, die du gerade ansiehst, an <code>structures.json</code> an.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tsgive-tstake"><code>ts.give</code> / <code>ts.take</code></h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>ts.give<span class="w"> </span><span class="m">1234567890</span><span class="w"> </span><span class="m">500</span><span class="w">      </span><span class="c1"># 500 Punkte zu Stamm 1234567890 hinzufügen</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>ts.take<span class="w"> </span><span class="m">1234567890</span><span class="w"> </span><span class="m">250</span><span class="w">      </span><span class="c1"># 250 Punkte von Stamm 1234567890 entfernen</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Beide schreiben einen Eintrag vom Typ <code>system</code> in die Transaktionshistorie, sodass
+manuelle Anpassungen nachvollziehbar sind.</p>
+<h3 id="tsboost"><code>ts.boost</code></h3>
+<p>Gewährt einen temporären Punkte-Multiplikator, der sich für eine festgelegte Dauer in die
+Modifikator-Pipeline einreiht.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>ts.boost &lt;tribe-id&gt; &lt;type&gt; &lt;value&gt; &lt;duration&gt;
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>ts.boost &lt;tribe-id&gt; clear
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;tribe-id&gt;</code></td>
+<td>Die ID des Zielstammes.</td>
+</tr>
+<tr>
+<td><code>&lt;type&gt;</code></td>
+<td>Worauf der Boost angewendet wird: <code>structures</code>, <code>dinos</code>, <code>players</code>, <code>all</code> oder eine mit <code>+</code> verbundene Kombination (z. B. <code>structures+dinos</code>).</td>
+</tr>
+<tr>
+<td><code>&lt;value&gt;</code></td>
+<td>Der Multiplikator (z. B. <code>1.5</code> für +50 %).</td>
+</tr>
+<tr>
+<td><code>&lt;duration&gt;</code></td>
+<td>Lebensdauer des Boosts, in <strong>Sekunden</strong>.</td>
+</tr>
+</tbody>
+</table>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a>ts.boost<span class="w"> </span><span class="m">1234567890</span><span class="w"> </span>structures+dinos<span class="w"> </span><span class="m">1</span>.5<span class="w"> </span><span class="m">3600</span><span class="w">   </span><span class="c1"># +50% auf Strukturen &amp; Dinos für 1 Std.</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>ts.boost<span class="w"> </span><span class="m">1234567890</span><span class="w"> </span>all<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">600</span><span class="w">                   </span><span class="c1"># alle Punkte für 10 Minuten verdoppeln</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>ts.boost<span class="w"> </span><span class="m">1234567890</span><span class="w"> </span>clear<span class="w">                        </span><span class="c1"># den aktiven Boost entfernen</span>
+</span></code></pre></div></td></tr></table></div>
+<blockquote>
+<p>ℹ️ <strong>Auch für andere Plugins verfügbar.</strong> Zeitlich begrenzte Boosts sind Teil der
+öffentlichen API von Tribescore (<code>SetTimedBoost</code> / <code>ClearTimedBoost</code> / <code>GetTimedBoost</code>),
+die das begleitende <strong>Koth</strong>-Plugin nutzt, um Event-Gewinner automatisch zu belohnen.</p>
+</blockquote>
+<h3 id="tsaudit"><code>ts.audit</code></h3>
+<p>Erstellt einen asynchronen Bericht über die Transaktionen eines Stammes (von wem sie
+Punkte verdient haben, wer ihnen Punkte gestohlen hat, Aufschlüsselungen pro Cluster) und
+lädt ihn hoch, wobei eine URL zurückgegeben wird.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>ts.audit &lt;tribe-id&gt; [clusters_amount=X] [givers_amount=X] [stealers_amount=X] [start_date=YYYY-MM-DD] [end_date=YYYY-MM-DD]
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>clusters_amount=X</code></td>
+<td>Anzahl der einzubeziehenden Top-Cluster.</td>
+</tr>
+<tr>
+<td><code>givers_amount=X</code></td>
+<td>Anzahl der Top-Stämme, von denen dieser Stamm Punkte verdient hat.</td>
+</tr>
+<tr>
+<td><code>stealers_amount=X</code></td>
+<td>Anzahl der Top-Stämme, die diesem Stamm Punkte weggenommen haben.</td>
+</tr>
+<tr>
+<td><code>start_date</code> / <code>end_date</code></td>
+<td>Beschränkt die Prüfung auf einen Datumsbereich (<code>YYYY-MM-DD</code>).</td>
+</tr>
+</tbody>
+</table>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>ts.audit<span class="w"> </span><span class="m">1234567890</span><span class="w"> </span><span class="nv">givers_amount</span><span class="o">=</span><span class="m">10</span><span class="w"> </span><span class="nv">start_date</span><span class="o">=</span><span class="m">2026</span>-07-01<span class="w"> </span><span class="nv">end_date</span><span class="o">=</span><span class="m">2026</span>-07-12
+</span></code></pre></div></td></tr></table></div>
+<h3 id="tsestimate"><code>ts.estimate</code></h3>
+<p>Scannt die Strukturen in Reichweite deines Charakters (mittels eines Octree-Scans, über
+mehrere Ticks aufgeteilt) und schätzt, wie viele Punkte sie einem bestimmten Stamm wert
+wären. Nützlich zum Feinabstimmen der Werte in <code>structures.json</code>.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>ts.estimate &lt;recipient-tribe-id&gt; [modifiers=on|off] [range=X]
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>modifiers=on\|off</code></td>
+<td>Ob die Modifikator-Pipeline auf die Schätzung angewendet wird.</td>
+</tr>
+<tr>
+<td><code>range=X</code></td>
+<td>Scan-Radius um deinen Charakter.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tsaddstructure"><code>ts.addstructure</code></h3>
+<p>Führt einen Line-Trace auf die Struktur aus, die du gerade ansiehst, hängt sie als
+benutzerdefinierten Eintrag an <code>structures.json</code> an und lädt die Datei per Hot-Reload neu
+— eine schnelle Möglichkeit, Werte pro Blueprint hinzuzufügen, ohne Blueprint-Pfade von
+Hand zu suchen.</p>
+<hr />
+<h2 id="chatbefehle">Chatbefehle</h2>
+<p>Diese werden im In-Game-Chat eingegeben. Die Namen sind konfigurierbar — die folgenden
+Standardwerte stammen aus der ausgelieferten
+<a href="../configuration/#chatcommands"><code>ChatCommands</code></a>-Konfiguration, und jeder Befehl kann
+vollständig deaktiviert werden.</p>
+<table>
+<thead>
+<tr>
+<th>Befehl (Standard)</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/leaderboard</code></td>
+<td>Zeigt die besten Stämme nach Punktzahl.</td>
+</tr>
+<tr>
+<td><code>/triberank</code></td>
+<td>Zeigt den Rang und die Punktzahl deines eigenen Stammes.</td>
+</tr>
+<tr>
+<td><code>/holograms</code></td>
+<td>Schaltet die schwebenden <code>+/- points</code>-Hologramme für dich selbst ein oder aus.</td>
+</tr>
+</tbody>
+</table>
+<p>Die Formulierung, Farben, Größe, Anzeigedauer auf dem Bildschirm und (für die Bestenliste)
+die Anzahl der Zeilen sowie die Farben pro Rang werden allesamt in
+<a href="../configuration/#chatcommands"><code>ChatCommands</code></a> festgelegt.</p>
+<hr />
+<h2 id="berechtigungsknoten">Berechtigungsknoten</h2>
+<p>Tribescore verwendet keine Berechtigungen, um seine Befehle abzusichern, aber die Funktion
+<a href="../configuration/#modifierspermissionmodifiers"><code>PermissionModifiers</code></a> liest
+Berechtigungsknoten, um die Punktzahl eines Stammes zu erhöhen oder zu senken. Vergib sie
+über das <a href="https://github.com/ServersHub/ServerAPI">Permissions</a>-Plugin. Mit der
+Standardkonfiguration:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>Permissions.AddGroup<span class="w"> </span>VIP
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a>Permissions.Grant<span class="w"> </span>VIP<span class="w"> </span>ts.boost.15
+</span></code></pre></div></td></tr></table></div>
+<p>Hier würde ein Mitglied der Gruppe <code>VIP</code> seinem Stamm einen <strong>1.15×</strong>-Punktemultiplikator
+verleihen, gemäß dem Eintrag <code>ts.boost.15</code> in <code>PermissionModifiers.Modifiers</code>. Die
+Knotennamen sind frei wählbar — sie müssen lediglich mit dem übereinstimmen, was du
+konfigurierst.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

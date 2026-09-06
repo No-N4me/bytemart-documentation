@@ -1,0 +1,435 @@
+/*
+ * Bytemart theme for Material for MkDocs.
+ *
+ * Layered on top of Material's `slate` scheme to match bytemart.net: a fixed
+ * gradient body, glass surfaces, and a blue accent. Section 2 sets
+ * `--md-default-bg-color` to transparent so the gradient shows through, which is
+ * why several Material components below need an explicit opaque background.
+ */
+
+:root {
+  /* =========================================
+     1. COLORS
+     ========================================= */
+
+  /* Primary (blue shades) */
+  --md-primary-fg-color:        #64b5f6;
+  --md-primary-fg-color--light: #90caf9;
+  --md-primary-fg-color--dark:  #1e88e5;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #ffffff;
+
+  /* Accent. Material uses this for link/icon hover states; the matching
+     --md-accent-fg-color declaration lives in section 5, alongside the other
+     copy-button variables. */
+  --md-accent-fg-color--transparent: rgba(100, 181, 246, 0.1);
+  --md-accent-bg-color:         #ffffff;
+  --md-accent-bg-color--light:  #ffffff;
+
+  /* Typography */
+  --md-text-font:               "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+}
+
+/* Base override for MkDocs Default and Slate (Dark) schemes */
+[data-md-color-scheme="slate"], [data-md-color-scheme="default"] {
+  /* Structural Defaults */
+  --md-default-bg-color:        transparent; /* Important for global gradient body to show through */
+  --md-default-bg-color--light: rgba(255, 255, 255, 0.05);
+  --md-default-bg-color--lighter: rgba(255, 255, 255, 0.1);
+
+  /* Text defaults */
+  --md-default-fg-color:        #f5f5f5;
+  --md-default-fg-color--light: #b0bec5;
+  --md-default-fg-color--lighter: rgba(176, 190, 197, 0.7);
+
+  --md-typeset-color:           #f5f5f5;
+  --md-typeset-a-color:         #64b5f6;
+
+  /* Code Block Colors */
+  --md-code-bg-color:           rgba(255, 255, 255, 0.05);
+  --md-code-fg-color:           #f5f5f5;
+
+  /* Card shadow at rest, and the lifted blue-glow shadow on hover. */
+  --md-shadow-z1:               0 10px 30px rgba(0, 0, 0, 0.25);
+  --md-shadow-z2:               0 15px 35px rgba(0, 0, 0, 0.2), 0 0 15px rgba(144, 202, 249, 0.3);
+}
+
+/* =========================================
+   2. BODY & GLOBAL STRUCTURE
+   ========================================= */
+
+body {
+  background: linear-gradient(125deg, rgba(19, 19, 19, 0.95) 0%, rgba(19, 19, 19, 0.8) 50%, rgba(32, 20, 50, 0.85) 100%);
+  background-attachment: fixed;
+  background-color: #131313;
+  color: var(--md-default-fg-color);
+  background-size: cover;
+}
+
+/* Remove default background colors from structural tags so body gradient passes through */
+.md-header, .md-tabs, .md-main__inner {
+  background-color: transparent !important;
+}
+
+/* Provide the transparent glass aesthetic on the top navigation bar header */
+.md-header {
+  background: rgba(19, 19, 19, 0.8) !important;
+  backdrop-filter: blur(10px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* =========================================
+   3. CARDS & GLASSMORPHISM
+   ========================================= */
+
+/* Admonitions and collapsible details get the glass-card treatment. */
+.md-typeset .admonition,
+.md-typeset details {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: var(--md-shadow-z1);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* Lift on hover. */
+.md-typeset .admonition:hover,
+.md-typeset details:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  box-shadow: var(--md-shadow-z2);
+}
+
+.md-nav__link--active {
+  color: #90caf9;
+  font-weight: 600;
+}
+
+/* Headings are bold across the board. */
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {
+  font-weight: bold;
+}
+
+/* =========================================
+   4. CUSTOM SCROLLBAR
+   ========================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(30, 30, 42, 0.4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(142, 142, 160, 0.5);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(142, 142, 160, 0.8);
+}
+
+/* =========================================
+   5. COPY BUTTON & TOAST (VARIABLE OVERRIDES)
+   ========================================= */
+
+/* Material drives the code copy button entirely through these variables. */
+:root, .md-typeset {
+  /* Copy Button Container background (rest) */
+  --md-code-bg-color--lighter: rgba(255, 255, 255, 0.05);
+
+  /* Copy Button Container background (when hovered) */
+  --md-code-bg-color--light: rgba(255, 255, 255, 0.08);
+
+  /* Copy Button Icon Color (rest) */
+  --md-default-fg-color--lightest: #b0bec5;
+
+  /* Copy Button Icon Color (hovered - Bytemart Blue) */
+  --md-accent-fg-color: #64b5f6;
+
+  /* Toast Snackbar specific root variables */
+  --md-toast-bg-color: rgba(19, 19, 19, 0.95);
+  --md-toast-fg-color: #f5f5f5;
+}
+
+/* Borders and radii are not variable-driven, so the container is styled directly. */
+.md-typeset .md-code__nav {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+  padding: 4px !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Force the toast/dialog to inherit the glass aesthetic */
+.md-toast, .md-dialog {
+  background-color: rgba(30, 30, 42, 0.98) !important;
+  color: #f5f5f5 !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(139, 92, 246, 0.6) !important;
+  border-radius: 12px !important;
+}
+
+.md-toast__message, .md-dialog__inner {
+  color: #f5f5f5 !important;
+}
+
+/* =========================================
+   6. TABLE STYLES
+   ========================================= */
+
+/* Tables need an explicit background: --md-default-bg-color is transparent. */
+.md-typeset table {
+  background-color: rgba(30, 30, 42, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.md-typeset table th {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f5f5f5;
+}
+
+.md-typeset table td, .md-typeset table th {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* =========================================
+   7. SEARCH COMPONENT
+   ========================================= */
+
+/* Same for the search overlay, which would otherwise read straight through. */
+.md-search-result, .md-search-result__scrollwrap, .md-search-result__meta {
+  background-color: rgba(30, 30, 42, 0.98) !important;
+  color: #f5f5f5 !important;
+}
+
+.md-search-result__item {
+  background-color: transparent !important;
+}
+
+.md-search-result__article {
+  background-color: transparent !important;
+}
+
+.md-search-result__article:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* =========================================
+   8. "BACK TO MAIN SITE" HEADER BUTTON
+   ========================================= */
+
+/* Compact glass pill in the header that links back to bytemart.net.
+   Markup lives in overrides/partials/header.html (.md-mainsite). */
+.md-header__button.md-mainsite {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: auto 0.5rem auto 0; /* first item on the left, gap before the logo */
+  padding: 0.25rem 0.55rem;
+  height: 1.6rem;
+  border-radius: 50px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  color: #fff;
+  opacity: 1; /* override the default dimmed .md-header__button */
+  border: 1px solid rgba(100, 181, 246, 0.35);
+  background: rgba(100, 181, 246, 0.15);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.md-header__button.md-mainsite:hover {
+  background: rgba(100, 181, 246, 0.28);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 12px rgba(144, 202, 249, 0.4);
+  transform: translateY(-1px);
+}
+
+/* The arrow icon inside the pill */
+.md-header__button.md-mainsite svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: 0;
+  fill: currentColor;
+}
+
+/* Collapse to an icon-only button on narrow screens to save header space */
+@media screen and (max-width: 44.9375em) {
+  .md-mainsite__label {
+    display: none;
+  }
+  .md-header__button.md-mainsite {
+    padding: 0.25rem;
+  }
+}
+
+/* =========================================
+   9. CODE LINE ANCHOR HIGHLIGHT
+   ========================================= */
+
+/* When a code line is targeted via its anchor (e.g. #__codelineno-0-11),
+   highlight the whole line. The URL fragment matches the empty
+   <a id="__codelineno-N-M">, so we light up its wrapping line span
+   (<span id="__span-N-M">) using :has(). Mirrors Material's own hl_lines
+   full-width bleed, but with a clearly visible Bytemart-blue tint. */
+.md-typeset .highlight [id^="__span"]:has(> a[id^="__codelineno"]:target) {
+  display: block;
+  margin: 0 -1.1764705882em;
+  padding: 0 1.1764705882em;
+  background-color: rgba(100, 181, 246, 0.16);
+  box-shadow: 3px 0 0 0 var(--md-primary-fg-color) inset;
+}
+
+/* =========================================
+   10. LANGUAGE SELECTOR (i18n switcher)
+   ========================================= */
+
+/* The dropdown panel. The theme sets --md-default-bg-color to transparent so
+   the page gradient shows through the body, but Material reuses that variable
+   for this popup, leaving it see-through and unreadable over content. Give it
+   the same opaque glass treatment as the search results and cards. */
+.md-select__inner {
+  /* Right-align under the button so the panel opens inward and never spills
+     off the right edge of the viewport (the switcher sits near the header end).
+     Material positions this panel centered on the button via `left: 50%` plus a
+     `transform: translateX(-50%)`. We swap to right-alignment, so we must also
+     drop the -50% X translate (keeping only the vertical reveal slide) or the
+     panel ends up shifted left by half its width. !important beats Material's
+     higher-specificity rules. */
+  left: auto !important;
+  right: 0 !important;
+  transform: translateY(0.3rem) !important;
+  background: rgba(30, 30, 42, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  box-shadow: var(--md-shadow-z1);
+  margin-top: 0.2rem;
+  overflow: hidden;
+}
+
+/* Revealed state: slide up to rest, still without any horizontal translate.
+   Also lift Material's 10rem max-height cap so all six languages show without a
+   scrollbar (the compact rows below fit comfortably). */
+.md-select:focus-within .md-select__inner,
+.md-select:hover .md-select__inner {
+  transform: translateY(0) !important;
+  max-height: 80vh !important;
+}
+
+/* Material draws a little caret above the panel tinted with the (now
+   transparent) default bg; hide it for a clean floating panel. */
+.md-select__inner::after {
+  display: none;
+}
+
+.md-select__list {
+  padding: 0.25rem;
+}
+
+/* Each language row: flag chip + label, full width, rounded hover. */
+.md-select__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.62rem;
+  border-radius: 8px;
+  color: var(--md-default-fg-color);
+  opacity: 1;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.md-select__link:hover,
+.md-select__link:focus {
+  background: rgba(100, 181, 246, 0.18);
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Flag chip, keyed off the hreflang the switcher emits per language.
+   Files live in docs/assets/flags/; the path is relative to this
+   stylesheet (site/stylesheets/ -> site/assets/flags/). */
+.md-select__link::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.9rem;
+  height: 0.6rem;
+  border-radius: 2px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.md-select__link[hreflang="en"]::before { background-image: url("../assets/flags/en.svg"); }
+.md-select__link[hreflang="de"]::before { background-image: url("../assets/flags/de.svg"); }
+.md-select__link[hreflang="fr"]::before { background-image: url("../assets/flags/fr.svg"); }
+.md-select__link[hreflang="es"]::before { background-image: url("../assets/flags/es.svg"); }
+.md-select__link[hreflang="zh"]::before { background-image: url("../assets/flags/zh.svg"); }
+.md-select__link[hreflang="ru"]::before { background-image: url("../assets/flags/ru.svg"); }
+
+/* Active language: highlight the row matching the current page's <html lang>
+   (accent colour + subtle tint) and add a trailing checkmark, so the current
+   selection is obvious once the menu is open. `|=` also matches region codes
+   like "de-AT". */
+html[lang|="en"] .md-select__link[hreflang="en"],
+html[lang|="de"] .md-select__link[hreflang="de"],
+html[lang|="fr"] .md-select__link[hreflang="fr"],
+html[lang|="es"] .md-select__link[hreflang="es"],
+html[lang|="zh"] .md-select__link[hreflang="zh"],
+html[lang|="ru"] .md-select__link[hreflang="ru"] {
+  color: #90caf9;
+  font-weight: 600;
+  background: rgba(100, 181, 246, 0.14);
+}
+
+html[lang|="en"] .md-select__link[hreflang="en"]::after,
+html[lang|="de"] .md-select__link[hreflang="de"]::after,
+html[lang|="fr"] .md-select__link[hreflang="fr"]::after,
+html[lang|="es"] .md-select__link[hreflang="es"]::after,
+html[lang|="zh"] .md-select__link[hreflang="zh"]::after,
+html[lang|="ru"] .md-select__link[hreflang="ru"]::after {
+  content: "✓";
+  margin-left: auto;
+  padding-left: 0.6rem;
+  color: #90caf9;
+  font-weight: 700;
+}
+
+/* At-a-glance: show the current language's flag next to the header globe icon
+   so the active language is visible without opening the menu. */
+.md-select > .md-header__button.md-icon {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+}
+
+.md-select > .md-header__button.md-icon::after {
+  content: "";
+  width: 0.9rem;
+  height: 0.6rem;
+  margin-left: 0.2rem;
+  border-radius: 2px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22);
+}
+
+html[lang|="en"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/en.svg"); }
+html[lang|="de"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/de.svg"); }
+html[lang|="fr"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/fr.svg"); }
+html[lang|="es"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/es.svg"); }
+html[lang|="zh"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/zh.svg"); }
+html[lang|="ru"] .md-select > .md-header__button.md-icon::after { background-image: url("../assets/flags/ru.svg"); }

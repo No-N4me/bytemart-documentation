@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://docs.bytemart.net/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/arkbosscooldown/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/arkbosscooldown/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/dupedetector/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/dupedetector/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/ssanticheat/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/ssanticheat/bans/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/bans/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/ssanticheat/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/ssanticheat/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/tribescore/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/tribescore/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/tribescore/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/plugins/tribescore/discord-bot/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/discord-bot/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/arkbosscooldown/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/arkbosscooldown/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/dupedetector/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/dupedetector/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/ssanticheat/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/ssanticheat/bans/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/bans/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/ssanticheat/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/ssanticheat/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/tribescore/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/tribescore/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/tribescore/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/de/plugins/tribescore/discord-bot/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/discord-bot/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/arkbosscooldown/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/arkbosscooldown/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/dupedetector/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/dupedetector/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/ssanticheat/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/ssanticheat/bans/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/bans/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/ssanticheat/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/ssanticheat/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/tribescore/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/tribescore/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/tribescore/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/fr/plugins/tribescore/discord-bot/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/discord-bot/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/arkbosscooldown/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/arkbosscooldown/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/dupedetector/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/dupedetector/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/ssanticheat/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/ssanticheat/bans/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/bans/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/ssanticheat/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/ssanticheat/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/tribescore/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/tribescore/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/tribescore/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/es/plugins/tribescore/discord-bot/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/discord-bot/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/arkbosscooldown/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/arkbosscooldown/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/dupedetector/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/dupedetector/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/ssanticheat/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/ssanticheat/bans/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/bans/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/ssanticheat/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/ssanticheat/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/tribescore/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/tribescore/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/tribescore/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/zh/plugins/tribescore/discord-bot/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/discord-bot/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/arkbosscooldown/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/arkbosscooldown/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/arkbosscooldown/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/arkbosscooldown/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/dupedetector/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/dupedetector/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/dupedetector/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/dupedetector/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/ssanticheat/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/ssanticheat/bans/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/bans/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/bans/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/ssanticheat/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/commands/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/ssanticheat/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/ssanticheat/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/ssanticheat/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/tribescore/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/tribescore/commands/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/commands/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/commands/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/tribescore/configuration/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/configuration/"/>
+    </url>
+    <url>
+        <loc>https://docs.bytemart.net/ru/plugins/tribescore/discord-bot/</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://docs.bytemart.net/ru/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.bytemart.net/de/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.bytemart.net/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://docs.bytemart.net/es/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://docs.bytemart.net/fr/plugins/tribescore/discord-bot/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://docs.bytemart.net/zh/plugins/tribescore/discord-bot/"/>
+    </url>
+</urlset>
