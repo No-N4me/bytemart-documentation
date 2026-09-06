@@ -74,6 +74,7 @@ nav:
           - plugins/arkbosscooldown/configuration.md
 
 markdown_extensions:
+  - attr_list                       # Explicit heading ids, so #common-configuration is the same in every locale
   - pymdownx.highlight:
       linenums: true
       anchor_linenums: true

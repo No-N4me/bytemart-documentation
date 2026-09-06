@@ -75,4 +75,4 @@ final score = base points
 - [配置](configuration.md) —— 完整的 `config.json`，以及 `structures.json` 和 `dinos.json`。
 - [命令](commands.md) —— 控制台/RCON 管理命令和游戏内聊天命令。
 - [Discord 机器人](discord-bot.md) —— 配套机器人：实时排行榜、斜杠命令和滥用检测。
-- [通用配置](../index.md) —— 共享的 `LicenseKey`、`Database`、`LogToFile` 和 `Verbose` 键。
+- [通用配置](../index.md#common-configuration) —— 共享的 `LicenseKey`、`Database`、`LogToFile` 和 `Verbose` 键。

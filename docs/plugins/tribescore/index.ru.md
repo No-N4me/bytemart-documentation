@@ -88,4 +88,4 @@ final score = base points
 - [Конфигурация](configuration.md) — полный `config.json`, а также `structures.json` и `dinos.json`.
 - [Команды](commands.md) — админ-команды консоли/RCON и внутриигровые чат-команды.
 - [Discord-бот](discord-bot.md) — сопутствующий бот: живая таблица лидеров, слэш-команды и выявление злоупотреблений.
-- [Общая конфигурация](../index.md) — общие ключи `LicenseKey`, `Database`, `LogToFile` и `Verbose`.
+- [Общая конфигурация](../index.md#common-configuration) — общие ключи `LicenseKey`, `Database`, `LogToFile` и `Verbose`.

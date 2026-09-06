@@ -10,8 +10,10 @@ Chaque plugin est distribué sous forme d'un `.zip` que vous téléchargez depui
 | ------ | ----------- |
 | [Tribescore](tribescore/index.md) | Un système compétitif de score de tribu : les tribus gagnent des points en détruisant les structures, dinos et joueurs ennemis en PvP, le tout mis en avant via un classement et des hologrammes affichés dans le monde. |
 | [ssAntiCheat](ssanticheat/index.md) | Anticheat côté serveur : modules de détection pour les triches de combat et les exploits, système de bannissement intégré avec vagues de bans, alertes Discord et correctifs pour les exploits connus de crash et de duplication. |
+| [DupeDetector](dupedetector/index.md) | Un détecteur de duplication ciblé pour la boutique de tribut/upload : repère la duplication d'objets, alerte votre Discord et peut, en option, punir automatiquement les récidivistes. |
+| [ArkBossCooldown](arkbosscooldown/index.md) | Un temps de recharge à l'échelle du serveur entre les débuts de combat de boss, afin que des tributs de boss envoyés en rafale n'empilent plus les téléportations et ne tuent plus les joueurs à leur arrivée. |
 
-## Configuration commune
+## Configuration commune {#common-configuration}
 
 Chaque plugin Bytemart se configure via un fichier `config.json` situé dans le
 dossier propre au plugin :

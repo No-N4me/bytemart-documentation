@@ -109,5 +109,5 @@ your JSON before reloading.
 **Next steps:**
 
 - [Configuration](configuration.md) — the cooldown, the message, and the boss list.
-- [Common Configuration](../index.md) — the shared `LicenseKey`,
+- [Common Configuration](../index.md#common-configuration) — the shared `LicenseKey`,
   `Database`, `LogToFile`, and `Verbose` keys.

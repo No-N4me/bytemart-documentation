@@ -12,7 +12,7 @@ config with `//` comments** — read it, but don't rename it over `config.json`
 
 The keys `LicenseKey`, `Verbose`, `LogToFile`, and `Database` are shared by every
 Bytemart plugin and are documented on the
-**[Common Configuration](../index.md)** page. This page covers the
+**[Common Configuration](../index.md#common-configuration)** page. This page covers the
 keys unique to ArkBossCooldown.
 
 > 💡 **Validate before you start.** Always validate your JSON after editing (e.g.
@@ -186,5 +186,5 @@ A 15-minute limit announced in chat:
 **Next steps:**
 
 - [Overview](index.md) — what the plugin does, installation, and commands.
-- [Common Configuration](../index.md) — `LicenseKey`, `Database`,
+- [Common Configuration](../index.md#common-configuration) — `LicenseKey`, `Database`,
   `LogToFile`, `Verbose`.

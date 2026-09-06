@@ -10,8 +10,10 @@ und in den Plugin-Ordner deines Servers ablegst.
 | ------ | ----------- |
 | [Tribescore](tribescore/index.md) | Ein kompetitives Punktesystem für Stämme: Stämme verdienen Punkte für das Zerstören feindlicher Strukturen, Dinos und Spieler im PvP, dargestellt über eine Bestenliste und Hologramme in der Spielwelt. |
 | [ssAntiCheat](ssanticheat/index.md) | Serverseitiger Anti-Cheat: Erkennungsmodule für Kampf-Cheats und Exploits, ein integriertes Bansystem mit Ban-Wellen, Discord-Benachrichtigungen sowie Fixes für bekannte Crash- und Duplikations-Exploits. |
+| [DupeDetector](dupedetector/index.md) | Ein fokussierter Dupe-Detektor für den Tribut-/Upload-Store: erkennt Item-Duplizierung, benachrichtigt deinen Discord und bestraft Wiederholungstäter optional automatisch. |
+| [ArkBossCooldown](arkbosscooldown/index.md) | Eine serverweite Abklingzeit zwischen Boss-Starts, damit gespammte Boss-Tribute nicht mehr Teleports stapeln und Spieler bei der Ankunft töten. |
 
-## Gemeinsame Konfiguration
+## Gemeinsame Konfiguration {#common-configuration}
 
 Jedes Bytemart-Plugin wird über eine `config.json`-Datei konfiguriert, die sich im
 eigenen Ordner des Plugins befindet:

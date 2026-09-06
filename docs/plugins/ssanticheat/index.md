@@ -120,5 +120,5 @@ tuning.
 - [Configuration](configuration.md) — every key in `config.json`.
 - [Commands](commands.md) — console/RCON commands and in-game admin chat commands.
 - [Bans & Detections](bans.md) — thresholds, ban waves, IP/HWID bans, and unbanning.
-- [Common Configuration](../index.md) — the shared `LicenseKey`,
+- [Common Configuration](../index.md#common-configuration) — the shared `LicenseKey`,
   `Database`, `LogToFile`, and `Verbose` keys.

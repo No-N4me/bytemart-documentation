@@ -13,7 +13,7 @@ plugin folder.
 | [DupeDetector](dupedetector/index.md) | A focused dupe detector for the tribute/upload store: catches item duplication, alerts your Discord, and optionally punishes repeat offenders automatically. |
 | [ArkBossCooldown](arkbosscooldown/index.md) | A server-wide cooldown between boss starts, so spammed boss tributes stop stacking teleports and killing players on arrival. |
 
-## Common Configuration
+## Common Configuration {#common-configuration}
 
 Every Bytemart plugin is configured through a `config.json` file located in the
 plugin's own folder:

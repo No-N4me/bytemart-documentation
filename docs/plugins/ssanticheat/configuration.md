@@ -12,7 +12,7 @@ config with `//` comments** — read it, but don't rename it over `config.json`
 
 The keys `LicenseKey`, `Verbose`, `LogToFile`, and `Database` are shared by every
 Bytemart plugin and are documented on the
-**[Common Configuration](../index.md)** page. This page covers only
+**[Common Configuration](../index.md#common-configuration)** page. This page covers only
 the keys unique to ssAntiCheat.
 
 > 💡 **Validate before you start.** Always validate your JSON after editing (e.g.
@@ -356,5 +356,5 @@ reject accounts that look disposable.
 
 - [Commands](commands.md) — console/RCON and in-game admin commands.
 - [Bans & Detections](bans.md) — thresholds, ban waves, IP/HWID bans, unbanning.
-- [Common Configuration](../index.md) — `LicenseKey`, `Database`,
+- [Common Configuration](../index.md#common-configuration) — `LicenseKey`, `Database`,
   `LogToFile`, `Verbose`.

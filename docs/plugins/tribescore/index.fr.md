@@ -85,4 +85,4 @@ clés nouvelles ou renommées.
 - [Configuration](configuration.md) — le `config.json` complet, ainsi que `structures.json` et `dinos.json`.
 - [Commandes](commands.md) — les commandes d'administration console/RCON et les commandes de chat en jeu.
 - [Bot Discord](discord-bot.md) — le bot compagnon : classement en direct, commandes slash et détection d'abus.
-- [Configuration commune](../index.md) — les clés partagées `LicenseKey`, `Database`, `LogToFile` et `Verbose`.
+- [Configuration commune](../index.md#common-configuration) — les clés partagées `LicenseKey`, `Database`, `LogToFile` et `Verbose`.

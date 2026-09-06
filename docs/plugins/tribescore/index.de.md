@@ -86,4 +86,4 @@ erkennen.
 - [Konfiguration](configuration.md) — die vollständige `config.json` sowie `structures.json` und `dinos.json`.
 - [Befehle](commands.md) — Admin-Befehle über Konsole/RCON und In-Game-Chatbefehle.
 - [Discord-Bot](discord-bot.md) — der begleitende Bot: Live-Bestenliste, Slash-Befehle und Missbrauchserkennung.
-- [Gemeinsame Konfiguration](../index.md) — die gemeinsamen Schlüssel `LicenseKey`, `Database`, `LogToFile` und `Verbose`.
+- [Gemeinsame Konfiguration](../index.md#common-configuration) — die gemeinsamen Schlüssel `LicenseKey`, `Database`, `LogToFile` und `Verbose`.

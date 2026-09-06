@@ -82,4 +82,4 @@ Always check the changelog for config changes when updating; a tool like
 - [Configuration](configuration.md) — the full `config.json`, plus `structures.json` and `dinos.json`.
 - [Commands](commands.md) — console/RCON admin commands and in-game chat commands.
 - [Discord Bot](discord-bot.md) — the companion bot: live leaderboard, slash commands, and abuse detection.
-- [Common Configuration](../index.md) — the shared `LicenseKey`, `Database`, `LogToFile`, and `Verbose` keys.
+- [Common Configuration](../index.md#common-configuration) — the shared `LicenseKey`, `Database`, `LogToFile`, and `Verbose` keys.

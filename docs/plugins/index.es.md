@@ -10,8 +10,10 @@ en la carpeta de plugins de tu servidor.
 | ------ | ----------- |
 | [Tribescore](tribescore/index.md) | Un sistema competitivo de puntuación de tribus: las tribus ganan puntos por destruir estructuras, dinos y jugadores enemigos en PvP, mostrado a través de una tabla de clasificación y hologramas en el mundo. |
 | [ssAntiCheat](ssanticheat/index.md) | Anti-cheat del lado del servidor: módulos de detección para trampas de combate y exploits, un sistema de baneos integrado con oleadas de baneos, alertas de Discord y correcciones para exploits conocidos de cierre inesperado y duplicación. |
+| [DupeDetector](dupedetector/index.md) | Un detector de dupeo enfocado en la tienda de tributo/subida: detecta la duplicación de objetos, alerta a tu Discord y, opcionalmente, castiga automáticamente a los infractores reincidentes. |
+| [ArkBossCooldown](arkbosscooldown/index.md) | Un tiempo de espera a nivel de servidor entre inicios de jefe, para que los tributos de jefe repetidos dejen de acumular teletransportes y matar a los jugadores al llegar. |
 
-## Configuración común
+## Configuración común {#common-configuration}
 
 Todos los plugins de Bytemart se configuran mediante un archivo `config.json`
 ubicado en la propia carpeta del plugin:

@@ -10,8 +10,10 @@ Bytemart 插件为你的 ARK 服务器扩展新功能。每个插件都以一个
 | ------ | ----------- |
 | [Tribescore](tribescore/index.md) | 一套竞技性的部落计分系统：部落通过在 PvP 中摧毁敌方建筑、恐龙和玩家来赚取分数，并通过排行榜和世界内全息投影呈现。 |
 | [ssAntiCheat](ssanticheat/index.md) | 服务端反作弊：涵盖战斗作弊与漏洞利用的检测模块、带封禁波次的内置封禁系统、Discord 告警，以及针对已知崩溃与复制漏洞的修复。 |
+| [DupeDetector](dupedetector/index.md) | 一款专注于贡品/上传商店的专项复制检测器：捕捉物品复制，告警到你的 Discord，并可选择自动惩罚累犯。 |
+| [ArkBossCooldown](arkbosscooldown/index.md) | 一个介于 Boss 开始之间的全服冷却时间，让刷屏式的 Boss 贡品不再层层叠加传送并在玩家抵达时将其杀死。 |
 
-## 通用配置
+## 通用配置 {#common-configuration}
 
 每个 Bytemart 插件都通过位于该插件自身文件夹中的 `config.json` 文件进行配置：
 
